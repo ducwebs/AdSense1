@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO PRINCIPAL ═══ -->
+  <title>Cómo Instalar n8n en tu Computadora (Windows, Mac y Linux) 2025 | AutomatizaIA</title>
+  <meta name="description" content="Guía completa paso a paso para instalar n8n en Windows, Mac y Linux en 2025. Automatiza gratis desde tu computadora sin pagar hosting. Tutorial en español para México y Latinoamérica.">
+  <meta name="keywords" content="instalar n8n, n8n windows, n8n mac, n8n linux, instalar n8n español, n8n local, n8n gratis, n8n tutorial español, como instalar n8n, n8n automatización, n8n mexico, n8n latinoamerica, n8n npm, n8n node.js, automatización gratis">
+  <meta name="author" content="AutomatizaIA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="MX">
+  <meta name="language" content="Spanish">
+  <meta name="revisit-after" content="5 days">
+  <link rel="canonical" href="https://automatizaia.com/instalar-n8n/">
+
+  <!-- HREFLANG LATAM -->
+  <link rel="alternate" hreflang="es-mx" href="https://automatizaia.com/instalar-n8n/">
+  <link rel="alternate" hreflang="es-co" href="https://automatizaia.com/instalar-n8n/">
+  <link rel="alternate" hreflang="es-ar" href="https://automatizaia.com/instalar-n8n/">
+  <link rel="alternate" hreflang="es" href="https://automatizaia.com/instalar-n8n/">
+  <link rel="alternate" hreflang="x-default" href="https://automatizaia.com/instalar-n8n/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cómo Instalar n8n en tu Computadora (Windows, Mac y Linux) 2025">
+  <meta property="og:description" content="Tutorial completo paso a paso para instalar n8n localmente en cualquier sistema operativo. Automatización gratis en español para México y Latinoamérica.">
+  <meta property="og:url" content="https://automatizaia.com/instalar-n8n/">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="AutomatizaIA">
+  <meta property="og:image" content="https://automatizaia.com/og-instalar-n8n.jpg">
+  <meta property="article:published_time" content="2025-05-01">
+  <meta property="article:modified_time" content="2025-05-10">
+  <meta property="article:author" content="AutomatizaIA">
+  <meta property="article:tag" content="n8n, Automatización, Windows, Mac, Linux, Tutorial">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@automatizaia">
+  <meta name="twitter:title" content="Cómo Instalar n8n en Windows, Mac y Linux (2025)">
+  <meta name="twitter:description" content="Tutorial completo para instalar n8n gratis en tu computadora. Paso a paso en español para LATAM.">
+
+  <!-- SCHEMA: ARTICLE -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Cómo instalar n8n en tu computadora: Windows, Mac y Linux (2025)",
+    "description": "Guía completa paso a paso para instalar n8n localmente en Windows, Mac y Linux. Automatiza gratis sin necesitar hosting.",
+    "image": "https://automatizaia.com/og-instalar-n8n.jpg",
+    "author": { "@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com" },
+    "publisher": { "@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com", "logo": { "@type": "ImageObject", "url": "https://automatizaia.com/logo.png" } },
+    "datePublished": "2025-05-01",
+    "dateModified": "2025-05-10",
+    "inLanguage": "es-MX",
+    "url": "https://automatizaia.com/instalar-n8n/",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://automatizaia.com/instalar-n8n/" },
+    "proficiencyLevel": "Beginner",
+    "timeRequired": "PT30M",
+    "keywords": "instalar n8n, n8n windows, n8n mac, n8n linux, n8n gratis, automatización"
+  }
+  </script>
+
+  <!-- SCHEMA: HOW-TO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo instalar n8n en tu computadora",
+    "description": "Instala n8n localmente en Windows, Mac o Linux y empieza a automatizar gratis desde tu computadora.",
+    "totalTime": "PT30M",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+    "tool": [
+      { "@type": "HowToTool", "name": "Node.js (v18 o superior)" },
+      { "@type": "HowToTool", "name": "npm o npx" },
+      { "@type": "HowToTool", "name": "Terminal / Símbolo del sistema" }
+    ],
+    "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Instalar Node.js", "text": "Descarga e instala Node.js versión 18 o superior desde nodejs.org." },
+      { "@type": "HowToStep", "position": 2, "name": "Verificar instalación", "text": "Abre la terminal y ejecuta 'node -v' y 'npm -v' para verificar que Node.js está instalado." },
+      { "@type": "HowToStep", "position": 3, "name": "Instalar n8n", "text": "Ejecuta 'npm install -g n8n' en la terminal para instalar n8n globalmente." },
+      { "@type": "HowToStep", "position": 4, "name": "Iniciar n8n", "text": "Ejecuta 'n8n start' y abre tu navegador en http://localhost:5678" },
+      { "@type": "HowToStep", "position": 5, "name": "Crear cuenta", "text": "En la interfaz de n8n, crea tu usuario y contraseña para empezar a automatizar." }
+    ]
+  }
+  </script>
+
+  <!-- SCHEMA: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Es gratis instalar n8n en mi computadora?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, n8n es completamente gratis cuando lo instalas localmente en tu computadora. Es software de código abierto. Solo pagas si usas n8n Cloud (su servicio de hosting)." } },
+      { "@type": "Question", "name": "¿Qué versión de Node.js necesito para instalar n8n?", "acceptedAnswer": { "@type": "Answer", "text": "n8n requiere Node.js versión 18 o superior. Recomendamos siempre instalar la versión LTS (Long Term Support) más reciente desde nodejs.org." } },
+      { "@type": "Question", "name": "¿Puedo usar n8n sin conexión a internet?", "acceptedAnswer": { "@type": "Answer", "text": "n8n en sí funciona localmente, pero la mayoría de integraciones (Gmail, Slack, WhatsApp, etc.) requieren conexión a internet para comunicarse con esas APIs externas." } },
+      { "@type": "Question", "name": "¿Cuánta memoria RAM necesito para correr n8n?", "acceptedAnswer": { "@type": "Answer", "text": "n8n funciona bien con 2GB de RAM mínimo. Para uso cómodo con múltiples flujos activos, recomendamos 4GB o más." } }
+    ]
+  }
+  </script>
+
+  <!-- PERFORMANCE -->
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE ADSENSE — reemplaza con tu Publisher ID -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    :root {
+      --bg:        #0d0d0d;
+      --bg2:       #141414;
+      --bg3:       #1c1c1c;
+      --surface:   rgba(255,255,255,0.04);
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,140,0,0.25);
+      --amber:     #ff8c00;
+      --amber2:    #ffb347;
+      --amber-dim: rgba(255,140,0,0.12);
+      --green:     #39d353;
+      --red:       #f85149;
+      --blue:      #58a6ff;
+      --text:      #e6e6e6;
+      --muted:     #888;
+      --muted2:    #555;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Barlow', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; overflow-x: hidden; }
+
+    body::after {
+      content: ''; position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+      pointer-events: none; z-index: 9999;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    h1,h2,h3,h4,h5 { font-family: var(--sans); font-weight: 700; line-height: 1.2; }
+    code, pre { font-family: var(--mono); }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(13,13,13,0.95); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border); padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .logo { font-family: var(--mono); font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .logo-icon { width: 28px; height: 28px; background: var(--amber); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #000; font-size: 0.75rem; font-weight: 700; }
+    .logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 6px; transition: color 0.2s, background 0.2s; letter-spacing: 0.02em; display: flex; align-items: center; gap: 6px; }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+    .nav-back { color: var(--amber) !important; border: 1px solid var(--border2) !important; background: var(--amber-dim) !important; font-family: var(--mono) !important; font-size: 0.78rem !important; }
+    .nav-back:hover { opacity: 0.85; background: var(--amber-dim) !important; }
+    .nav-toggle { display: none; background: none; border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb-bar { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.7rem 5%; }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; }
+    .breadcrumb { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--amber); transition: opacity 0.2s; }
+    .breadcrumb a:hover { opacity: 0.8; text-decoration: underline; }
+    .breadcrumb .sep { color: var(--muted2); }
+    .breadcrumb .current { color: var(--text); }
+
+    /* ── READING PROGRESS ── */
+    .reading-progress { position: fixed; top: 60px; left: 0; right: 0; height: 2px; background: var(--bg3); z-index: 150; }
+    .reading-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--amber), var(--amber2)); transition: width 0.1s linear; }
+
+    /* ── OS TABS ── */
+    .os-tabs {
+      display: flex; gap: 0; margin: 2rem 0 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .os-tab {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 20px; cursor: pointer;
+      font-family: var(--mono); font-size: 0.82rem; font-weight: 600;
+      color: var(--muted); border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s; margin-bottom: -1px;
+      background: none; border-top: none; border-left: none; border-right: none;
+    }
+    .os-tab:hover { color: var(--text); }
+    .os-tab.active { color: var(--amber); border-bottom-color: var(--amber); }
+    .os-tab .os-icon { font-size: 1rem; }
+    .os-content { display: none; padding-top: 1.5rem; }
+    .os-content.active { display: block; }
+
+    /* ── LAYOUT ── */
+    .page-wrap {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 300px;
+      gap: 3rem; padding: 3rem 5% 6rem;
+    }
+
+    /* ── ARTICLE META ── */
+    .article-meta-top { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .art-tag { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; color: var(--amber); background: var(--amber-dim); border: 1px solid var(--border2); padding: 3px 10px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .art-tag.green { color: var(--green); background: rgba(57,211,83,0.08); border-color: rgba(57,211,83,0.3); }
+    .art-tag.blue  { color: var(--blue);  background: rgba(88,166,255,0.08); border-color: rgba(88,166,255,0.3); }
+    .art-meta { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; gap: 1rem; flex-wrap: wrap; }
+    .art-meta span::before { content: '· '; color: var(--muted2); }
+
+    /* ── ARTICLE CONTENT ── */
+    .article-main h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; }
+    .article-intro { font-size: 1.05rem; color: var(--muted); line-height: 1.85; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); font-weight: 300; }
+
+    .art-content h2 { font-size: 1.45rem; font-weight: 800; margin: 3rem 0 1rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .art-content h2:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+    .art-content h3 { font-size: 1.05rem; font-weight: 700; color: var(--amber); margin: 2rem 0 0.75rem; font-family: var(--mono); }
+    .art-content p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.85; }
+    .art-content ul, .art-content ol { padding-left: 1.5rem; margin-bottom: 1.1rem; }
+    .art-content li { color: var(--muted); line-height: 1.8; margin-bottom: 0.5rem; }
+    .art-content strong { color: var(--text); font-weight: 600; }
+    .art-content a { color: var(--amber); text-decoration: underline; }
+    .art-content code { background: var(--bg3); border: 1px solid var(--border); padding: 2px 6px; border-radius: 3px; font-size: 0.85em; color: var(--amber2); }
+
+    /* OVERVIEW BOX */
+    .art-overview { background: var(--bg2); border: 1px solid var(--border2); border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .art-overview h4 { font-family: var(--mono); font-size: 0.78rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
+    .art-overview ul { list-style: none; }
+    .art-overview li { display: flex; gap: 10px; align-items: baseline; padding: 5px 0; font-size: 0.9rem; color: var(--muted); }
+    .art-overview li::before { content: '→'; color: var(--amber); font-size: 0.75rem; flex-shrink: 0; }
+
+    /* STEP BLOCKS */
+    .step-block { display: flex; gap: 1.25rem; margin: 1.5rem 0; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem; align-items: flex-start; }
+    .step-num { width: 36px; height: 36px; flex-shrink: 0; background: var(--amber); color: #000; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 0.85rem; font-weight: 700; }
+    .step-content h4 { font-weight: 700; margin-bottom: 0.5rem; font-size: 1rem; color: var(--text); }
+    .step-content p { color: var(--muted); font-size: 0.92rem; margin: 0; line-height: 1.75; }
+    .step-content p + p { margin-top: 0.6rem; }
+    .step-content ul { padding-left: 1.2rem; margin-top: 0.6rem; }
+    .step-content li { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.35rem; }
+    .step-content code { background: var(--bg3); border: 1px solid var(--border); padding: 2px 6px; border-radius: 3px; font-size: 0.82em; color: var(--amber2); font-family: var(--mono); }
+
+    /* SCREENSHOT PLACEHOLDER */
+    .screenshot-placeholder {
+      background: var(--bg2); border: 2px dashed var(--border2);
+      border-radius: 10px; padding: 2.5rem 2rem;
+      text-align: center; margin: 1.5rem 0; position: relative;
+      transition: border-color 0.2s;
+    }
+    .screenshot-placeholder:hover { border-color: var(--amber); }
+    .screenshot-placeholder .ph-badge { position: absolute; top: 0.75rem; right: 0.75rem; background: var(--amber-dim); border: 1px solid var(--border2); color: var(--amber); font-family: var(--mono); font-size: 0.62rem; padding: 2px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .screenshot-placeholder .ph-icon { font-size: 2rem; margin-bottom: 0.6rem; opacity: 0.4; display: block; }
+    .screenshot-placeholder .ph-label { font-family: var(--mono); font-size: 0.75rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.35rem; display: block; }
+    .screenshot-placeholder .ph-desc { font-size: 0.82rem; color: var(--muted2); line-height: 1.6; display: block; }
+    /* Cuando insertes imagen real, reemplaza el interior del div con <img src="..." alt="..."> */
+
+    /* CODE BLOCKS */
+    .code-block { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin: 1.25rem 0; font-family: var(--mono); }
+    .code-header { background: rgba(255,255,255,0.03); padding: 8px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+    .code-lang { font-size: 0.7rem; color: var(--amber); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .code-copy { font-size: 0.7rem; color: var(--muted); cursor: pointer; background: none; border: 1px solid var(--border); padding: 3px 10px; border-radius: 3px; transition: color 0.2s; font-family: var(--mono); }
+    .code-copy:hover { color: var(--amber); }
+    .code-body { padding: 1.2rem 1.5rem; font-size: 0.83rem; line-height: 1.9; overflow-x: auto; white-space: pre; color: #e6e6e6; }
+    .code-body .kw  { color: #ff7b72; }
+    .code-body .str { color: #a5d6ff; }
+    .code-body .cm  { color: var(--muted2); font-style: italic; }
+    .code-body .fn  { color: #d2a8ff; }
+    .code-body .num { color: var(--amber2); }
+    .code-body .var { color: #79c0ff; }
+    .code-body .ok  { color: var(--green); }
+    .code-body .prompt { color: var(--green); user-select: none; }
+
+    /* CALLOUTS */
+    .callout { border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+    .callout.tip    { background: rgba(57,211,83,0.06);  border-left: 3px solid var(--green); }
+    .callout.warn   { background: rgba(255,140,0,0.08);  border-left: 3px solid var(--amber); }
+    .callout.info   { background: rgba(88,166,255,0.06); border-left: 3px solid var(--blue); }
+    .callout.danger { background: rgba(248,81,73,0.06);  border-left: 3px solid var(--red); }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .callout-body p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+    .callout-body strong { color: var(--text); }
+    .callout-body code { background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 3px; font-size: 0.85em; }
+
+    /* COMPARISON TABLE */
+    .comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+    .comp-table th { background: var(--bg3); border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-family: var(--mono); font-size: 0.75rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; }
+    .comp-table td { border: 1px solid var(--border); padding: 10px 14px; color: var(--muted); line-height: 1.5; vertical-align: top; }
+    .comp-table tr:hover td { background: var(--surface); }
+    .check { color: var(--green); font-weight: 700; } .cross { color: var(--red); }
+
+    /* OS BADGE */
+    .os-badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1rem; }
+    .os-badge.win   { background: rgba(88,166,255,0.12); color: var(--blue);  border: 1px solid rgba(88,166,255,0.25); }
+    .os-badge.mac   { background: rgba(255,255,255,0.06); color: #ddd;        border: 1px solid rgba(255,255,255,0.15); }
+    .os-badge.linux { background: rgba(255,140,0,0.12);  color: var(--amber); border: 1px solid var(--border2); }
+
+    /* REQ LIST */
+    .req-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .req-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem; }
+    .req-card .req-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+    .req-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text); }
+    .req-card p { font-size: 0.82rem; color: var(--muted); margin: 0; line-height: 1.6; }
+
+    /* AD SLOTS */
+    .ad-slot { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; margin: 2rem 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+    .ad-slot-label { font-family: var(--mono); font-size: 0.65rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.5rem; }
+    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: border-color 0.2s; }
+    .faq-item[open] { border-color: var(--border2); }
+    .faq-q { padding: 1.1rem 1.4rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after { content: '+'; color: var(--amber); font-size: 1.3rem; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item[open] .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.4rem 1.1rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+
+    /* ART NAV */
+    .art-nav { display: flex; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .art-nav-btn { flex: 1; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.4rem; cursor: pointer; transition: border-color 0.2s; text-decoration: none; display: block; }
+    .art-nav-btn:hover { border-color: var(--border2); }
+    .art-nav-btn .nav-dir { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+    .art-nav-btn .nav-title { font-size: 0.9rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+
+    /* SIDEBAR */
+    .sidebar { position: relative; }
+    .sidebar-sticky { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.5rem; }
+    .toc-box { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .toc-header { background: var(--bg3); padding: 0.9rem 1.2rem; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 0.72rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; }
+    .toc-list { list-style: none; padding: 0.75rem; }
+    .toc-list li { margin-bottom: 0.2rem; }
+    .toc-list a { font-size: 0.82rem; color: var(--muted); display: flex; align-items: flex-start; gap: 7px; padding: 4px 6px; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+    .toc-list a::before { content: '#'; color: var(--muted2); font-family: var(--mono); font-size: 0.68rem; flex-shrink: 0; margin-top: 2px; }
+    .toc-list a:hover, .toc-list a.active { color: var(--amber); background: var(--amber-dim); }
+    .toc-sep { height: 1px; background: var(--border); margin: 0.4rem 0.6rem; }
+
+    .sidebar-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; }
+    .sidebar-card h4 { font-family: var(--mono); font-size: 0.72rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+    .sidebar-tool { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .sidebar-tool:last-child { border-bottom: none; padding-bottom: 0; }
+    .sidebar-tool-icon { width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .sidebar-tool-icon.orange { background: rgba(255,140,0,0.15); }
+    .sidebar-tool-icon.blue   { background: rgba(88,166,255,0.15); }
+    .sidebar-tool-icon.green  { background: rgba(57,211,83,0.15); }
+    .sidebar-tool-name { font-size: 0.85rem; font-weight: 600; }
+    .sidebar-tool-badge { font-family: var(--mono); font-size: 0.62rem; color: var(--green); }
+
+    .sidebar-ad { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; text-align: center; min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; }
+    .sidebar-ad .ad-label { font-family: var(--mono); font-size: 0.62rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* SCROLL REVEAL */
+    .reveal { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.animate-hidden { opacity: 0; transform: translateY(20px); }
+    .reveal.animate-hidden.visible { opacity: 1; transform: translateY(0); }
+
+    /* FOOTER */
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 3rem 5% 2rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.75rem; max-width: 260px; line-height: 1.7; }
+    .footer-col h4 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; color: var(--amber); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a { color: var(--muted); font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; color: var(--muted2); font-family: var(--mono); font-size: 0.75rem; flex-wrap: wrap; gap: 0.5rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1rem 5%; gap: 0.5rem; z-index: 100; }
+      .nav-toggle { display: block; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .art-nav { flex-direction: column; }
+      .os-tabs { overflow-x: auto; }
+      .os-tab { white-space: nowrap; }
+      .req-grid { grid-template-columns: 1fr; }
+      .step-block { flex-direction: column; }
+    }
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- READING PROGRESS -->
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress-bar" id="progressBar"></div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="automatizacionsIA.html" class="logo" aria-label="AutomatizaIA inicio">
+      <div class="logo-icon">AI</div>
+      Automatiza<span>IA</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li><a href="automatizacionsIA.html#tutoriales">Tutoriales</a></li>
+      <li><a href="automatizacionsIA.html#herramientas">Herramientas</a></li>
+      <li><a href="automatizacionsIA.html#faq">FAQ</a></li>
+      <li><a href="automatizacionsIA.html" class="nav-back">← Volver al inicio</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="breadcrumb-inner">
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="automatizacionsIA.html">AutomatizaIA</a>
+      <span class="sep">›</span>
+      <a href="automatizacionsIA.html#tutoriales">Tutoriales</a>
+      <span class="sep">›</span>
+      <span class="current">Instalar n8n (Windows, Mac, Linux)</span>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══ CONTENIDO ═══ -->
+<div class="page-wrap">
+
+  <!-- ── ARTÍCULO ── -->
+  <article class="article-main" itemscope itemtype="https://schema.org/TechArticle">
+
+    <div class="article-meta-top">
+      <span class="art-tag">n8n</span>
+      <span class="art-tag green">Gratis</span>
+      <span class="art-tag blue">Principiante</span>
+      <div class="art-meta">
+        <span itemprop="datePublished">Mayo 2025</span>
+        <span>⏱ 30 min lectura</span>
+        <span>Windows · Mac · Linux</span>
+      </div>
+    </div>
+
+    <h1 itemprop="headline">Cómo instalar n8n en tu computadora: Windows, Mac y Linux (Guía completa 2025)</h1>
+
+    <p class="article-intro" itemprop="description">
+      n8n es una de las herramientas de automatización más poderosas del mundo — y lo mejor: es <strong>100% gratis</strong> cuando la instalas en tu propia computadora. En esta guía completa te enseñamos a instalar n8n paso a paso en <strong>Windows, Mac y Linux</strong>, desde cero, sin necesitar conocimientos técnicos avanzados. En menos de 30 minutos tendrás tu propio servidor de automatización corriendo localmente.
+    </p>
+
+    <!-- OVERVIEW -->
+    <div class="art-overview reveal">
+      <h4>// Lo que aprenderás en esta guía</h4>
+      <ul>
+        <li>Qué es n8n y por qué es mejor que Zapier o Make para muchos casos</li>
+        <li>Cómo instalar Node.js (requisito previo) en cualquier sistema operativo</li>
+        <li>Instalación de n8n en Windows paso a paso con capturas</li>
+        <li>Instalación de n8n en Mac (Intel y Apple Silicon M1/M2/M3)</li>
+        <li>Instalación de n8n en Linux (Ubuntu/Debian y otras distros)</li>
+        <li>Cómo iniciar n8n y acceder a la interfaz por primera vez</li>
+        <li>Configuración básica y resolución de errores comunes</li>
+      </ul>
+    </div>
+
+    <!-- AD SLOT 1 — Banner superior -->
+    <div class="ad-slot" aria-label="Publicidad">
+      <!--
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <span class="ad-slot-label">// Espacio AdSense — Banner 728×90 / Responsive</span>
+    </div>
+
+    <div class="art-content" itemprop="articleBody">
+
+      <!-- ══ QUÉ ES N8N ══ -->
+      <h2 id="que-es-n8n">¿Qué es n8n y por qué instalarlo localmente?</h2>
+
+      <p>n8n (pronunciado "n-eight-n") es una herramienta de automatización de flujos de trabajo de <strong>código abierto</strong>. Funciona de forma similar a Zapier o Make, pero con ventajas clave:</p>
+
+      <table class="comp-table" aria-label="Comparativa n8n vs Zapier vs Make">
+        <thead>
+          <tr><th>Característica</th><th>n8n (local)</th><th>Zapier</th><th>Make</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Precio base</td><td><span class="check">Gratis</span></td><td><span class="cross">$20+/mes</span></td><td>$9+/mes</td></tr>
+          <tr><td>Límite de operaciones</td><td><span class="check">Sin límite</span></td><td>Limitado</td><td>Limitado</td></tr>
+          <tr><td>Privacidad de datos</td><td><span class="check">100% local</span></td><td>En la nube</td><td>En la nube</td></tr>
+          <tr><td>Personalización</td><td><span class="check">Total</span></td><td>Limitada</td><td>Media</td></tr>
+          <tr><td>Código JavaScript</td><td><span class="check">Sí</span></td><td>Limitado</td><td>Sí</td></tr>
+          <tr><td>Facilidad inicial</td><td>Media</td><td><span class="check">Alta</span></td><td><span class="check">Alta</span></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <p><strong>¿Cuándo conviene n8n local?</strong> Si procesas datos sensibles de clientes, quieres automatizaciones sin límite de operaciones, o simplemente no quieres pagar mensualidad. Para un negocio que automatiza procesos internos, n8n local es la opción más económica y potente.</p>
+        </div>
+      </div>
+
+      <!-- ══ REQUISITOS ══ -->
+      <h2 id="requisitos">Requisitos previos antes de instalar n8n</h2>
+
+      <p>Antes de instalar n8n necesitas tener <strong>Node.js</strong> instalado en tu computadora. Node.js es el entorno de ejecución sobre el que corre n8n. Aquí los requisitos mínimos:</p>
+
+      <div class="req-grid">
+        <div class="req-card">
+          <span class="req-icon">⚡</span>
+          <h4>Node.js v18+</h4>
+          <p>Versión 18 o superior (LTS recomendado). Es el único requisito técnico.</p>
+        </div>
+        <div class="req-card">
+          <span class="req-icon">💾</span>
+          <h4>RAM mínima</h4>
+          <p>2 GB mínimo. Con 4 GB o más tendrás una experiencia cómoda y fluida.</p>
+        </div>
+        <div class="req-card">
+          <span class="req-icon">💿</span>
+          <h4>Espacio en disco</h4>
+          <p>~500 MB para n8n y sus dependencias. Más si guardas muchos datos de flujos.</p>
+        </div>
+        <div class="req-card">
+          <span class="req-icon">🌐</span>
+          <h4>Conexión a internet</h4>
+          <p>Para descargar n8n e integrar con servicios externos (Gmail, Slack, etc.).</p>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-body">
+          <p><strong>Importante:</strong> Si ya tienes Node.js instalado, verifica la versión ejecutando <code>node -v</code> en la terminal. Si es menor a v18, actualiza antes de continuar o tendrás errores al instalar n8n.</p>
+        </div>
+      </div>
+
+      <!-- AD SLOT 2 — Mid content -->
+      <div class="ad-slot" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-slot-label">// Espacio AdSense — In-article / Fluid</span>
+      </div>
+
+      <!-- ══ TABS DE OS ══ -->
+      <h2 id="instalacion">Instalación de n8n según tu sistema operativo</h2>
+      <p>Selecciona tu sistema operativo para ver las instrucciones específicas:</p>
+
+      <div class="os-tabs" role="tablist" aria-label="Selecciona sistema operativo">
+        <button class="os-tab active" role="tab" aria-selected="true"  aria-controls="tab-win"   onclick="switchOS('win')"   id="btn-win">
+          <span class="os-icon">🪟</span> Windows
+        </button>
+        <button class="os-tab" role="tab" aria-selected="false" aria-controls="tab-mac"   onclick="switchOS('mac')"   id="btn-mac">
+          <span class="os-icon">🍎</span> Mac
+        </button>
+        <button class="os-tab" role="tab" aria-selected="false" aria-controls="tab-linux" onclick="switchOS('linux')" id="btn-linux">
+          <span class="os-icon">🐧</span> Linux
+        </button>
+      </div>
+
+      <!-- ══════ WINDOWS ══════ -->
+      <div class="os-content active" id="tab-win" role="tabpanel" aria-labelledby="btn-win">
+        <div class="os-badge win">🪟 Windows 10 / 11</div>
+
+        <h3>// Paso 1 — Instalar Node.js en Windows</h3>
+
+        <div class="step-block reveal">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Descargar Node.js</h4>
+            <p>Ve a <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a> y descarga el instalador de la versión <strong>LTS</strong> (la que dice "Recommended For Most Users"). Elige el instalador de <strong>64-bit</strong> para Windows.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">Página de descarga de nodejs.org resaltando el botón LTS para Windows 64-bit</span>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Ejecutar el instalador</h4>
+            <p>Abre el archivo <code>.msi</code> descargado y sigue el asistente de instalación. Acepta los términos de licencia, deja las opciones por defecto y haz clic en <strong>"Install"</strong>. El proceso tarda 1-2 minutos.</p>
+            <p>Asegúrate de que la opción <strong>"Add to PATH"</strong> esté marcada — esto permite usar Node.js desde cualquier terminal.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">Asistente de instalación de Node.js en Windows mostrando la opción "Add to PATH" marcada</span>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Verificar la instalación</h4>
+            <p>Abre <strong>Símbolo del sistema</strong> (busca "cmd" en el menú Inicio) o <strong>PowerShell</strong> y ejecuta:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">CMD / PowerShell — Windows</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">></span> node -v
+<span class="ok">v20.x.x</span>   <span class="cm">← debe mostrar v18 o superior</span>
+
+<span class="prompt">></span> npm -v
+<span class="ok">10.x.x</span>    <span class="cm">← npm viene incluido con Node.js</span></div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">PowerShell mostrando los comandos "node -v" y "npm -v" con sus versiones correctas</span>
+        </div>
+
+        <h3>// Paso 2 — Instalar n8n en Windows</h3>
+
+        <div class="step-block reveal">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Instalar n8n globalmente con npm</h4>
+            <p>En tu terminal (CMD o PowerShell), ejecuta este comando. Puede tardar entre 2 y 5 minutos dependiendo de tu conexión:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">CMD / PowerShell — Instalar n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">></span> npm install -g n8n
+
+<span class="cm">← Verás muchas líneas descargando paquetes, es normal</span>
+<span class="ok">added 892 packages in 3m</span>   <span class="cm">← mensaje final de éxito</span></div>
+        </div>
+
+        <div class="callout warn">
+          <div class="callout-icon">⚠️</div>
+          <div class="callout-body">
+            <p><strong>Error común en Windows:</strong> Si ves un error de permisos, abre PowerShell <strong>como Administrador</strong> (clic derecho → "Ejecutar como administrador") y repite el comando.</p>
+          </div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Iniciar n8n</h4>
+            <p>Una vez instalado, ejecuta:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">CMD / PowerShell — Iniciar n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">></span> n8n start
+
+<span class="cm">← Verás algo similar a esto:</span>
+<span class="ok">✔ n8n ready on 0.0.0.0, port 5678</span>
+<span class="ok">✔ Version: 1.x.x</span>
+<span class="ok">✔ Editor is now accessible via:</span>
+<span class="ok">  http://localhost:5678</span></div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h4>Abrir n8n en el navegador</h4>
+            <p>Abre tu navegador (Chrome, Edge o Firefox) y ve a:</p>
+            <p><code>http://localhost:5678</code></p>
+            <p>Verás la pantalla de bienvenida de n8n para crear tu cuenta local.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">Pantalla de bienvenida de n8n en el navegador (localhost:5678) con el formulario de registro del primer usuario</span>
+        </div>
+
+        <div class="callout tip">
+          <div class="callout-icon">💡</div>
+          <div class="callout-body">
+            <p><strong>Tip Windows:</strong> Para que n8n no cierre cuando cierras la terminal, puedes instalarlo como servicio con <code>npm install -g pm2</code> y luego <code>pm2 start n8n</code>. Así corre en segundo plano. Te explicamos esto en la sección de configuración avanzada más abajo.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /tab-win -->
+
+      <!-- ══════ MAC ══════ -->
+      <div class="os-content" id="tab-mac" role="tabpanel" aria-labelledby="btn-mac">
+        <div class="os-badge mac">🍎 macOS (Intel y Apple Silicon M1/M2/M3)</div>
+
+        <h3>// Paso 1 — Instalar Node.js en Mac</h3>
+
+        <p>Tienes dos formas de instalar Node.js en Mac. Recomendamos usar <strong>Homebrew</strong> (el gestor de paquetes más popular en Mac), pero también puedes descargarlo directamente.</p>
+
+        <div class="step-block reveal">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Opción A (recomendada): Instalar con Homebrew</h4>
+            <p>Si no tienes Homebrew, instálalo primero. Abre la aplicación <strong>Terminal</strong> (búscala con Cmd+Espacio) y ejecuta:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Terminal — macOS — Instalar Homebrew</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+<span class="cm">← Pedirá tu contraseña de Mac y tardará unos minutos</span></div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Instalar Node.js con Homebrew</h4>
+            <p>Una vez instalado Homebrew, instala Node.js con:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Terminal — macOS — Instalar Node.js</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> brew install node
+
+<span class="cm">← Homebrew descarga e instala Node.js automáticamente</span>
+<span class="ok">==> node 20.x.x installed successfully</span></div>
+        </div>
+
+        <div class="callout info">
+          <div class="callout-icon">ℹ️</div>
+          <div class="callout-body">
+            <p><strong>Opción B — Sin Homebrew:</strong> Ve a <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a>, descarga el instalador <code>.pkg</code> para macOS y sigue el asistente. Funciona igual en Intel y Apple Silicon (M1/M2/M3).</p>
+          </div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Verificar instalación</h4>
+            <p>En la Terminal, verifica que Node.js está correctamente instalado:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Terminal — macOS — Verificar</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> node -v
+<span class="ok">v20.x.x</span>
+
+<span class="prompt">$</span> npm -v
+<span class="ok">10.x.x</span></div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">Terminal de macOS mostrando los comandos "node -v" y "npm -v" con sus versiones correctas</span>
+        </div>
+
+        <h3>// Paso 2 — Instalar n8n en Mac</h3>
+
+        <div class="step-block reveal">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Instalar n8n con npm</h4>
+            <p>En la Terminal, ejecuta:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Terminal — macOS — Instalar n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> npm install -g n8n
+
+<span class="cm">← Si pide permisos, agrega "sudo" al inicio:</span>
+<span class="prompt">$</span> sudo npm install -g n8n</div>
+        </div>
+
+        <div class="callout warn">
+          <div class="callout-icon">⚠️</div>
+          <div class="callout-body">
+            <p><strong>Mac Apple Silicon (M1/M2/M3):</strong> Si instalaste Node.js con Homebrew, normalmente no necesitas <code>sudo</code>. Si usaste el instalador <code>.pkg</code> de nodejs.org y ves errores de permisos, agrega <code>sudo</code> antes del comando.</p>
+          </div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Iniciar n8n</h4>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Terminal — macOS — Iniciar n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> n8n start
+
+<span class="ok">✔ n8n ready on 0.0.0.0, port 5678</span>
+<span class="ok">  http://localhost:5678</span></div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h4>Abrir en el navegador</h4>
+            <p>Abre Safari, Chrome o Firefox y ve a <code>http://localhost:5678</code>. Crea tu usuario y contraseña en la pantalla de bienvenida.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">n8n corriendo en el navegador en Mac (localhost:5678) — pantalla de registro inicial</span>
+        </div>
+
+        <div class="callout tip">
+          <div class="callout-icon">💡</div>
+          <div class="callout-body">
+            <p><strong>Tip Mac:</strong> Para que n8n siga corriendo cuando cierras la Terminal, puedes usar <code>pm2</code>. Instálalo con <code>npm install -g pm2</code> y luego ejecuta <code>pm2 start n8n</code>. Para que arranque automáticamente al encender tu Mac: <code>pm2 startup</code>.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /tab-mac -->
+
+      <!-- ══════ LINUX ══════ -->
+      <div class="os-content" id="tab-linux" role="tabpanel" aria-labelledby="btn-linux">
+        <div class="os-badge linux">🐧 Linux — Ubuntu, Debian y derivados</div>
+
+        <h3>// Paso 1 — Instalar Node.js en Linux</h3>
+
+        <p>La forma más recomendada en Linux es usar <strong>NodeSource</strong>, que garantiza tener la versión correcta de Node.js desde repositorios oficiales.</p>
+
+        <div class="step-block reveal">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Actualizar paquetes del sistema</h4>
+            <p>Abre la terminal y ejecuta:</p>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Bash — Linux — Actualizar sistema</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> sudo apt update && sudo apt upgrade -y</div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Instalar Node.js v20 LTS desde NodeSource</h4>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Bash — Linux — Instalar Node.js 20 LTS</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="cm"># Descargar el script de instalación de NodeSource</span>
+<span class="prompt">$</span> curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+
+<span class="cm"># Instalar Node.js</span>
+<span class="prompt">$</span> sudo apt install -y nodejs
+
+<span class="cm"># Verificar instalación</span>
+<span class="prompt">$</span> node -v
+<span class="ok">v20.x.x</span>
+
+<span class="prompt">$</span> npm -v
+<span class="ok">10.x.x</span></div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">Terminal de Linux (Ubuntu) mostrando la instalación exitosa de Node.js con "node -v" y "npm -v"</span>
+        </div>
+
+        <div class="callout info">
+          <div class="callout-icon">ℹ️</div>
+          <div class="callout-body">
+            <p><strong>¿Usas Fedora, CentOS o RHEL?</strong> Cambia <code>apt</code> por <code>dnf</code> o <code>yum</code> según tu distro. El script de NodeSource tiene instrucciones específicas para cada sistema en <a href="https://github.com/nodesource/distributions" target="_blank" rel="noopener">github.com/nodesource/distributions</a>.</p>
+          </div>
+        </div>
+
+        <h3>// Paso 2 — Instalar n8n en Linux</h3>
+
+        <div class="step-block reveal">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Instalar n8n globalmente</h4>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Bash — Linux — Instalar n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> sudo npm install -g n8n
+
+<span class="cm">← Descarga e instala todas las dependencias (~800 paquetes)</span>
+<span class="ok">added 892 packages in 3m</span></div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Iniciar n8n</h4>
+          </div>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Bash — Linux — Iniciar n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="prompt">$</span> n8n start
+
+<span class="ok">✔ n8n ready on 0.0.0.0, port 5678</span>
+<span class="ok">  http://localhost:5678</span></div>
+        </div>
+
+        <div class="step-block reveal">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Abrir en el navegador</h4>
+            <p>Ve a <code>http://localhost:5678</code> en tu navegador. Si usas un servidor remoto (VPS), reemplaza <code>localhost</code> por la IP pública de tu servidor.</p>
+          </div>
+        </div>
+
+        <h3>// Bonus — Correr n8n como servicio en Linux (systemd)</h3>
+        <p>Para que n8n arranque automáticamente al reiniciar el servidor, crea un servicio de systemd:</p>
+
+        <div class="code-block">
+          <div class="code-header"><span class="code-lang">Bash — Linux — n8n como servicio systemd</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+          <div class="code-body"><span class="cm"># Crear archivo de servicio</span>
+<span class="prompt">$</span> sudo nano /etc/systemd/system/n8n.service
+
+<span class="cm"># Pega este contenido (ajusta el usuario):</span>
+[Unit]
+Description=n8n workflow automation
+After=network.target
+
+[Service]
+Type=simple
+User=<span class="var">tu-usuario</span>
+ExecStart=/usr/bin/n8n start
+Restart=on-failure
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=n8n
+Environment=N8N_PORT=<span class="num">5678</span>
+
+[Install]
+WantedBy=multi-user.target
+
+<span class="cm"># Habilitar e iniciar el servicio</span>
+<span class="prompt">$</span> sudo systemctl daemon-reload
+<span class="prompt">$</span> sudo systemctl enable n8n
+<span class="prompt">$</span> sudo systemctl start n8n
+<span class="prompt">$</span> sudo systemctl status n8n
+<span class="ok">● n8n.service - n8n workflow automation</span>
+<span class="ok">   Active: active (running)</span></div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="ph-badge">Captura pendiente</div>
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-label">Captura sugerida</span>
+          <span class="ph-desc">Terminal Linux mostrando "systemctl status n8n" con el servicio en estado "active (running)"</span>
+        </div>
+      </div>
+      <!-- /tab-linux -->
+
+      <!-- ══ PRIMER INICIO ══ -->
+      <h2 id="primer-inicio">Primer inicio: configurar tu cuenta en n8n</h2>
+
+      <p>Independientemente de tu sistema operativo, el proceso de configuración inicial en el navegador es el mismo:</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crear tu usuario administrador</h4>
+          <p>En la pantalla de bienvenida de n8n, ingresa tu <strong>nombre</strong>, <strong>email</strong> y una <strong>contraseña segura</strong>. Este será el usuario administrador local — no se envía a ningún servidor externo.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Formulario de registro de primer usuario en n8n (localhost:5678/setup) con los campos de nombre, email y contraseña</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Explorar el dashboard de n8n</h4>
+          <p>Una vez dentro, verás el panel principal. Los elementos clave son:</p>
+          <ul>
+            <li><strong>Workflows:</strong> Tus flujos de automatización guardados</li>
+            <li><strong>Credentials:</strong> Donde conectas tus cuentas (Gmail, Slack, etc.)</li>
+            <li><strong>Executions:</strong> Historial de todas las ejecuciones</li>
+            <li><strong>+ New Workflow:</strong> Para crear tu primera automatización</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Dashboard principal de n8n mostrando el menú lateral con Workflows, Credentials y Executions, y el botón "+ New Workflow"</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Crear tu primer workflow de prueba</h4>
+          <p>Haz clic en <strong>"+ New Workflow"</strong>. En el editor, haz clic en <strong>"+"</strong> y busca el nodo <strong>"Manual Trigger"</strong>. Añade otro nodo de <strong>"Set"</strong> para asignar valores. Haz clic en <strong>"Execute Workflow"</strong> para probarlo. Si ves el resultado sin errores, ¡n8n está funcionando perfectamente!</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Editor de n8n con un workflow simple de 2 nodos (Manual Trigger → Set) y el botón "Execute Workflow" resaltado</span>
+      </div>
+
+      <!-- AD SLOT 3 -->
+      <div class="ad-slot" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-slot-label">// Espacio AdSense — Banner 728×90 / Responsive</span>
+      </div>
+
+      <!-- ══ ERRORES COMUNES ══ -->
+      <h2 id="errores">Errores comunes y cómo solucionarlos</h2>
+
+      <table class="comp-table" aria-label="Errores comunes de instalación de n8n">
+        <thead>
+          <tr><th>Error</th><th>Sistema</th><th>Causa</th><th>Solución</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>n8n: command not found</code></td>
+            <td>Mac / Linux</td>
+            <td>Node.js no está en el PATH</td>
+            <td>Reinicia la terminal o agrega Node.js al PATH manualmente</td>
+          </tr>
+          <tr>
+            <td><code>EACCES: permission denied</code></td>
+            <td>Mac / Linux</td>
+            <td>Sin permisos en directorio npm</td>
+            <td>Usa <code>sudo npm install -g n8n</code> o configura npm para usuario local</td>
+          </tr>
+          <tr>
+            <td><code>Error: ENOENT</code> al iniciar</td>
+            <td>Windows</td>
+            <td>Ruta de instalación con espacios</td>
+            <td>Instala en un directorio sin espacios, ej: <code>C:\n8n</code></td>
+          </tr>
+          <tr>
+            <td>Puerto 5678 en uso</td>
+            <td>Todos</td>
+            <td>Otra app usa el puerto</td>
+            <td>Inicia con <code>N8N_PORT=5679 n8n start</code></td>
+          </tr>
+          <tr>
+            <td>Versión de Node.js antigua</td>
+            <td>Todos</td>
+            <td>Node.js menor a v18</td>
+            <td>Actualiza Node.js desde nodejs.org</td>
+          </tr>
+          <tr>
+            <td>n8n cierra al cerrar terminal</td>
+            <td>Todos</td>
+            <td>Proceso dependiente de la terminal</td>
+            <td>Usa <code>pm2 start n8n</code> o el servicio de systemd (Linux)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ══ CONFIGURACIÓN ADICIONAL ══ -->
+      <h2 id="configuracion">Configuración adicional recomendada</h2>
+
+      <h3>// Variables de entorno útiles</h3>
+      <p>Puedes personalizar n8n con variables de entorno antes de iniciarlo. Las más útiles:</p>
+
+      <div class="code-block">
+        <div class="code-header"><span class="code-lang">Bash / CMD — Variables de entorno n8n</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+        <div class="code-body"><span class="cm"># Puerto personalizado (default: 5678)</span>
+<span class="var">N8N_PORT</span>=<span class="num">5679</span>
+
+<span class="cm"># Zona horaria (importante para triggers programados)</span>
+<span class="var">GENERIC_TIMEZONE</span>=<span class="str">"America/Mexico_City"</span>
+<span class="cm"># Otras zonas LATAM:</span>
+<span class="cm"># America/Bogota, America/Buenos_Aires, America/Lima</span>
+<span class="cm"># America/Santiago, America/Caracas, America/Sao_Paulo</span>
+
+<span class="cm"># Desactivar telemetría</span>
+<span class="var">N8N_DIAGNOSTICS_ENABLED</span>=<span class="str">"false"</span>
+
+<span class="cm"># Forma de iniciar con variables (Linux/Mac):</span>
+<span class="prompt">$</span> N8N_PORT=5679 GENERIC_TIMEZONE="America/Mexico_City" n8n start
+
+<span class="cm"># En Windows (PowerShell):</span>
+<span class="prompt">></span> $env:N8N_PORT="5679"; $env:GENERIC_TIMEZONE="America/Mexico_City"; n8n start</div>
+      </div>
+
+      <h3>// Correr n8n en segundo plano con PM2</h3>
+
+      <div class="code-block">
+        <div class="code-header"><span class="code-lang">Terminal — PM2 (todos los sistemas)</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+        <div class="code-body"><span class="cm"># Instalar PM2 (gestor de procesos)</span>
+<span class="prompt">$</span> npm install -g pm2
+
+<span class="cm"># Iniciar n8n con PM2</span>
+<span class="prompt">$</span> pm2 start n8n
+
+<span class="cm"># Ver estado</span>
+<span class="prompt">$</span> pm2 status
+<span class="ok">┌─ App name ─┬─ Status ─┬─ CPU ─┬─ Memory ─┐</span>
+<span class="ok">│ n8n        │ online   │ 0.2% │ 120 MB   │</span>
+
+<span class="cm"># Arrancar automáticamente al reiniciar el sistema</span>
+<span class="prompt">$</span> pm2 startup
+<span class="prompt">$</span> pm2 save
+
+<span class="cm"># Ver logs en tiempo real</span>
+<span class="prompt">$</span> pm2 logs n8n
+
+<span class="cm"># Reiniciar / detener n8n</span>
+<span class="prompt">$</span> pm2 restart n8n
+<span class="prompt">$</span> pm2 stop n8n</div>
+      </div>
+
+      <!-- ══ FAQ ══ -->
+      <h2 id="faq">Preguntas frecuentes sobre instalar n8n</h2>
+
+      <div class="faq-list">
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Es realmente gratis instalar n8n localmente?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí, 100% gratis. n8n es software de código abierto bajo licencia "Sustainable Use License". Puedes instalarlo, usarlo y automatizar todo lo que quieras sin pagar nada. Solo pagas si contratas n8n Cloud (el servicio de hosting de ellos). Instalado en tu computadora o servidor propio: completamente gratis.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Puedo acceder a n8n desde otros dispositivos en mi red?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí. Si n8n corre en tu computadora, otros dispositivos en la misma red WiFi pueden acceder usando la IP local de tu computadora en lugar de "localhost". Por ejemplo: http://192.168.1.100:5678. Para acceso desde internet necesitas configurar tu router (port forwarding) o usar un servicio como ngrok.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Cuánta RAM consume n8n en reposo?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">En reposo, n8n consume entre 80-150 MB de RAM. Durante ejecución de flujos complejos puede subir a 300-500 MB. Para uso normal en una computadora de trabajo, el impacto es mínimo y no notarás diferencia en el rendimiento del sistema.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Dónde guarda n8n mis flujos de trabajo y datos?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Por defecto, n8n guarda todo en una base de datos SQLite local en la carpeta del usuario: ~/.n8n/ en Mac/Linux, o C:\Users\TuUsuario\.n8n\ en Windows. Puedes hacer backup de esta carpeta para no perder tus flujos. Para producción, se recomienda configurar PostgreSQL o MySQL como base de datos.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Cuál es la diferencia entre n8n local y n8n Cloud?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">n8n local: gratis, corre en tu computadora o servidor, control total sobre los datos, tú gestionas las actualizaciones y el servidor. n8n Cloud: de pago (~$20-50 USD/mes), gestionado por n8n, accesible desde internet sin configuración, actualizaciones automáticas, sin preocuparte por el servidor. Para empezar y para proyectos personales o internos, local es la mejor opción.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- ══ CONCLUSIÓN ══ -->
+      <h2 id="conclusion">Ya tienes n8n instalado — ¿Qué sigue?</h2>
+
+      <p>Felicidades, ya tienes tu propio servidor de automatización corriendo localmente. Esto es solo el comienzo. Con n8n puedes construir flujos que conecten cientos de servicios: Gmail, WhatsApp, Slack, Google Sheets, Notion, bases de datos, APIs propias y mucho más.</p>
+
+      <div class="callout tip">
+        <div class="callout-icon">🚀</div>
+        <div class="callout-body">
+          <p><strong>Próximo paso recomendado:</strong> Ahora que n8n está instalado, aprende a crear tu primer flujo real. En nuestro siguiente tutorial te enseñamos a conectar Gmail con n8n para procesar emails automáticamente y guardar los datos en Google Sheets — sin escribir código.</p>
+        </div>
+      </div>
+
+      <!-- NAVEGACIÓN ENTRE ARTÍCULOS -->
+      <div class="art-nav">
+        <a class="art-nav-btn" href="automatizacionsIA.html">
+          <div class="nav-dir">← Volver</div>
+          <div class="nav-title">Página principal — Todos los tutoriales</div>
+        </a>
+        <a class="art-nav-btn" href="tutorial-whatsapp.html" style="text-align:right">
+          <div class="nav-dir">Siguiente tutorial →</div>
+          <div class="nav-title">Automatizar WhatsApp con Make y ChatGPT</div>
+        </a>
+      </div>
+
+    </div>
+    <!-- /art-content -->
+
+  </article>
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar" aria-label="Sidebar — Tabla de contenidos y recursos">
+    <div class="sidebar-sticky">
+
+      <nav class="toc-box" aria-label="Tabla de contenidos">
+        <div class="toc-header">// Contenido</div>
+        <ul class="toc-list">
+          <li><a href="#que-es-n8n">¿Qué es n8n?</a></li>
+          <li><a href="#requisitos">Requisitos previos</a></li>
+          <li><a href="#instalacion">Instalación por OS</a></li>
+          <li class="toc-sep"></li>
+          <li><a href="#instalacion" onclick="switchOS('win')">→ Windows</a></li>
+          <li><a href="#instalacion" onclick="switchOS('mac')">→ Mac</a></li>
+          <li><a href="#instalacion" onclick="switchOS('linux')">→ Linux</a></li>
+          <li class="toc-sep"></li>
+          <li><a href="#primer-inicio">Primer inicio</a></li>
+          <li><a href="#errores">Errores comunes</a></li>
+          <li><a href="#configuracion">Configuración</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#conclusion">Qué sigue</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-card">
+        <h4>// Herramientas necesarias</h4>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon orange">⚡</div>
+          <div>
+            <div class="sidebar-tool-name">Node.js</div>
+            <div class="sidebar-tool-badge">v18+ — Gratis</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon green">🔧</div>
+          <div>
+            <div class="sidebar-tool-name">n8n</div>
+            <div class="sidebar-tool-badge">Open Source — Gratis</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon blue">📦</div>
+          <div>
+            <div class="sidebar-tool-name">PM2 (opcional)</div>
+            <div class="sidebar-tool-badge">Proceso en background</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AD SIDEBAR 300x250 -->
+      <div class="sidebar-ad" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-label">// Publicidad</span>
+        <span style="font-size:0.75rem;color:var(--muted2);">300 × 250</span>
+      </div>
+
+    </div>
+  </aside>
+
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">AI</div>
+        Automatiza<span style="color:var(--amber)">IA</span>
+      </div>
+      <p>Tutoriales de automatización con inteligencia artificial en español, para México y Latinoamérica.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Tutoriales</h4>
+      <ul>
+        <li><a href="tutorial-instalar-n8n.html">Instalar n8n</a></li>
+        <li><a href="tutorial-whatsapp.html">WhatsApp + Make</a></li>
+        <li><a href="automatizacionsIA.html#tutoriales">Ver todos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Herramientas</h4>
+      <ul>
+        <li><a href="https://n8n.io" target="_blank" rel="noopener">n8n.io</a></li>
+        <li><a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a></li>
+        <li><a href="https://make.com" target="_blank" rel="noopener">Make</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Sitio</h4>
+      <ul>
+        <li><a href="automatizacionsIA.html">Inicio</a></li>
+        <li><a href="automatizacionsIA.html#faq">FAQ</a></li>
+        <li><a href="automatizacionsIA.html#newsletter">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AutomatizaIA · Tutoriales en español para México y LATAM</span>
+    <span>Hecho con ❤️ para Latinoamérica</span>
+  </div>
+</footer>
+
+<script>
+  // ── OS TABS ──
+  function switchOS(os) {
+    document.querySelectorAll('.os-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+    document.querySelectorAll('.os-content').forEach(c => c.classList.remove('active'));
+    document.getElementById('btn-' + os).classList.add('active');
+    document.getElementById('btn-' + os).setAttribute('aria-selected', 'true');
+    document.getElementById('tab-' + os).classList.add('active');
+  }
+
+  // ── PROGRESS BAR ──
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const pct = doc.scrollTop / (doc.scrollHeight - doc.clientHeight) * 100;
+    document.getElementById('progressBar').style.width = Math.min(pct, 100) + '%';
+  });
+
+  // ── MOBILE MENU ──
+  function toggleMenu() {
+    const links = document.getElementById('nav-links');
+    const btn = document.querySelector('.nav-toggle');
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.textContent = open ? '✕' : '☰';
+  }
+
+  // ── COPY CODE ──
+  function copyCode(btn) {
+    const code = btn.closest('.code-block').querySelector('.code-body').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      btn.textContent = '✓ Copiado';
+      setTimeout(() => btn.textContent = 'Copiar', 2000);
+    });
+  }
+
+  // ── TOC ACTIVE ──
+  const tocLinks = document.querySelectorAll('.toc-list a[href^="#"]');
+  const headings = document.querySelectorAll('.art-content h2[id]');
+  const tocObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.toc-list a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  headings.forEach(h => tocObs.observe(h));
+
+  // ── SCROLL REVEAL ──
+  document.addEventListener('DOMContentLoaded', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => el.classList.add('animate-hidden'));
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => io.observe(el));
+  });
+
+  // ── KEYBOARD ACCESS ──
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[role="tab"]').forEach(tab => {
+      tab.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tab.click(); }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
