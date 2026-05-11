@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO PRINCIPAL ═══ -->
+  <title>AutomatizaIA | Aprende a automatizar con IA en español</title>
+  <meta name="description" content="Tutoriales paso a paso para automatizar con inteligencia artificial. Aprende Make, n8n, chatbots, WhatsApp Business API y más. Guías en español para México y Latinoamérica.">
+  <meta name="keywords" content="automatización IA, Make tutorial español, n8n español, chatbot WhatsApp, automatizar WhatsApp IA, n8n vs Make, instalar n8n, automatización negocios México, herramientas automatización gratis">
+  <meta name="author" content="AutomatizaIA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="MX">
+  <meta name="language" content="Spanish">
+  <meta name="revisit-after" content="5 days">
+  <link rel="canonical" href="https://automatizaia.com/" id="canonical-tag">
+
+  <!-- HREFLANG LATAM -->
+  <link rel="alternate" hreflang="es-mx" href="https://automatizaia.com/">
+  <link rel="alternate" hreflang="es" href="https://automatizaia.com/">
+  <link rel="alternate" hreflang="x-default" href="https://automatizaia.com/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AutomatizaIA | Tutoriales de automatización con IA en español">
+  <meta property="og:description" content="Aprende a automatizar con Make, n8n, chatbots e IA. Tutoriales paso a paso en español para México y Latinoamérica.">
+  <meta property="og:url" content="https://automatizaia.com/">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="AutomatizaIA">
+  <meta property="og:image" content="https://automatizaia.com/og.jpg">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@automatizaia">
+  <meta name="twitter:title" content="AutomatizaIA | Automatización con IA en español">
+  <meta name="twitter:description" content="Tutoriales de Make, n8n, chatbots y WhatsApp con IA. En español, paso a paso.">
+
+  <!-- SCHEMA: WEBSITE -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"AutomatizaIA","alternateName":"Automatiza IA","url":"https://automatizaia.com","description":"Tutoriales de automatización con inteligencia artificial en español","inLanguage":"es-MX","publisher":{"@type":"Organization","name":"AutomatizaIA","url":"https://automatizaia.com"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://automatizaia.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}}
+  </script>
+
+  <!-- SCHEMA: FAQ -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es la automatización con IA?","acceptedAnswer":{"@type":"Answer","text":"La automatización con IA consiste en usar herramientas inteligentes para que tareas repetitivas de tu negocio se ejecuten solas, sin intervención manual. Por ejemplo: responder mensajes de WhatsApp automáticamente, procesar formularios, enviar correos o actualizar bases de datos usando herramientas como Make o n8n combinadas con modelos de IA como ChatGPT."}},{"@type":"Question","name":"¿Es gratis Make o n8n?","acceptedAnswer":{"@type":"Answer","text":"Make tiene un plan gratuito con 1,000 operaciones al mes. n8n es de código abierto y completamente gratuito si lo instalas en tu propio servidor o computadora. n8n Cloud tiene prueba gratuita. Para empezar, ambos son accesibles sin costo."}},{"@type":"Question","name":"¿Necesito saber programar para automatizar con IA?","acceptedAnswer":{"@type":"Answer","text":"No. Herramientas como Make y Zapier tienen interfaces visuales de arrastrar y soltar, sin escribir código. n8n requiere un poco más de comprensión técnica, pero tampoco exige programación. Para automatizaciones avanzadas con IA, conocer conceptos básicos de JSON ayuda, pero no es obligatorio para empezar."}}]}
+  </script>
+
+  <!-- PERFORMANCE -->
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    /* ═══════════════════════════════════════════
+       DESIGN SYSTEM — INDUSTRIAL / TÉCNICO
+       Paleta: negro profundo + naranja ámbar + blanco roto
+       Tipografía: JetBrains Mono + Barlow
+    ═══════════════════════════════════════════ */
+    :root {
+      --bg:        #0d0d0d;
+      --bg2:       #141414;
+      --bg3:       #1c1c1c;
+      --surface:   rgba(255,255,255,0.04);
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,140,0,0.25);
+      --amber:     #ff8c00;
+      --amber2:    #ffb347;
+      --amber-dim: rgba(255,140,0,0.12);
+      --green:     #39d353;
+      --red:       #f85149;
+      --blue:      #58a6ff;
+      --text:      #e6e6e6;
+      --muted:     #888;
+      --muted2:    #555;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Barlow', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* SCAN LINE texture */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    h1,h2,h3,h4,h5 { font-family: var(--sans); font-weight: 700; line-height: 1.2; }
+    code, pre { font-family: var(--mono); }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+    /* ════════════════════════════════
+       NAV
+    ════════════════════════════════ */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(13,13,13,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-family: var(--mono);
+      font-size: 1rem; font-weight: 700;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .logo-icon {
+      width: 28px; height: 28px;
+      background: var(--amber);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      color: #000; font-size: 0.75rem; font-weight: 700;
+    }
+    .logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 0; list-style: none; }
+    .nav-links a {
+      color: var(--muted); font-size: 0.85rem; font-weight: 600;
+      padding: 8px 14px; border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+      letter-spacing: 0.02em;
+    }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+    .nav-pill {
+      background: var(--amber); color: #000 !important;
+      border-radius: 6px; font-weight: 700 !important;
+    }
+    .nav-pill:hover { opacity: 0.85; background: var(--amber) !important; }
+
+    /* Mobile menu toggle */
+    .nav-toggle {
+      display: none; background: none; border: 1px solid var(--border);
+      color: var(--text); padding: 6px 10px; border-radius: 6px;
+      cursor: pointer; font-size: 1rem;
+    }
+
+    /* ════════════════════════════════
+       HERO
+    ════════════════════════════════ */
+    .hero {
+      min-height: 88vh;
+      display: flex; align-items: center;
+      padding: 5rem 5% 4rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,140,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,140,0,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 40%, transparent 100%);
+    }
+    .hero-glow {
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,140,0,0.08) 0%, transparent 65%);
+      top: -100px; right: -100px; pointer-events: none;
+    }
+    .hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; width: 100%; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--amber-dim); border: 1px solid var(--border2);
+      color: var(--amber); padding: 5px 14px; border-radius: 4px;
+      font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 2rem;
+      animation: fadeUp 0.5s ease both;
+    }
+    .hero-badge::before { content: '▶'; font-size: 0.6rem; }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+      font-weight: 900; line-height: 1.0;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.5s 0.1s ease both;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--amber);
+    }
+    .hero h1 .under {
+      position: relative; display: inline-block;
+    }
+    .hero h1 .under::after {
+      content: '';
+      position: absolute; bottom: -4px; left: 0; right: 0;
+      height: 3px; background: var(--amber);
+    }
+
+    .hero-sub {
+      font-size: 1.15rem; color: var(--muted); max-width: 620px;
+      margin-bottom: 2.5rem; font-weight: 300; line-height: 1.8;
+      animation: fadeUp 0.5s 0.2s ease both;
+    }
+    .hero-sub strong { color: var(--text); font-weight: 600; }
+
+    .hero-ctas {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      animation: fadeUp 0.5s 0.3s ease both;
+    }
+    .btn-primary {
+      background: var(--amber); color: #000;
+      padding: 13px 28px; border-radius: 6px;
+      font-family: var(--mono); font-size: 0.88rem; font-weight: 700;
+      transition: transform 0.15s, box-shadow 0.15s;
+      cursor: pointer; border: none; display: inline-block;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255,140,0,0.35);
+    }
+    .btn-ghost {
+      border: 1px solid var(--border); color: var(--muted);
+      padding: 13px 28px; border-radius: 6px;
+      font-family: var(--mono); font-size: 0.88rem; font-weight: 500;
+      transition: border-color 0.2s, color 0.2s;
+      cursor: pointer; background: none; display: inline-block;
+    }
+    .btn-ghost:hover { border-color: var(--amber); color: var(--text); }
+
+    .hero-terminal {
+      margin-top: 3.5rem;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden; max-width: 560px;
+      animation: fadeUp 0.5s 0.4s ease both;
+    }
+    .terminal-bar {
+      background: var(--bg3); padding: 10px 16px;
+      display: flex; align-items: center; gap: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .t-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .t-dot.r { background: var(--red); }
+    .t-dot.y { background: #f0b429; }
+    .t-dot.g { background: var(--green); }
+    .terminal-title { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); margin-left: 8px; }
+    .terminal-body { padding: 1.2rem 1.5rem; font-family: var(--mono); font-size: 0.82rem; line-height: 2; }
+    .t-line { display: flex; gap: 10px; }
+    .t-prompt { color: var(--green); }
+    .t-cmd { color: var(--text); }
+    .t-out { color: var(--muted); padding-left: 20px; }
+    .t-out.ok { color: var(--green); }
+    .t-cursor { display: inline-block; width: 8px; height: 14px; background: var(--amber); animation: blink 1s step-end infinite; vertical-align: middle; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    .hero-stats {
+      display: flex; gap: 2.5rem; margin-top: 3rem;
+      animation: fadeUp 0.5s 0.5s ease both;
+    }
+    .stat { border-left: 3px solid var(--amber); padding-left: 1rem; }
+    .stat-n { font-family: var(--mono); font-size: 1.6rem; font-weight: 700; color: var(--amber); line-height: 1; }
+    .stat-l { font-size: 0.78rem; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ════════════════════════════════
+       SECTION BASE
+    ════════════════════════════════ */
+    section { padding: 5rem 5%; position: relative; z-index: 1; }
+    .inner { max-width: 1200px; margin: 0 auto; }
+    .sec-label {
+      font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+      color: var(--amber); letter-spacing: 0.12em; text-transform: uppercase;
+      margin-bottom: 0.6rem; display: flex; align-items: center; gap: 8px;
+    }
+    .sec-label::before { content: '//'; opacity: 0.5; }
+    .sec-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 900; margin-bottom: 0.75rem;
+    }
+    .sec-desc { color: var(--muted); font-size: 1rem; max-width: 540px; font-weight: 300; }
+
+    .divider { height: 1px; background: var(--border); margin: 0 5%; }
+
+    /* ════════════════════════════════
+       ARTICLE CARDS
+    ════════════════════════════════ */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem; margin-top: 3rem;
+    }
+
+    .article-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      display: flex; flex-direction: column;
+    }
+    .article-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    }
+    .article-card:hover .card-arrow { transform: translateX(4px); }
+
+    .card-banner {
+      height: 8px;
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+    }
+    .card-banner.blue { background: linear-gradient(90deg, #1c7ed6, var(--blue)); }
+    .card-banner.green { background: linear-gradient(90deg, #1a7f37, var(--green)); }
+    .card-banner.purple { background: linear-gradient(90deg, #6e40c9, #a78bfa); }
+    .card-banner.red { background: linear-gradient(90deg, #8d1f1f, var(--red)); }
+
+    .card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+
+    .card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1rem; }
+    .tag {
+      font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
+      padding: 3px 9px; border-radius: 3px;
+      border: 1px solid var(--border); color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .tag.amber { border-color: var(--border2); color: var(--amber); background: var(--amber-dim); }
+    .tag.blue { border-color: rgba(88,166,255,0.3); color: var(--blue); background: rgba(88,166,255,0.08); }
+    .tag.green { border-color: rgba(57,211,83,0.3); color: var(--green); background: rgba(57,211,83,0.08); }
+
+    .card-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.6rem; line-height: 1.35; }
+    .card-excerpt { font-size: 0.88rem; color: var(--muted); line-height: 1.65; flex: 1; }
+
+    .card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+      font-family: var(--mono); font-size: 0.72rem; color: var(--muted2);
+    }
+    .card-meta { display: flex; gap: 12px; align-items: center; }
+    .card-time { display: flex; align-items: center; gap: 5px; }
+    .card-diff { padding: 2px 8px; border-radius: 3px; font-size: 0.68rem; font-weight: 700; }
+    .diff-init { background: rgba(57,211,83,0.15); color: var(--green); }
+    .diff-med  { background: rgba(255,140,0,0.15); color: var(--amber); }
+    .diff-adv  { background: rgba(248,81,73,0.15); color: var(--red); }
+    .card-arrow { color: var(--amber); transition: transform 0.2s; font-size: 1rem; }
+
+    /* FEATURED CARD */
+    .featured-card {
+      background: var(--bg2); border: 1px solid var(--border2);
+      border-radius: 10px; overflow: hidden;
+      cursor: pointer; margin-bottom: 1.5rem;
+      display: grid; grid-template-columns: 1fr 1.6fr;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .featured-card:hover { box-shadow: 0 16px 50px rgba(255,140,0,0.12); transform: translateY(-2px); }
+    .featured-visual {
+      background: linear-gradient(135deg, #1a1400, #2d2000);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 4.5rem; position: relative; overflow: hidden; min-height: 220px;
+    }
+    .featured-visual::after {
+      content: 'DESTACADO';
+      position: absolute; top: 1rem; left: 1rem;
+      font-family: var(--mono); font-size: 0.6rem; font-weight: 700;
+      color: var(--amber); letter-spacing: 0.15em;
+      border: 1px solid var(--border2); padding: 3px 8px; border-radius: 3px;
+    }
+    .featured-body { padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+    .featured-body .card-title { font-size: 1.35rem; margin-bottom: 0.75rem; }
+
+    /* ════════════════════════════════
+       HERRAMIENTAS GRID
+    ════════════════════════════════ */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem; margin-top: 2.5rem;
+    }
+    .tool-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.5rem;
+      transition: border-color 0.2s;
+    }
+    .tool-card:hover { border-color: var(--border2); }
+    .tool-head { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+    .tool-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .tool-icon.orange { background: rgba(255,140,0,0.15); }
+    .tool-icon.blue   { background: rgba(88,166,255,0.15); }
+    .tool-icon.green  { background: rgba(57,211,83,0.15); }
+    .tool-icon.purple { background: rgba(167,139,250,0.15); }
+    .tool-icon.red    { background: rgba(248,81,73,0.15); }
+    .tool-name { font-weight: 700; font-size: 0.95rem; }
+    .tool-badge { font-family: var(--mono); font-size: 0.65rem; color: var(--green); background: rgba(57,211,83,0.1); border: 1px solid rgba(57,211,83,0.25); padding: 2px 7px; border-radius: 3px; margin-top: 2px; display: inline-block; }
+    .tool-badge.paid { color: var(--amber); background: var(--amber-dim); border-color: var(--border2); }
+    .tool-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+    .tool-link { display: inline-block; margin-top: 1rem; font-family: var(--mono); font-size: 0.75rem; color: var(--amber); transition: gap 0.2s; }
+    .tool-link:hover { text-decoration: underline; }
+
+    /* ════════════════════════════════
+       FAQ SECTION
+    ════════════════════════════════ */
+    .faq-list { display: flex; flex-direction: column; gap: 0.6rem; max-width: 820px; margin-top: 2.5rem; }
+    .faq-item {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden; transition: border-color 0.2s;
+    }
+    .faq-item[open] { border-color: var(--border2); }
+    .faq-q {
+      padding: 1.1rem 1.4rem; font-weight: 600; font-size: 0.95rem;
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after { content: '+'; color: var(--amber); font-size: 1.3rem; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item[open] .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.4rem 1.1rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+
+    /* ════════════════════════════════
+       NEWSLETTER
+    ════════════════════════════════ */
+    .newsletter-section {
+      background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 4rem 5%;
+    }
+    .newsletter-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+    .newsletter-inner .sec-label { justify-content: center; }
+    .newsletter-inner h2 { font-size: 2rem; font-weight: 900; margin-bottom: 0.75rem; }
+    .newsletter-inner p { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+    .nl-form { display: flex; gap: 0.75rem; }
+    .nl-input {
+      flex: 1; background: var(--bg3); border: 1px solid var(--border);
+      color: var(--text); padding: 13px 16px; border-radius: 6px;
+      font-family: var(--mono); font-size: 0.88rem;
+      transition: border-color 0.2s; outline: none;
+    }
+    .nl-input:focus { border-color: var(--amber); }
+    .nl-input::placeholder { color: var(--muted2); }
+    .nl-btn {
+      background: var(--amber); color: #000;
+      border: none; padding: 13px 22px; border-radius: 6px;
+      font-family: var(--mono); font-size: 0.85rem; font-weight: 700;
+      cursor: pointer; transition: opacity 0.2s; white-space: nowrap;
+    }
+    .nl-btn:hover { opacity: 0.85; }
+    .nl-note { font-family: var(--mono); font-size: 0.72rem; color: var(--muted2); margin-top: 1rem; }
+
+    /* ════════════════════════════════
+       FOOTER
+    ════════════════════════════════ */
+    footer {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 3rem 5% 2rem;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem;
+    }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.75rem; max-width: 260px; line-height: 1.7; }
+    .footer-col h4 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; color: var(--amber); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a { color: var(--muted); font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom {
+      max-width: 1200px; margin: 2rem auto 0;
+      padding-top: 1.5rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      color: var(--muted2); font-family: var(--mono); font-size: 0.75rem;
+    }
+
+    /* ════════════════════════════════
+       ARTICLE PAGE
+    ════════════════════════════════ */
+    #article-view { display: none; }
+
+    .article-header-bar {
+      background: var(--bg2); border-bottom: 1px solid var(--border);
+      padding: 1rem 5%;
+    }
+    .article-header-bar .inner { display: flex; align-items: center; gap: 0.75rem; }
+    .breadcrumb { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; }
+    .breadcrumb span { color: var(--muted2); }
+    .breadcrumb a { color: var(--amber); cursor: pointer; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .article-wrap { max-width: 780px; margin: 0 auto; padding: 3rem 5% 6rem; }
+
+    .article-meta-top {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .art-tag { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; color: var(--amber); background: var(--amber-dim); border: 1px solid var(--border2); padding: 3px 10px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .art-meta { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; gap: 1rem; }
+    .art-meta span::before { content: '· '; color: var(--muted2); }
+
+    .article-wrap h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; }
+    .article-intro { font-size: 1.1rem; color: var(--muted); line-height: 1.8; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); font-weight: 300; }
+
+    /* ARTICLE CONTENT STYLES */
+    .art-content h2 { font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 1rem; padding-top: 0.5rem; }
+    .art-content h3 { font-size: 1.15rem; font-weight: 700; color: var(--amber); margin: 2rem 0 0.75rem; font-family: var(--mono); }
+    .art-content p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.8; }
+    .art-content ul, .art-content ol { padding-left: 1.5rem; margin-bottom: 1.1rem; }
+    .art-content li { color: var(--muted); line-height: 1.8; margin-bottom: 0.4rem; }
+    .art-content strong { color: var(--text); font-weight: 600; }
+    .art-content a { color: var(--amber); text-decoration: underline; }
+
+    /* STEP BLOCKS */
+    .step-block {
+      display: flex; gap: 1.25rem; margin: 2rem 0;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.5rem; align-items: flex-start;
+    }
+    .step-num {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: var(--amber); color: #000;
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 0.85rem; font-weight: 700;
+    }
+    .step-content h4 { font-weight: 700; margin-bottom: 0.4rem; font-size: 1rem; }
+    .step-content p { color: var(--muted); font-size: 0.92rem; margin: 0; }
+    .step-content p + p { margin-top: 0.6rem; }
+
+    /* CODE BLOCKS */
+    .code-block {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden; margin: 1.5rem 0;
+      font-family: var(--mono);
+    }
+    .code-header {
+      background: rgba(255,255,255,0.03); padding: 8px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .code-lang { font-size: 0.7rem; color: var(--amber); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .code-copy { font-size: 0.7rem; color: var(--muted); cursor: pointer; background: none; border: 1px solid var(--border); padding: 3px 10px; border-radius: 3px; transition: color 0.2s; }
+    .code-copy:hover { color: var(--amber); }
+    .code-body { padding: 1.25rem 1.5rem; font-size: 0.82rem; line-height: 1.8; overflow-x: auto; white-space: pre; color: #e6e6e6; }
+    .code-body .kw { color: #ff7b72; }
+    .code-body .str { color: #a5d6ff; }
+    .code-body .cm { color: var(--muted2); font-style: italic; }
+    .code-body .fn { color: #d2a8ff; }
+    .code-body .num { color: var(--amber2); }
+    .code-body .var { color: #79c0ff; }
+
+    /* CALLOUT / TIP */
+    .callout {
+      border-radius: 8px; padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .callout.tip    { background: rgba(57,211,83,0.06);  border-left: 3px solid var(--green); }
+    .callout.warn   { background: rgba(255,140,0,0.06);  border-left: 3px solid var(--amber); }
+    .callout.info   { background: rgba(88,166,255,0.06); border-left: 3px solid var(--blue); }
+    .callout.danger { background: rgba(248,81,73,0.06);  border-left: 3px solid var(--red); }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .callout-body p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+    .callout-body strong { color: var(--text); }
+
+    /* COMPARISON TABLE */
+    .comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+    .comp-table th {
+      background: var(--bg3); border: 1px solid var(--border);
+      padding: 10px 14px; text-align: left;
+      font-family: var(--mono); font-size: 0.75rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .comp-table td { border: 1px solid var(--border); padding: 10px 14px; color: var(--muted); line-height: 1.5; }
+    .comp-table tr:hover td { background: var(--surface); }
+    .check { color: var(--green); } .cross { color: var(--red); }
+
+    /* ARTICLE OVERVIEW BOX */
+    .art-overview {
+      background: var(--bg2); border: 1px solid var(--border2);
+      border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .art-overview h4 { font-family: var(--mono); font-size: 0.78rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
+    .art-overview ul { list-style: none; }
+    .art-overview li { display: flex; gap: 10px; align-items: baseline; padding: 4px 0; font-size: 0.9rem; color: var(--muted); }
+    .art-overview li::before { content: '→'; color: var(--amber); font-size: 0.75rem; flex-shrink: 0; }
+
+    /* ARTICLE NAV */
+    .art-nav {
+      display: flex; gap: 1rem; margin-top: 3rem; padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .art-nav-btn {
+      flex: 1; background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.1rem 1.4rem; cursor: pointer;
+      transition: border-color 0.2s;
+      font-family: var(--sans); text-align: left;
+    }
+    .art-nav-btn:hover { border-color: var(--border2); }
+    .art-nav-btn .nav-dir { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+    .art-nav-btn .nav-title { font-size: 0.9rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+
+    /* SCROLL REVEAL */
+    .reveal { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.animate-hidden { opacity: 0; transform: translateY(20px); }
+    .reveal.animate-hidden.visible { opacity: 1; transform: translateY(0); }
+
+    /* ════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════ */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1rem 5%; gap: 0.5rem; }
+      .nav-toggle { display: block; }
+      .featured-card { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+      .nl-form { flex-direction: column; }
+      .hero-terminal { max-width: 100%; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .art-nav { flex-direction: column; }
+    }
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#" onclick="goHome(); return false;" class="logo" aria-label="AutomatizaIA - Inicio">
+      <div class="logo-icon">AI</div>
+      Automatiza<span>IA</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menú" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li role="none"><a href="#tutoriales" role="menuitem">Tutoriales</a></li>
+      <li role="none"><a href="#herramientas" role="menuitem">Herramientas</a></li>
+      <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+      <li role="none"><a href="#newsletter" class="nav-pill" role="menuitem">Newsletter</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══ HOME VIEW ═══ -->
+<div id="home-view">
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">Actualizado Mayo 2026</div>
+      <h1>
+        Automatiza tu negocio<br>
+        con <em>IA</em> de verdad
+      </h1>
+      <p class="hero-sub">
+        Tutoriales <strong>paso a paso</strong> de Make, n8n, chatbots y WhatsApp con IA.<br>
+        En español, para México y Latinoamérica. Sin rodeos.
+      </p>
+      <div class="hero-ctas">
+        <a href="#tutoriales" class="btn-primary">Ver tutoriales →</a>
+        <a href="#herramientas" class="btn-ghost">Herramientas gratis</a>
+      </div>
+
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <div class="t-dot r"></div>
+          <div class="t-dot y"></div>
+          <div class="t-dot g"></div>
+          <span class="terminal-title">automatizaia.com ~ terminal</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> instalar n8n localmente</span></div>
+          <div class="t-line t-out">▶ Descargando n8n v1.x...</div>
+          <div class="t-line t-out ok">✓ n8n corriendo en localhost:5678</div>
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> conectar WhatsApp + ChatGPT</span></div>
+          <div class="t-line t-out">▶ Configurando webhook...</div>
+          <div class="t-line t-out ok">✓ Automatización activa</div>
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd"> <span class="t-cursor"></span></span></div>
+        </div>
+      </div>
+
+      <div class="hero-stats" aria-label="Estadísticas del sitio">
+        <div class="stat">
+          <div class="stat-n">6+</div>
+          <div class="stat-l">Tutoriales detallados</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">100%</div>
+          <div class="stat-l">En español</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">Gratis</div>
+          <div class="stat-l">Sin registro</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- TUTORIALES -->
+  <section id="tutoriales" aria-labelledby="tutoriales-title">
+    <div class="inner">
+      <p class="sec-label">Tutoriales</p>
+      <h2 class="sec-title" id="tutoriales-title">Aprende haciendo</h2>
+      <p class="sec-desc">Guías completas con pasos numerados, capturas de pantalla y código listo para copiar.</p>
+
+      <!-- FEATURED -->
+      <a href="tutorial-whatsapp.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="featured-card reveal" role="article" tabindex="0" aria-label="Artículo destacado: Automatizar WhatsApp con Make">
+    <div class="featured-visual">🤖</div>
+    <div class="featured-body">
+      <div class="card-tags">
+        <span class="tag amber">Destacado</span>
+        <span class="tag blue">Make</span>
+        <span class="tag">WhatsApp</span>
+        <span class="tag green">Principiante</span>
+      </div>
+      <div class="card-title">Automatiza WhatsApp con Make e IA: respuestas automáticas con ChatGPT</div>
+      <div class="card-excerpt" style="color:var(--muted);font-size:0.88rem;line-height:1.65;margin-top:0.5rem;">
+        Conecta tu WhatsApp Business con Make y ChatGPT para responder mensajes automáticamente, 24/7, con respuestas inteligentes. Tutorial completo desde cero.
+      </div>
+      <div class="card-footer" style="margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--border);font-family:var(--mono);font-size:0.72rem;color:var(--muted2);display:flex;align-items:center;justify-content:space-between;">
+        <span>⏱ 25 min · Paso a paso</span>
+        <span style="color:var(--amber)">Leer tutorial →</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      <!-- CARDS GRID -->
+      <div class="cards-grid reveal">
+
+        <a href="comparativa-make-n8n.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="article-card" role="article" tabindex="0" aria-label="Make vs n8n: comparativa completa">
+    <div class="card-banner blue"></div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag blue">Make</span>
+        <span class="tag blue">n8n</span>
+        <span class="tag">Comparativa</span>
+      </div>
+      <div class="card-title">Make vs n8n: ¿Cuál elegir para automatizar tu negocio?</div>
+      <div class="card-excerpt">
+        Diferencias reales, precios, casos de uso y cuál conviene dependiendo de tu nivel técnico y presupuesto.
+      </div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <span class="card-time">⏱ 10 min</span>
+          <span class="card-diff diff-init">Principiante</span>
+        </div>
+        <span class="card-arrow" style="color:var(--amber)">→</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+        <a href="tutorial-n8n-local.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="article-card" role="article" tabindex="0" aria-label="Instalar n8n localmente">
+    <div class="card-banner green"></div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag green">n8n</span>
+        <span class="tag">Instalación</span>
+        <span class="tag">Local</span>
+      </div>
+      <div class="card-title">Cómo instalar n8n en tu computadora (Windows, Mac y Linux)</div>
+      <div class="card-excerpt">
+        Guía completa para instalar n8n localmente con Docker o Node.js. Automatizaciones gratis, sin límites y sin pagar servidor.
+      </div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <span class="card-time">⏱ 20 min</span>
+          <span class="card-diff diff-med">Intermedio</span>
+        </div>
+        <span class="card-arrow" style="color:var(--green)">→</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+        <a href="tutorial-chatbot-negocio.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="article-card" role="article" tabindex="0" aria-label="Crear un chatbot para tu negocio">
+    <div class="card-banner purple"></div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag" style="color:#a78bfa;border-color:rgba(167,139,250,0.3);background:rgba(167,139,250,0.08)">Chatbot</span>
+        <span class="tag">ChatGPT API</span>
+      </div>
+      <div class="card-title">Cómo crear un chatbot para tu negocio con ChatGPT (sin programar)</div>
+      <div class="card-excerpt">
+        Crea un asistente virtual que responde preguntas de tus clientes usando la API de OpenAI. Funciona en tu web, WhatsApp o Telegram.
+      </div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <span class="card-time">⏱ 30 min</span>
+          <span class="card-diff diff-med">Intermedio</span>
+        </div>
+        <span class="card-arrow" style="color:#a78bfa">→</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+        <a href="herramientas-gratis-2026.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="article-card" role="article" tabindex="0" aria-label="Herramientas de automatización gratis">
+    <div class="card-banner"></div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag amber">Gratis</span>
+        <span class="tag">Herramientas</span>
+      </div>
+      <div class="card-title">Las mejores herramientas gratuitas para automatizar con IA en 2026</div>
+      <div class="card-excerpt">
+        Comparativa de Make, n8n, Zapier, Activepieces y más. Cuáles son realmente gratis y qué puedes hacer con cada una.
+      </div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <span class="card-time">⏱ 8 min</span>
+          <span class="card-diff diff-init">Principiante</span>
+        </div>
+        <span class="card-arrow" style="color:var(--amber)">→</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+        <a href="tutorial-email-ia.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="article-card" role="article" tabindex="0" aria-label="Automatizar emails con IA">
+    <div class="card-banner red"></div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag" style="color:var(--red);border-color:rgba(248,81,73,0.3);background:rgba(248,81,73,0.08)">Email</span>
+        <span class="tag">Make</span>
+        <span class="tag">Gmail</span>
+      </div>
+      <div class="card-title">Automatiza tus correos con IA: respuestas inteligentes con Gmail + Make</div>
+      <div class="card-excerpt">
+        Detecta el tipo de correo que recibes y genera respuestas automáticas inteligentes usando ChatGPT. Ahorra horas a la semana.
+      </div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <span class="card-time">⏱ 15 min</span>
+          <span class="card-diff diff-init">Principiante</span>
+        </div>
+        <span class="card-arrow" style="color:var(--red)">→</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+        <a href="tutorial-n8n-chatgpt.html" style="text-decoration: none; color: inherit; display: block;">
+  <div class="article-card" role="article" tabindex="0" aria-label="Conectar n8n con ChatGPT">
+    <div class="card-banner green"></div>
+    <div class="card-body">
+      <div class="card-tags">
+        <span class="tag green">n8n</span>
+        <span class="tag">ChatGPT API</span>
+        <span class="tag">Avanzado</span>
+      </div>
+      <div class="card-title">Conecta n8n con ChatGPT: flujos de trabajo inteligentes paso a paso</div>
+      <div class="card-excerpt">
+        Aprende a usar la API de OpenAI dentro de n8n para crear automatizaciones que piensan: clasificación, resumen y generación de contenido.
+      </div>
+      <div class="card-footer">
+        <div class="card-meta">
+          <span class="card-time">⏱ 25 min</span>
+          <span class="card-diff diff-adv">Avanzado</span>
+        </div>
+        <span class="card-arrow" style="color:var(--green)">→</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- HERRAMIENTAS -->
+  <section id="herramientas" aria-labelledby="tools-title">
+    <div class="inner">
+      <p class="sec-label">Herramientas</p>
+      <h2 class="sec-title" id="tools-title">Stack de automatización gratuito</h2>
+      <p class="sec-desc">Las herramientas que necesitas para automatizar. Todas tienen plan gratuito para empezar.</p>
+
+      <div class="tools-grid reveal">
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon orange">⚡</div>
+            <div>
+              <div class="tool-name">Make</div>
+              <span class="tool-badge">Gratis hasta 1k ops/mes</span>
+            </div>
+          </div>
+          <div class="tool-desc">La herramienta de automatización visual más potente. Conecta cientos de apps entre sí y con IA. Interfaz de flujo visual, ideal para principiantes y expertos.</div>
+          <a href="https://make.com" target="_blank" rel="noopener" class="tool-link">make.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon green">🔄</div>
+            <div>
+              <div class="tool-name">n8n</div>
+              <span class="tool-badge">Open Source · 100% Gratis</span>
+            </div>
+          </div>
+          <div class="tool-desc">Plataforma de automatización de código abierto. Instálala en tu servidor y úsala gratis sin límites. Perfecta para automatizaciones avanzadas con IA.</div>
+          <a href="https://n8n.io" target="_blank" rel="noopener" class="tool-link">n8n.io →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon blue">🤖</div>
+            <div>
+              <div class="tool-name">OpenAI API</div>
+              <span class="tool-badge paid">Créditos gratis al inicio</span>
+            </div>
+          </div>
+          <div class="tool-desc">La API de ChatGPT que puedes integrar en cualquier automatización. Úsala para clasificar textos, generar respuestas, resumir o traducir contenido.</div>
+          <a href="https://platform.openai.com" target="_blank" rel="noopener" class="tool-link">platform.openai.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon orange">💬</div>
+            <div>
+              <div class="tool-name">WhatsApp Business API</div>
+              <span class="tool-badge">1k mensajes gratis/mes</span>
+            </div>
+          </div>
+          <div class="tool-desc">La API oficial de WhatsApp para enviar y recibir mensajes de forma programática. Combínala con Make o n8n para crear chatbots y respuestas automáticas.</div>
+          <a href="https://business.whatsapp.com" target="_blank" rel="noopener" class="tool-link">business.whatsapp.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon purple">🔗</div>
+            <div>
+              <div class="tool-name">Zapier</div>
+              <span class="tool-badge">Gratis hasta 100 tareas/mes</span>
+            </div>
+          </div>
+          <div class="tool-desc">La opción más fácil de usar. Perfecta para conectar apps populares como Gmail, Slack o Google Sheets sin configuración compleja. Ideal para empezar.</div>
+          <a href="https://zapier.com" target="_blank" rel="noopener" class="tool-link">zapier.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon green">🌐</div>
+            <div>
+              <div class="tool-name">Activepieces</div>
+              <span class="tool-badge">Open Source · Gratis</span>
+            </div>
+          </div>
+          <div class="tool-desc">Alternativa open source a Zapier con una interfaz muy limpia. Puedes usarla en la nube gratis o instalarla tú mismo. Soporte nativo para IA.</div>
+          <a href="https://activepieces.com" target="_blank" rel="noopener" class="tool-link">activepieces.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon blue">📊</div>
+            <div>
+              <div class="tool-name">Airtable</div>
+              <span class="tool-badge">Gratis para equipos pequeños</span>
+            </div>
+          </div>
+          <div class="tool-desc">Base de datos visual perfecta como "cerebro" de tus automatizaciones. Guarda clientes, pedidos o leads y conéctala con Make o n8n para flujos inteligentes.</div>
+          <a href="https://airtable.com" target="_blank" rel="noopener" class="tool-link">airtable.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-head">
+            <div class="tool-icon red">📧</div>
+            <div>
+              <div class="tool-name">Resend</div>
+              <span class="tool-badge">3k emails gratis/mes</span>
+            </div>
+          </div>
+          <div class="tool-desc">API de email moderna y fácil de usar. Perfecta para enviar emails transaccionales o masivos desde tus automatizaciones. 3,000 emails gratis al mes.</div>
+          <a href="https://resend.com" target="_blank" rel="noopener" class="tool-link">resend.com →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="inner">
+      <p class="sec-label">FAQ</p>
+      <h2 class="sec-title" id="faq-title">Preguntas frecuentes</h2>
+      <p class="sec-desc">Lo que más nos preguntan sobre automatización con IA.</p>
+
+      <div class="faq-list reveal">
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Qué es la automatización con IA y para qué sirve?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">La automatización con IA combina herramientas como Make o n8n con modelos de lenguaje como ChatGPT para crear flujos de trabajo que se ejecutan solos. Por ejemplo: un cliente te manda un WhatsApp, la IA entiende su pregunta, consulta tu catálogo y responde automáticamente. Todo sin que toques nada. Esto ahorra horas de trabajo manual cada semana.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Cuál es la diferencia entre Make y n8n?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Make es una plataforma en la nube con interfaz visual muy intuitiva, perfecta para principiantes. Tiene plan gratuito con 1,000 operaciones al mes. n8n es open source: puedes instalarlo gratis en tu computadora o servidor sin límites de operaciones. n8n es más técnico pero más potente y flexible. Para empezar, recomendamos Make. Para proyectos grandes o si quieres control total, n8n.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Necesito saber programar para hacer automatizaciones?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">No es obligatorio. Make y Zapier son completamente visuales: conectas bloques arrastrando y soltando. n8n tiene más partes técnicas pero tampoco exige código. Para automatizaciones más avanzadas con IA (como enviar prompts a ChatGPT con variables dinámicas), saber leer JSON básico te ayuda mucho, pero se aprende en horas.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Cuánto cuesta automatizar WhatsApp con IA?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Puedes empezar casi gratis: WhatsApp Business API da 1,000 mensajes de servicio gratis al mes. Make tiene 1,000 operaciones gratis. OpenAI tiene créditos iniciales gratuitos. Para un negocio pequeño con bajo volumen de mensajes, el costo mensual puede ser de $0 a $10 USD. Al crecer, los costos son muy bajos comparado con contratar personal.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Es seguro usar IA para responder a mis clientes?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí, con la configuración correcta. La clave es dar a la IA un "system prompt" bien definido con información de tu negocio y límites claros: qué puede y qué no puede responder. Las preguntas fuera de su alcance se pueden redirigir a un humano. Miles de negocios en Latinoamérica ya usan esto exitosamente.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="newsletter-section" aria-labelledby="nl-title">
+    <div class="newsletter-inner">
+      <p class="sec-label">Newsletter</p>
+      <h2 id="nl-title">Una automatización nueva<br>cada semana</h2>
+      <p>Sin spam. Solo tutoriales prácticos, herramientas nuevas y flujos listos para usar. Directo a tu correo, en español.</p>
+      <div class="nl-form" role="form" aria-label="Formulario de suscripción">
+        <input type="email" class="nl-input" id="nl-email" placeholder="tu@correo.com" aria-label="Tu correo electrónico" autocomplete="email">
+        <button class="nl-btn" onclick="subscribeNL()" aria-label="Suscribirse al newsletter">Suscribirme →</button>
+      </div>
+      <p class="nl-note" id="nl-msg">// Sin spam · Cancela cuando quieras</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">AI</div>
+          Automatiza<span>IA</span>
+        </div>
+        <p>Tutoriales de automatización con inteligencia artificial en español. Para México, Colombia, Argentina y toda Latinoamérica.</p>
+      </div>
+      <nav class="footer-col" aria-label="Tutoriales">
+        <h4>Tutoriales</h4>
+        <ul>
+          <li><a href="#" onclick="showArticle('whatsapp-make'); return false;">WhatsApp + Make</a></li>
+          <li><a href="#" onclick="showArticle('make-vs-n8n'); return false;">Make vs n8n</a></li>
+          <li><a href="#" onclick="showArticle('instalar-n8n'); return false;">Instalar n8n</a></li>
+          <li><a href="#" onclick="showArticle('chatbot-negocio'); return false;">Crear chatbot</a></li>
+          <li><a href="#" onclick="showArticle('automatizar-email'); return false;">Automatizar email</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Herramientas">
+        <h4>Herramientas</h4>
+        <ul>
+          <li><a href="https://make.com" target="_blank" rel="noopener">Make</a></li>
+          <li><a href="https://n8n.io" target="_blank" rel="noopener">n8n</a></li>
+          <li><a href="https://zapier.com" target="_blank" rel="noopener">Zapier</a></li>
+          <li><a href="https://activepieces.com" target="_blank" rel="noopener">Activepieces</a></li>
+          <li><a href="https://platform.openai.com" target="_blank" rel="noopener">OpenAI API</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Sitio">
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="#tutoriales">Tutoriales</a></li>
+          <li><a href="#herramientas">Herramientas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutomatizaIA · Todos los derechos reservados</span>
+      <span>Hecho para 🇲🇽 México y Latinoamérica</span>
+    </div>
+  </footer>
+
+</div><!-- /home-view -->
+
+<!-- ═══ ARTICLE VIEW ═══ -->
+<div id="article-view" role="main">
+  <div class="article-header-bar">
+    <div class="inner">
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a onclick="goHome()">Inicio</a>
+        <span>/</span>
+        <a onclick="goHome()">Tutoriales</a>
+        <span>/</span>
+        <span id="breadcrumb-current">Artículo</span>
+      </nav>
+    </div>
+  </div>
+  <div class="article-wrap" id="article-content"></div>
+</div>
+
+<!-- ═══ SCRIPTS ═══ -->
+<script>
+/* ──────────────────────────────────────
+   ARTICLES DATA
+────────────────────────────────────── */
+const ARTICLES = {
+
+  'whatsapp-make': {
+    title: 'Automatiza WhatsApp con Make e IA: respuestas automáticas con ChatGPT',
+    cat: 'Make · WhatsApp',
+    time: '25 min lectura',
+    diff: 'Principiante',
+    diffClass: 'diff-init',
+    date: 'Mayo 2026',
+    intro: 'En este tutorial aprenderás a conectar WhatsApp Business con Make y ChatGPT para que tu negocio responda mensajes automáticamente, las 24 horas, con respuestas inteligentes adaptadas a tus clientes. No necesitas saber programar.',
+    overview: [
+      'Configurar WhatsApp Business API (paso a paso)',
+      'Crear un escenario en Make para recibir mensajes',
+      'Conectar ChatGPT para generar respuestas inteligentes',
+      'Enviar la respuesta de vuelta al cliente por WhatsApp',
+      'Filtros: qué mensajes responde la IA y cuáles no'
+    ],
+    prev: null,
+    next: 'make-vs-n8n',
+    content: `
+<h2>¿Qué vas a lograr?</h2>
+<p>Al terminar este tutorial tendrás un sistema que: (1) recibe mensajes de WhatsApp de tus clientes, (2) los envía a ChatGPT con el contexto de tu negocio, (3) devuelve una respuesta inteligente automáticamente. Todo corriendo en Make, sin servidor propio.</p>
+
+<div class="callout tip"><div class="callout-icon">✅</div><div class="callout-body"><p><strong>Lo que necesitas antes de empezar:</strong> Una cuenta de Make (gratuita), acceso a WhatsApp Business API (explicado abajo), y una clave de API de OpenAI (puedes obtenerla en platform.openai.com con créditos gratuitos iniciales).</p></div></div>
+
+<h2>Paso 1: Acceder a WhatsApp Business API</h2>
+<div class="step-block"><div class="step-num">1</div><div class="step-content"><h4>Crea una cuenta en Meta for Developers</h4><p>Ve a <strong>developers.facebook.com</strong> y crea una aplicación de tipo "Business". En el panel, busca el producto "WhatsApp" y agrégalo a tu app. Meta te dará acceso a un número de prueba para comenzar.</p></div></div>
+<div class="step-block"><div class="step-num">2</div><div class="step-content"><h4>Obtén tu Token de acceso y Phone ID</h4><p>En la sección de WhatsApp → API Setup, encontrarás tu <strong>Phone Number ID</strong> y podrás generar un <strong>Access Token</strong> temporal. Guárdalos, los necesitarás en Make. Para producción, tendrás que generar un token permanente con un System User.</p></div></div>
+<div class="step-block"><div class="step-num">3</div><div class="step-content"><h4>Configura el Webhook</h4><p>WhatsApp necesita saber a dónde enviar los mensajes que llegan. En Make, cuando crees el trigger de WhatsApp, te dará una URL de webhook. Pégala en la sección "Webhooks" de tu app de Meta. El token de verificación puedes inventarlo tú (ej: <code>mi_token_secreto</code>).</p></div></div>
+
+<h2>Paso 2: Crear el escenario en Make</h2>
+<p>Un "escenario" en Make es el flujo de automatización. El nuestro tendrá 3 módulos principales:</p>
+
+<div class="step-block"><div class="step-num">4</div><div class="step-content"><h4>Módulo 1: Webhook (recibir el mensaje)</h4><p>En Make, crea un nuevo escenario y agrega el módulo <strong>"Webhooks → Custom webhook"</strong>. Esto crea la URL que pegaste en Meta. Cuando llegue un mensaje de WhatsApp, Make lo recibirá aquí con todos los datos: número del remitente, texto del mensaje, timestamp, etc.</p></div></div>
+
+<div class="callout info"><div class="callout-icon">💡</div><div class="callout-body"><p><strong>Tip:</strong> Envíate un mensaje de WhatsApp de prueba desde otro número al número de prueba de Meta. Make recibirá el webhook y podrás ver exactamente la estructura del JSON con todos los campos. Esto te ayuda a saber cómo extraer el texto del mensaje y el número del remitente.</p></div></div>
+
+<div class="step-block"><div class="step-num">5</div><div class="step-content"><h4>Módulo 2: OpenAI (generar respuesta)</h4><p>Agrega el módulo <strong>"OpenAI → Create a Completion"</strong> (o "Create a Chat Completion" si usas GPT-4). En el campo <strong>System</strong>, escribe el contexto de tu negocio. En el campo <strong>User message</strong>, mapea el texto del mensaje que llegó por WhatsApp.</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">System Prompt — Ejemplo para tienda</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body">Eres el asistente virtual de "Tienda El Sol", una tienda de ropa en <span class="var">Ciudad de México</span>.
+
+<span class="cm">Información del negocio:</span>
+- Horario: Lunes a Sábado, <span class="num">10:00</span>am a <span class="num">8:00</span>pm
+- Dirección: Av. Insurgentes <span class="num">1234</span>, CDMX
+- WhatsApp para pedidos: <span class="num">55-1234-5678</span>
+- Envíos: Solo CDMX, costo $<span class="num">60</span> pesos, gratis arriba de $<span class="num">500</span>
+
+<span class="cm">Responde siempre en español mexicano, de forma amable y concisa.</span>
+<span class="cm">Si no sabes algo, di "Te conecto con un asesor ahora mismo 😊"</span></div>
+</div>
+
+<div class="step-block"><div class="step-num">6</div><div class="step-content"><h4>Módulo 3: WhatsApp (enviar respuesta)</h4><p>Agrega el módulo <strong>"HTTP → Make a request"</strong> (ya que Make no tiene módulo nativo de WhatsApp aún). Configura una petición POST a la API de WhatsApp con el texto generado por ChatGPT y el número del remitente original.</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">JSON — Cuerpo de la petición WhatsApp</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body">{
+  <span class="str">"messaging_product"</span>: <span class="str">"whatsapp"</span>,
+  <span class="str">"to"</span>: <span class="str">"{{número del remitente}}"</span>,
+  <span class="str">"type"</span>: <span class="str">"text"</span>,
+  <span class="str">"text"</span>: {
+    <span class="str">"body"</span>: <span class="str">"{{respuesta generada por ChatGPT}}"</span>
+  }
+}</div>
+</div>
+
+<h2>Paso 3: Pruebas y ajustes</h2>
+<div class="step-block"><div class="step-num">7</div><div class="step-content"><h4>Activa el escenario y prueba</h4><p>Activa el escenario en Make (botón toggle en la esquina). Mándate un mensaje al número de prueba. Deberías recibir una respuesta automática en segundos. Si algo falla, revisa el historial de ejecuciones en Make para ver exactamente en qué módulo ocurrió el error.</p></div></div>
+
+<div class="callout warn"><div class="callout-icon">⚠️</div><div class="callout-body"><p><strong>Importante:</strong> WhatsApp solo permite responder dentro de las 24 horas siguientes al último mensaje del cliente (ventana de atención al cliente). Fuera de ese tiempo necesitas usar "Message Templates" aprobados por Meta. Para la mayoría de negocios esto no es problema.</p></div></div>
+
+<h2>Filtros opcionales: ¿Qué mensajes responde la IA?</h2>
+<p>Puedes agregar un módulo de filtro en Make para que la IA solo responda ciertos mensajes. Por ejemplo, solo textos (ignorar imágenes o audios), solo en horario de oficina, o redirigir a humano si el mensaje contiene palabras como "urgente" o "queja".</p>
+`
+  },
+
+  'make-vs-n8n': {
+    title: 'Make vs n8n: ¿Cuál elegir para automatizar tu negocio en 2026?',
+    cat: 'Comparativa',
+    time: '10 min lectura',
+    diff: 'Principiante',
+    diffClass: 'diff-init',
+    date: 'Mayo 2026',
+    intro: 'Make y n8n son las dos herramientas de automatización más populares del momento. Ambas son poderosas, ambas tienen opciones gratuitas, pero sirven para contextos muy distintos. Te explico las diferencias reales para que elijas la correcta.',
+    overview: [
+      'Diferencias clave en interfaz y facilidad de uso',
+      'Comparativa de precios y planes gratuitos',
+      'Qué hace mejor cada una',
+      'Casos de uso concretos para cada herramienta',
+      'Veredicto: cuál elegir según tu situación'
+    ],
+    prev: 'whatsapp-make',
+    next: 'instalar-n8n',
+    content: `
+<h2>La diferencia fundamental</h2>
+<p><strong>Make</strong> es un SaaS (Software as a Service): tú accedes a su plataforma en la nube, pagas según el uso y no necesitas instalar nada. <strong>n8n</strong> es open source: puedes descargarlo e instalarlo gratis en tu computadora o servidor, sin límites de uso y sin pagar nada.</p>
+
+<table class="comp-table" aria-label="Comparativa Make vs n8n">
+  <thead>
+    <tr><th>Característica</th><th>Make</th><th>n8n</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Tipo</td><td>SaaS (en la nube)</td><td>Open Source / Self-hosted</td></tr>
+    <tr><td>Plan gratuito</td><td>✅ 1,000 ops/mes</td><td>✅ Ilimitado (self-hosted)</td></tr>
+    <tr><td>Instalación necesaria</td><td><span class="cross">✗ No</span></td><td><span class="check">✓ Sí (opcional)</span></td></tr>
+    <tr><td>Curva de aprendizaje</td><td>Muy baja</td><td>Media</td></tr>
+    <tr><td>Conectores disponibles</td><td>+1,000</td><td>+400</td></tr>
+    <tr><td>Nodos de código</td><td>Limitado</td><td>JavaScript / Python completo</td></tr>
+    <tr><td>IA nativa</td><td>Módulo OpenAI</td><td>Nodos de IA avanzados</td></tr>
+    <tr><td>Control de datos</td><td>En servidores de Make</td><td>En tu servidor</td></tr>
+    <tr><td>Precio (plan básico)</td><td>$9 USD/mes</td><td>$20 USD/mes (cloud)</td></tr>
+  </tbody>
+</table>
+
+<h2>¿Cuándo usar Make?</h2>
+<p>Make es la mejor opción cuando:</p>
+<ul>
+  <li>Eres principiante o no tienes experiencia técnica</li>
+  <li>Quieres empezar rápido sin instalar nada</li>
+  <li>Necesitas conectar muchas apps populares (Gmail, Slack, Shopify, etc.)</li>
+  <li>Tu volumen de automatizaciones es moderado</li>
+  <li>Prefieres pagar por uso en lugar de mantener un servidor</li>
+</ul>
+
+<div class="callout tip"><div class="callout-icon">🎯</div><div class="callout-body"><p><strong>Perfil típico de usuario Make:</strong> Emprendedor, freelancer, dueño de negocio pequeño o mediano que quiere automatizar procesos sin conocimientos técnicos profundos.</p></div></div>
+
+<h2>¿Cuándo usar n8n?</h2>
+<p>n8n es la mejor opción cuando:</p>
+<ul>
+  <li>Tienes algo de conocimiento técnico (o quieres aprenderlo)</li>
+  <li>Necesitas automatizaciones complejas con lógica personalizada</li>
+  <li>El volumen de tus automatizaciones es alto y Make sería costoso</li>
+  <li>Trabajas con datos sensibles que no quieres que pasen por terceros</li>
+  <li>Quieres control total y sin límites de operaciones</li>
+</ul>
+
+<div class="callout tip"><div class="callout-icon">🎯</div><div class="callout-body"><p><strong>Perfil típico de usuario n8n:</strong> Desarrollador, agencia, startup técnica o empresa que necesita automatizaciones avanzadas con código personalizado y control de sus datos.</p></div></div>
+
+<h2>Veredicto final</h2>
+<p><strong>Si estás empezando:</strong> comienza con Make. En menos de una hora puedes tener tu primera automatización funcionando, sin instalar nada, con el plan gratuito.</p>
+<p><strong>Si ya tienes experiencia o tu negocio crece:</strong> migra o complementa con n8n. El costo de operación es mínimo una vez instalado y la potencia es mucho mayor.</p>
+<p><strong>¿Y si no quieres instalarlo?</strong> n8n Cloud tiene un plan de pago pero es perfectamente funcional. La decisión real es entre facilidad (Make) y potencia + control (n8n).</p>
+`
+  },
+
+  'instalar-n8n': {
+    title: 'Cómo instalar n8n en tu computadora: guía completa para Windows, Mac y Linux',
+    cat: 'n8n · Instalación',
+    time: '20 min lectura',
+    diff: 'Intermedio',
+    diffClass: 'diff-med',
+    date: 'Mayo 2026',
+    intro: 'n8n es una plataforma de automatización open source que puedes instalar gratis en tu computadora. Una vez instalado, puedes crear automatizaciones ilimitadas sin pagar ni un peso. En este tutorial te explico cómo instalarlo usando Docker (el método más fácil) o con Node.js.',
+    overview: [
+      'Método 1: Instalación con Docker (recomendado, 5 min)',
+      'Método 2: Instalación con Node.js/npm',
+      'Cómo acceder a la interfaz de n8n',
+      'Configuración inicial y primer flujo de prueba',
+      'Mantener n8n corriendo en segundo plano'
+    ],
+    prev: 'make-vs-n8n',
+    next: 'chatbot-negocio',
+    content: `
+<h2>Antes de empezar: ¿Docker o Node.js?</h2>
+<p>Tienes dos formas de instalar n8n localmente. <strong>Docker</strong> es el método más recomendado: es más limpio, no ensucia tu sistema y funciona igual en todos los sistemas operativos. <strong>Node.js/npm</strong> es más directo pero requiere tener Node.js instalado.</p>
+
+<div class="callout info"><div class="callout-icon">ℹ️</div><div class="callout-body"><p><strong>Requisitos mínimos:</strong> 4 GB de RAM (8 GB recomendado), 2 GB de espacio libre en disco. Funciona en Windows 10/11, macOS 11+, y cualquier distribución de Linux.</p></div></div>
+
+<h2>Método 1: Instalación con Docker (Recomendado)</h2>
+
+<div class="step-block"><div class="step-num">1</div><div class="step-content"><h4>Instala Docker Desktop</h4><p>Ve a <strong>docker.com/products/docker-desktop</strong> y descarga Docker Desktop para tu sistema operativo. Instálalo normalmente. Cuando termines, abre Docker Desktop y espera a que aparezca el ícono de la ballena en tu barra de tareas — eso indica que está corriendo.</p></div></div>
+
+<div class="step-block"><div class="step-num">2</div><div class="step-content"><h4>Abre una terminal</h4><p>En <strong>Windows</strong>: busca "PowerShell" o "Símbolo del sistema" en el menú inicio. En <strong>Mac</strong>: abre Terminal (puedes buscarlo con Cmd+Space). En <strong>Linux</strong>: Ctrl+Alt+T.</p></div></div>
+
+<div class="step-block"><div class="step-num">3</div><div class="step-content"><h4>Ejecuta el comando de instalación de n8n</h4><p>Copia y pega este comando en tu terminal. Descargará n8n automáticamente y lo iniciará:</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">Terminal — Docker Run</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body"><span class="fn">docker</span> run -it --rm \
+  --name n8n \
+  -p <span class="num">5678</span>:<span class="num">5678</span> \
+  -v n8n_data:<span class="str">/home/node/.n8n</span> \
+  docker.n8n.io/n8nio/n8n</div>
+</div>
+
+<div class="callout tip"><div class="callout-icon">💡</div><div class="callout-body"><p><strong>¿Qué hace este comando?</strong> Descarga la imagen de n8n, lo ejecuta en el puerto 5678, y guarda tus datos en un volumen de Docker llamado "n8n_data" para que no los pierdas al reiniciar.</p></div></div>
+
+<div class="step-block"><div class="step-num">4</div><div class="step-content"><h4>Accede a n8n en tu navegador</h4><p>Cuando veas en la terminal el mensaje <code>n8n ready on port 5678</code>, abre tu navegador y ve a <strong>http://localhost:5678</strong>. Verás la pantalla de configuración inicial de n8n. Crea tu cuenta de administrador (solo se usa localmente).</p></div></div>
+
+<h2>Método 2: Instalación con Node.js</h2>
+
+<div class="step-block"><div class="step-num">1</div><div class="step-content"><h4>Instala Node.js</h4><p>Ve a <strong>nodejs.org</strong> y descarga la versión LTS (la más estable). Instálala normalmente. Para verificar que quedó bien, abre una terminal y escribe <code>node --version</code> — debería mostrarte algo como <code>v20.x.x</code>.</p></div></div>
+
+<div class="step-block"><div class="step-num">2</div><div class="step-content"><h4>Instala n8n globalmente con npm</h4><p>Con Node.js instalado, ejecuta este comando en tu terminal:</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">Terminal — npm install</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body"><span class="cm"># Instalar n8n globalmente</span>
+<span class="fn">npm</span> install -g n8n
+
+<span class="cm"># Iniciar n8n</span>
+<span class="fn">n8n</span> start</div>
+</div>
+
+<h2>Primer flujo de prueba</h2>
+<p>Una vez dentro de n8n, prueba crear un flujo simple para comprobar que todo funciona:</p>
+
+<div class="step-block"><div class="step-num">5</div><div class="step-content"><h4>Crea un flujo de prueba: Webhook → Set → Respuesta</h4><p>Haz click en "New Workflow". Agrega un nodo <strong>Webhook</strong> (trigger), luego un nodo <strong>Set</strong> para transformar datos, y finalmente un nodo <strong>Respond to Webhook</strong>. Conecta los tres. Activa el flujo y visita la URL del webhook en tu navegador.</p></div></div>
+
+<div class="callout warn"><div class="callout-icon">⚠️</div><div class="callout-body"><p><strong>Nota importante:</strong> n8n corriendo localmente solo es accesible desde tu computadora. Para que servicios externos (como WhatsApp o Make) puedan enviarle webhooks, necesitas exponerlo a internet. Para pruebas, puedes usar <strong>ngrok</strong> (gratuito): <code>ngrok http 5678</code> te dará una URL pública temporal.</p></div></div>
+
+<h2>Mantener n8n corriendo en segundo plano</h2>
+<p>Si cierras la terminal, n8n se detiene. Para mantenerlo corriendo en background, usa <strong>pm2</strong> (con Node.js) o crea el contenedor Docker sin la bandera <code>--rm</code> y con <code>-d</code> para modo detached:</p>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">Terminal — Docker en background</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body"><span class="cm"># Correr en background (modo daemon)</span>
+<span class="fn">docker</span> run -d \
+  --name n8n \
+  --restart unless-stopped \
+  -p <span class="num">5678</span>:<span class="num">5678</span> \
+  -v n8n_data:<span class="str">/home/node/.n8n</span> \
+  docker.n8n.io/n8nio/n8n
+
+<span class="cm"># Ver si está corriendo</span>
+<span class="fn">docker</span> ps
+
+<span class="cm"># Detenerlo</span>
+<span class="fn">docker</span> stop n8n
+
+<span class="cm"># Iniciarlo de nuevo</span>
+<span class="fn">docker</span> start n8n</div>
+</div>
+`
+  },
+
+  'chatbot-negocio': {
+    title: 'Cómo crear un chatbot para tu negocio con ChatGPT (sin programar)',
+    cat: 'Chatbot · ChatGPT API',
+    time: '30 min lectura',
+    diff: 'Intermedio',
+    diffClass: 'diff-med',
+    date: 'Mayo 2026',
+    intro: 'Un chatbot con IA puede responder preguntas de tus clientes, calificar leads, agendar citas o dar soporte básico, las 24 horas. En este tutorial crearás uno usando la API de OpenAI y Make, sin escribir una sola línea de código.',
+    overview: [
+      'Obtener tu API Key de OpenAI',
+      'Diseñar el "cerebro" del chatbot (system prompt)',
+      'Conectar el chatbot a WhatsApp o tu web con Make',
+      'Guardar el historial de conversación',
+      'Casos de uso: ventas, soporte, reservaciones'
+    ],
+    prev: 'instalar-n8n',
+    next: 'herramientas-gratis',
+    content: `
+<h2>¿Cómo funciona un chatbot con ChatGPT?</h2>
+<p>A diferencia de los chatbots viejos que solo respondían por palabras clave, un chatbot con ChatGPT entiende el lenguaje natural. Tú le das instrucciones (el "system prompt") con información de tu negocio y cómo debe comportarse. El resto lo hace la IA.</p>
+
+<div class="callout info"><div class="callout-icon">🧠</div><div class="callout-body"><p><strong>La arquitectura es simple:</strong> Cliente envía mensaje → tu sistema lo recibe → lo manda a la API de OpenAI con el historial de conversación y las instrucciones → ChatGPT responde → tú devuelves esa respuesta al cliente.</p></div></div>
+
+<h2>Paso 1: Obtener tu API Key de OpenAI</h2>
+<div class="step-block"><div class="step-num">1</div><div class="step-content"><h4>Crea una cuenta en OpenAI Platform</h4><p>Ve a <strong>platform.openai.com</strong> y crea una cuenta. OpenAI da créditos gratuitos al inicio ($5 USD) suficientes para hacer muchas pruebas. Ve a "API Keys" en el menú de tu perfil y crea una nueva clave. <strong>Guárdala bien</strong>: solo se muestra una vez.</p></div></div>
+
+<h2>Paso 2: Diseñar el System Prompt</h2>
+<p>El system prompt es la parte más importante. Define quién es tu chatbot, qué sabe y cómo debe responder. Aquí tienes una plantilla para un negocio genérico que puedes adaptar:</p>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">System Prompt — Plantilla completa</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body"><span class="cm">## Identidad</span>
+Eres <span class="var">{{nombre del asistente}}</span>, el asistente virtual de <span class="var">{{nombre de tu negocio}}</span>.
+Tu tono es amable, profesional y conciso. Siempre en español mexicano.
+
+<span class="cm">## Información del negocio</span>
+- Giro: <span class="var">{{tipo de negocio}}</span>
+- Productos/Servicios: <span class="var">{{lista tus productos principales}}</span>
+- Precios: <span class="var">{{rangos de precio o "consultar"}}</span>
+- Horario: <span class="var">{{días y horas}}</span>
+- Ubicación: <span class="var">{{dirección o "solo en línea"}}</span>
+- Contacto humano: <span class="var">{{teléfono o email para escalar}}</span>
+
+<span class="cm">## Reglas de comportamiento</span>
+<span class="num">1</span>. Responde SOLO lo que sabes con certeza sobre el negocio
+<span class="num">2</span>. Si no sabes algo, di: <span class="str">"Déjame conectarte con un asesor"</span>
+<span class="num">3</span>. Nunca inventes precios ni información
+<span class="num">4</span>. Si el cliente quiere comprar, pide su nombre y correo
+<span class="num">5</span>. Respuestas cortas: máximo <span class="num">3</span> oraciones por mensaje</div>
+</div>
+
+<div class="callout tip"><div class="callout-icon">✍️</div><div class="callout-body"><p><strong>Truco pro:</strong> Mientras más específico seas en el system prompt, mejor se comportará el chatbot. Incluye las preguntas más frecuentes que te hacen tus clientes y cómo quieres que las responda.</p></div></div>
+
+<h2>Paso 3: Conectar en Make</h2>
+<div class="step-block"><div class="step-num">3</div><div class="step-content"><h4>Estructura del escenario en Make</h4><p>Tu escenario tendrá: <strong>Webhook</strong> (recibir mensaje) → <strong>Google Sheets o Airtable</strong> (leer/guardar historial) → <strong>OpenAI: Create Chat Completion</strong> (generar respuesta) → <strong>Webhook response o WhatsApp API</strong> (devolver respuesta).</p></div></div>
+
+<div class="step-block"><div class="step-num">4</div><div class="step-content"><h4>Guardar el historial de conversación</h4><p>ChatGPT no tiene memoria entre llamadas. Debes enviar el historial completo en cada request. Usa Google Sheets o Airtable para guardar los mensajes: una hoja con columnas "session_id", "role" (user/assistant) y "content". En Make, antes de llamar a OpenAI, lee todos los mensajes del session_id actual y los incluyes en el array "messages".</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">JSON — Array de mensajes para la API</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body">{
+  <span class="str">"model"</span>: <span class="str">"gpt-4o-mini"</span>,
+  <span class="str">"messages"</span>: [
+    {<span class="str">"role"</span>: <span class="str">"system"</span>, <span class="str">"content"</span>: <span class="str">"{{tu system prompt aquí}}"</span>},
+    {<span class="str">"role"</span>: <span class="str">"user"</span>,   <span class="str">"content"</span>: <span class="str">"Hola, ¿tienen envíos a Guadalajara?"</span>},
+    {<span class="str">"role"</span>: <span class="str">"assistant"</span>, <span class="str">"content"</span>: <span class="str">"Sí, hacemos envíos a todo México..."</span>},
+    {<span class="str">"role"</span>: <span class="str">"user"</span>,   <span class="str">"content"</span>: <span class="str">"{{mensaje actual del cliente}}"</span>}
+  ]
+}</div>
+</div>
+
+<h2>Casos de uso por tipo de negocio</h2>
+<table class="comp-table" aria-label="Casos de uso de chatbots por industria">
+  <thead><tr><th>Negocio</th><th>Qué automatizar</th><th>Modelo sugerido</th></tr></thead>
+  <tbody>
+    <tr><td>Restaurante</td><td>Menú, reservaciones, horarios</td><td>gpt-4o-mini (barato)</td></tr>
+    <tr><td>Tienda online</td><td>Estatus de pedido, catálogo, devoluciones</td><td>gpt-4o-mini</td></tr>
+    <tr><td>Consultora</td><td>Calificar leads, agendar llamadas</td><td>gpt-4o</td></tr>
+    <tr><td>Clínica / Médico</td><td>Agendar citas, información de servicios</td><td>gpt-4o (más preciso)</td></tr>
+    <tr><td>Inmobiliaria</td><td>Filtrar propiedades, agendar visitas</td><td>gpt-4o</td></tr>
+  </tbody>
+</table>
+`
+  },
+
+  'herramientas-gratis': {
+    title: 'Las mejores herramientas gratuitas para automatizar con IA en 2026',
+    cat: 'Herramientas',
+    time: '8 min lectura',
+    diff: 'Principiante',
+    diffClass: 'diff-init',
+    date: 'Mayo 2026',
+    intro: 'Existen decenas de herramientas para automatizar con IA, pero la mayoría tiene planes de pago. En este artículo te muestro las que realmente tienen opciones gratuitas útiles, qué puedes hacer con cada una y cuáles son sus límites reales.',
+    overview: [
+      'Herramientas de automatización (Make, n8n, Zapier, Activepieces)',
+      'Modelos de IA gratuitos o con créditos (OpenAI, Gemini, Claude)',
+      'Bases de datos para tus automatizaciones (Airtable, Notion)',
+      'Email y mensajería gratuita para flujos automatizados',
+      'Tabla resumen con límites de planes gratuitos'
+    ],
+    prev: 'chatbot-negocio',
+    next: 'automatizar-email',
+    content: `
+<h2>Herramientas de automatización</h2>
+
+<h3>Make (antes Integromat)</h3>
+<p><strong>Plan gratuito:</strong> 1,000 operaciones/mes, escenarios ilimitados, 15 minutos de intervalo mínimo entre ejecuciones. Es suficiente para empezar y probar. Para un negocio activo, el plan de $9 USD/mes (10,000 operaciones) suele ser más que suficiente.</p>
+
+<h3>n8n Self-hosted</h3>
+<p><strong>Plan gratuito:</strong> Completamente gratuito e ilimitado si lo instalas tú mismo. Sin límite de operaciones, flujos o usuarios. El único "costo" es el tiempo de configuración y, si lo quieres en producción, un servidor (desde $5 USD/mes en DigitalOcean o Railway).</p>
+
+<h3>Zapier</h3>
+<p><strong>Plan gratuito:</strong> 100 tareas/mes, solo automatizaciones de 2 pasos. Muy limitado para automatizaciones reales con IA, pero útil para probar conexiones sencillas entre apps populares.</p>
+
+<h3>Activepieces</h3>
+<p><strong>Plan gratuito:</strong> Open source, self-hosted ilimitado. Similar a Make en interfaz pero con soporte nativo para nodos de IA. Excelente alternativa si buscas algo entre Make y n8n.</p>
+
+<h2>Modelos de IA</h2>
+
+<h3>OpenAI (ChatGPT API)</h3>
+<p><strong>Plan gratuito:</strong> $5 USD en créditos al registrarte. GPT-4o-mini cuesta $0.15 por millón de tokens — con $5 puedes procesar millones de palabras. Para un chatbot de negocio pequeño, los costos son de centavos por día.</p>
+
+<h3>Google Gemini API</h3>
+<p><strong>Plan gratuito:</strong> Gemini 1.5 Flash tiene 15 requests/minuto gratis, sin límite diario estricto para uso moderado. Excelente para empezar sin poner tarjeta de crédito. Se integra fácilmente con Make y n8n.</p>
+
+<h3>Anthropic Claude API</h3>
+<p><strong>Plan gratuito:</strong> No tiene tier gratuito permanente, pero da créditos al registrarse. Claude es especialmente bueno para tareas que requieren seguir instrucciones complejas — ideal para chatbots con reglas específicas.</p>
+
+<h2>Bases de datos y almacenamiento</h2>
+
+<h3>Google Sheets</h3>
+<p><strong>100% gratuito.</strong> Aunque no es una "base de datos" técnicamente, para automatizaciones simples es perfecta. Guarda logs, historial de conversaciones, catálogos de productos. Se integra nativamente con Make, n8n y Zapier.</p>
+
+<h3>Airtable</h3>
+<p><strong>Plan gratuito:</strong> 1,000 registros por base, 5 editores. Muy visual e intuitivo. Perfecta para guardar leads, clientes o información de productos que tu chatbot necesita consultar.</p>
+
+<h3>Notion</h3>
+<p><strong>Plan gratuito:</strong> Páginas ilimitadas para uso personal. Puedes usar Notion como base de conocimiento de tu chatbot y conectarlo con n8n a través de su API.</p>
+
+<h2>Resumen: límites reales de los planes gratuitos</h2>
+
+<table class="comp-table" aria-label="Comparativa de límites gratuitos">
+  <thead><tr><th>Herramienta</th><th>Límite gratuito</th><th>¿Suficiente para empezar?</th></tr></thead>
+  <tbody>
+    <tr><td>Make</td><td>1,000 ops/mes</td><td><span class="check">✓ Sí</span></td></tr>
+    <tr><td>n8n self-hosted</td><td>Ilimitado</td><td><span class="check">✓ Sí</span></td></tr>
+    <tr><td>Zapier</td><td>100 tareas/mes</td><td>Solo para pruebas</td></tr>
+    <tr><td>Activepieces</td><td>Ilimitado (self-hosted)</td><td><span class="check">✓ Sí</span></td></tr>
+    <tr><td>OpenAI API</td><td>$5 en créditos</td><td><span class="check">✓ Para empezar</span></td></tr>
+    <tr><td>Gemini API</td><td>15 req/min gratis</td><td><span class="check">✓ Sí</span></td></tr>
+    <tr><td>Google Sheets</td><td>Ilimitado</td><td><span class="check">✓ Sí</span></td></tr>
+    <tr><td>Airtable</td><td>1,000 registros/base</td><td><span class="check">✓ Para iniciar</span></td></tr>
+  </tbody>
+</table>
+
+<div class="callout tip"><div class="callout-icon">🚀</div><div class="callout-body"><p><strong>Stack recomendado para empezar con $0:</strong> Make (automatización) + Gemini API (IA gratis) + Google Sheets (datos) + WhatsApp Business API (1k mensajes gratis). Con esto puedes construir un chatbot funcional para tu negocio sin gastar nada el primer mes.</p></div></div>
+`
+  },
+
+  'automatizar-email': {
+    title: 'Automatiza tus correos con IA: respuestas inteligentes con Gmail + Make',
+    cat: 'Email · Make',
+    time: '15 min lectura',
+    diff: 'Principiante',
+    diffClass: 'diff-init',
+    date: 'Mayo 2026',
+    intro: 'Cada correo que respondes manualmente es tiempo perdido. Con Make y ChatGPT puedes crear un sistema que detecta qué tipo de correo llega, genera una respuesta inteligente y la envía (o te la muestra para aprobar). En este tutorial lo construimos paso a paso.',
+    overview: [
+      'Conectar Gmail a Make con el trigger correcto',
+      'Clasificar correos por tipo con ChatGPT',
+      'Generar respuestas personalizadas según el tipo',
+      'Modo automático vs. modo aprobación humana',
+      'Guardar respuestas en un log para revisión'
+    ],
+    prev: 'herramientas-gratis',
+    next: 'n8n-chatgpt',
+    content: `
+<h2>El flujo que vamos a construir</h2>
+<p>Gmail recibe un correo → Make lo detecta → ChatGPT clasifica el tipo (consulta, queja, pedido, spam) → ChatGPT genera una respuesta apropiada → Make envía la respuesta o te la manda a ti para aprobar. Todo en minutos.</p>
+
+<div class="callout tip"><div class="callout-icon">⏱️</div><div class="callout-body"><p><strong>Tiempo que ahorra:</strong> Si recibes 20 correos al día y cada uno te toma 3 minutos responder, son 60 minutos diarios. Con este sistema, solo revisas los que requieren atención especial.</p></div></div>
+
+<h2>Paso 1: Conectar Gmail a Make</h2>
+<div class="step-block"><div class="step-num">1</div><div class="step-content"><h4>Agregar el trigger de Gmail</h4><p>En Make, crea un nuevo escenario. Como primer módulo, busca <strong>"Gmail → Watch Emails"</strong>. Conecta tu cuenta de Google. Configura el filtro: puedes monitorear todos los correos no leídos, o solo los de una etiqueta específica (recomendado: crea una etiqueta "Para IA" en Gmail y mueve manualmente los correos que quieres que la IA responda).</p></div></div>
+
+<div class="step-block"><div class="step-num">2</div><div class="step-content"><h4>Extraer el contenido relevante</h4><p>Del módulo de Gmail, necesitas mapear: <code>from.email</code> (quién escribe), <code>subject</code> (asunto) y <code>text</code> (cuerpo en texto plano, no HTML). Evita usar el HTML del correo — es muy largo y gasta muchos tokens de la API.</p></div></div>
+
+<h2>Paso 2: Clasificar el correo con ChatGPT</h2>
+<div class="step-block"><div class="step-num">3</div><div class="step-content"><h4>Primer llamado a OpenAI: clasificación</h4><p>Agrega el módulo de OpenAI. Este primer llamado solo clasifica. El system prompt es simple:</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">System Prompt — Clasificador de correos</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body">Clasifica el siguiente correo en UNA de estas categorías:
+CONSULTA, QUEJA, PEDIDO, SEGUIMIENTO, SPAM, OTRO
+
+Responde SOLO con la palabra de la categoría, sin explicación.</div>
+</div>
+
+<div class="step-block"><div class="step-num">4</div><div class="step-content"><h4>Agregar un Router en Make</h4><p>Después del clasificador, agrega un módulo <strong>"Router"</strong>. Este te permite crear caminos distintos según la categoría detectada. Por ejemplo: si es SPAM → archivar; si es CONSULTA → generar respuesta con IA; si es QUEJA → notificarte en Slack y no responder automáticamente.</p></div></div>
+
+<h2>Paso 3: Generar la respuesta</h2>
+<div class="step-block"><div class="step-num">5</div><div class="step-content"><h4>Segundo llamado a OpenAI: redactar respuesta</h4><p>Para la rama de CONSULTA y PEDIDO, agrega otro módulo de OpenAI para generar la respuesta. El system prompt incluye la información de tu negocio (igual que en el chatbot).</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">System Prompt — Redactor de respuestas</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body">Eres el asistente de correo de <span class="var">{{nombre de empresa}}</span>.
+Redacta una respuesta profesional y concisa al siguiente correo.
+
+Información de la empresa:
+<span class="var">{{info de tu negocio}}</span>
+
+El correo es de tipo: <span class="var">{{clasificación del paso anterior}}</span>
+
+Firma siempre como: "Equipo <span class="var">{{nombre}}</span>"
+Usa un tono <span class="var">{{formal/casual}}</span>.
+Máximo 150 palabras.</div>
+</div>
+
+<h2>Modo automático vs. modo aprobación</h2>
+<p><strong>Modo automático:</strong> Make envía la respuesta directamente con el módulo "Gmail → Send an Email". Rápido pero requiere confiar en la IA.</p>
+<p><strong>Modo aprobación (recomendado al inicio):</strong> En lugar de enviar directamente, usa el módulo <strong>"Gmail → Create a Draft"</strong>. La respuesta generada aparece en tus borradores — la revisas y envías tú con un clic. Esto te da control sin perder tiempo redactando.</p>
+
+<div class="callout warn"><div class="callout-icon">⚠️</div><div class="callout-body"><p><strong>Consejo:</strong> Empieza siempre en modo borrador durante las primeras semanas. Una vez que confíes en la calidad de las respuestas, puedes cambiar al modo automático para correos de bajo riesgo (consultas simples, confirmaciones).</p></div></div>
+`
+  },
+
+  'n8n-chatgpt': {
+    title: 'Conecta n8n con ChatGPT: flujos de trabajo inteligentes paso a paso',
+    cat: 'n8n · ChatGPT API',
+    time: '25 min lectura',
+    diff: 'Avanzado',
+    diffClass: 'diff-adv',
+    date: 'Mayo 2026',
+    intro: 'n8n tiene nodos nativos de IA que hacen que integrar ChatGPT sea muy fácil. En este tutorial aprenderás a usar el nodo de OpenAI en n8n, crear cadenas de IA (chains), y construir automatizaciones que clasifican, resumen y generan contenido de forma automática.',
+    overview: [
+      'Configurar credenciales de OpenAI en n8n',
+      'Usar el nodo AI Agent de n8n',
+      'Crear una cadena: recibir texto → procesar → guardar',
+      'Automatización real: clasificar y responder tickets de soporte',
+      'Optimizar costos: cuándo usar GPT-4o vs GPT-4o-mini'
+    ],
+    prev: 'automatizar-email',
+    next: null,
+    content: `
+<h2>n8n y la IA: una combinación poderosa</h2>
+<p>n8n tiene nodos nativos diseñados específicamente para trabajar con modelos de lenguaje: el nodo <strong>OpenAI</strong> para llamadas directas a la API, el nodo <strong>AI Agent</strong> para flujos conversacionales con herramientas, y nodos de <strong>memoria</strong> para mantener contexto entre mensajes. Esto hace de n8n una de las plataformas más potentes para automatizaciones con IA.</p>
+
+<div class="callout info"><div class="callout-icon">ℹ️</div><div class="callout-body"><p><strong>Prerequisito:</strong> Necesitas n8n instalado (local o en la nube) y una API Key de OpenAI. Si aún no tienes n8n, consulta nuestro tutorial de instalación antes de continuar.</p></div></div>
+
+<h2>Paso 1: Configurar credenciales de OpenAI</h2>
+<div class="step-block"><div class="step-num">1</div><div class="step-content"><h4>Agregar credenciales en n8n</h4><p>En n8n, ve a <strong>Settings → Credentials</strong>. Haz click en "Add Credential" y busca "OpenAI". Pega tu API Key. n8n la guardará cifrada y la podrás usar en todos tus flujos sin volver a escribirla.</p></div></div>
+
+<h2>Paso 2: El nodo OpenAI básico</h2>
+<div class="step-block"><div class="step-num">2</div><div class="step-content"><h4>Agregar y configurar el nodo OpenAI</h4><p>En cualquier flujo, agrega el nodo <strong>"OpenAI" → "Message a Model"</strong>. Selecciona tu credencial. En "Model" elige <code>gpt-4o-mini</code> para la mayoría de casos (más barato). En el campo "Messages", puedes construir el array de mensajes con el editor visual o con expresiones JSON.</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">n8n Expression — Mensaje dinámico</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body"><span class="cm">// En el campo "User Message" del nodo OpenAI</span>
+<span class="cm">// Puedes usar expresiones para incluir datos del flujo:</span>
+
+Analiza este texto y extrae: nombre, email y consulta principal.
+Responde en formato JSON.
+
+Texto recibido:
+<span class="var">{{ $json.body.message }}</span>
+
+<span class="cm">// $json hace referencia al output del nodo anterior</span></div>
+</div>
+
+<h2>Paso 3: Caso real — Sistema de tickets de soporte</h2>
+<p>Vamos a construir un flujo completo que: recibe un mensaje de soporte por webhook → la IA lo clasifica y extrae datos → crea un ticket en Airtable → responde al cliente con una confirmación personalizada.</p>
+
+<div class="step-block"><div class="step-num">3</div><div class="step-content"><h4>Nodo 1: Webhook (recibir ticket)</h4><p>Agrega un nodo Webhook como trigger. Actívalo y copia la URL de producción. Esta URL es la que usarás para enviar tickets desde tu web o WhatsApp.</p></div></div>
+
+<div class="step-block"><div class="step-num">4</div><div class="step-content"><h4>Nodo 2: OpenAI — Clasificar y extraer</h4><p>El nodo OpenAI recibe el mensaje y extrae datos estructurados. Configura el model con output en JSON:</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">System Prompt — Extractor de tickets</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body">Eres un sistema de clasificación de tickets de soporte.
+Extrae la información del mensaje y responde SOLO con JSON válido.
+
+Formato de respuesta:
+{
+  <span class="str">"categoria"</span>: <span class="str">"TECNICO | FACTURACION | ENVIO | OTRO"</span>,
+  <span class="str">"prioridad"</span>: <span class="str">"ALTA | MEDIA | BAJA"</span>,
+  <span class="str">"resumen"</span>: <span class="str">"resumen en máx 20 palabras"</span>,
+  <span class="str">"requiere_humano"</span>: <span class="kw">true</span> <span class="cm">// o false</span>
+}</div>
+</div>
+
+<div class="step-block"><div class="step-num">5</div><div class="step-content"><h4>Nodo 3: Code — Parsear JSON de la IA</h4><p>La respuesta de OpenAI viene como texto. Necesitas un nodo "Code" para parsearla. Agrega un nodo Code con este JavaScript:</p></div></div>
+
+<div class="code-block">
+  <div class="code-header"><span class="code-lang">JavaScript — Parsear respuesta de IA</span><button class="code-copy" onclick="copyCode(this)">Copiar</button></div>
+  <div class="code-body"><span class="kw">const</span> <span class="var">aiText</span> = <span class="var">$input</span>.first().json.message.content;
+
+<span class="kw">try</span> {
+  <span class="cm">// Limpiar posibles backticks de markdown</span>
+const clean = aiText.substring(aiText.indexOf('{'), aiText.lastIndexOf('}') + 1).trim();
+  <span class="kw">const</span> <span class="var">parsed</span> = <span class="fn">JSON</span>.parse(<span class="var">clean</span>);
+  <span class="kw">return</span> [{ json: <span class="var">parsed</span> }];
+} <span class="kw">catch</span> (e) {
+  <span class="kw">return</span> [{ json: { error: <span class="str">'Parse failed'</span>, raw: <span class="var">aiText</span> } }];
+}</div>
+</div>
+
+<div class="step-block"><div class="step-num">6</div><div class="step-content"><h4>Nodo 4: Airtable — Crear registro</h4><p>Agrega el nodo de Airtable (o Google Sheets). Mapea los campos del JSON parseado a las columnas de tu base: categoria, prioridad, resumen, requiere_humano, más el mensaje original y la fecha/hora automática.</p></div></div>
+
+<h2>Optimización de costos: ¿GPT-4o o GPT-4o-mini?</h2>
+
+<table class="comp-table" aria-label="Comparativa de costos por modelo OpenAI">
+  <thead><tr><th>Tarea</th><th>Modelo recomendado</th><th>Por qué</th></tr></thead>
+  <tbody>
+    <tr><td>Clasificar textos</td><td>gpt-4o-mini</td><td>Tarea simple, muy barato</td></tr>
+    <tr><td>Extraer datos JSON</td><td>gpt-4o-mini</td><td>Suficientemente preciso</td></tr>
+    <tr><td>Responder clientes (soporte)</td><td>gpt-4o-mini</td><td>Buena calidad, bajo costo</td></tr>
+    <tr><td>Análisis complejo / legal</td><td>gpt-4o</td><td>Mayor precisión requerida</td></tr>
+    <tr><td>Redacción de alta calidad</td><td>gpt-4o</td><td>Mejor escritura</td></tr>
+    <tr><td>Chatbot de ventas crítico</td><td>gpt-4o</td><td>No puedes darte errores</td></tr>
+  </tbody>
+</table>
+
+<div class="callout tip"><div class="callout-icon">💰</div><div class="callout-body"><p><strong>Regla de oro:</strong> Usa <code>gpt-4o-mini</code> para el 80% de tus automatizaciones. Es 20 veces más barato que <code>gpt-4o</code> y para clasificación, extracción y respuestas simples la calidad es prácticamente igual. Reserva <code>gpt-4o</code> solo para tareas donde la precisión es crítica.</p></div></div>
+`
+  }
+};
+
+/* ──────────────────────────────────────
+   ROUTING & NAVIGATION
+────────────────────────────────────── */
+function showArticle(id) {
+  const art = ARTICLES[id];
+  if (!art) return;
+
+  // Scroll top
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Swap views
+  document.getElementById('home-view').style.display = 'none';
+  document.getElementById('article-view').style.display = 'block';
+
+  // Breadcrumb
+  document.getElementById('breadcrumb-current').textContent = art.title.substring(0, 50) + '…';
+
+  // Prev / Next
+  const prevBtn = art.prev
+    ? `<div class="art-nav-btn" onclick="showArticle('${art.prev}')"><div class="nav-dir">← Anterior</div><div class="nav-title">${ARTICLES[art.prev].title}</div></div>`
+    : '<div></div>';
+  const nextBtn = art.next
+    ? `<div class="art-nav-btn" onclick="showArticle('${art.next}')" style="text-align:right"><div class="nav-dir">Siguiente →</div><div class="nav-title">${ARTICLES[art.next].title}</div></div>`
+    : '<div></div>';
+
+  // Difficulty label
+  const diffLabels = { 'diff-init': 'Principiante', 'diff-med': 'Intermedio', 'diff-adv': 'Avanzado' };
+
+  // Render
+  document.getElementById('article-content').innerHTML = `
+    <div class="article-meta-top">
+      <span class="art-tag">${art.cat}</span>
+      <div class="art-meta">
+        <span>${art.date}</span>
+        <span>${art.time}</span>
+        <span class="card-diff ${art.diffClass}" style="margin-left:4px">${diffLabels[art.diffClass]}</span>
+      </div>
+    </div>
+
+    <h1>${art.title}</h1>
+    <p class="article-intro">${art.intro}</p>
+
+    <div class="art-overview">
+      <h4>// Lo que vas a aprender</h4>
+      <ul>
+        ${art.overview.map(i => `<li>${i}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="art-content">
+      ${art.content}
+    </div>
+
+    <div class="art-nav">${prevBtn}${nextBtn}</div>
+  `;
+
+  // Update SEO
+  document.title = `${art.title} | AutomatizaIA`;
+  document.querySelector('meta[name="description"]').setAttribute('content',
+    `${art.intro.substring(0, 155)}`
+  );
+  document.getElementById('canonical-tag').setAttribute('href', `https://automatizaia.com/#${id}`);
+}
+
+function goHome() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('home-view').style.display = 'block';
+  document.getElementById('article-view').style.display = 'none';
+  document.title = 'AutomatizaIA | Aprende a automatizar con IA en español';
+  document.querySelector('meta[name="description"]').setAttribute('content',
+    'Tutoriales paso a paso para automatizar con inteligencia artificial. Aprende Make, n8n, chatbots, WhatsApp Business API y más. Guías en español para México y Latinoamérica.'
+  );
+  document.getElementById('canonical-tag').setAttribute('href', 'https://automatizaia.com/');
+}
+
+/* ──────────────────────────────────────
+   UTILITIES
+────────────────────────────────────── */
+function copyCode(btn) {
+  const code = btn.closest('.code-block').querySelector('.code-body').innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => btn.textContent = 'Copiar', 2000);
+  });
+}
+
+function subscribeNL() {
+  const input = document.getElementById('nl-email');
+  const msg = document.getElementById('nl-msg');
+  if (input.value && input.value.includes('@')) {
+    msg.textContent = '// ✓ ¡Suscrito! Revisa tu correo para confirmar.';
+    msg.style.color = 'var(--green)';
+    input.value = '';
+    input.placeholder = 'tu@correo.com';
+  } else {
+    input.style.borderColor = 'var(--red)';
+    setTimeout(() => input.style.borderColor = '', 2000);
+  }
+}
+
+function toggleMenu() {
+  const links = document.getElementById('nav-links');
+  const btn = document.querySelector('.nav-toggle');
+  const open = links.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+  btn.textContent = open ? '✕' : '☰';
+}
+
+/* SCROLL REVEAL — aplica animación solo si JS carga correctamente */
+document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach(el => el.classList.add('animate-hidden'));
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => io.observe(el));
+});
+
+/* KEYBOARD NAV for cards */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[tabindex="0"]').forEach(el => {
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); } });
+  });
+});
+</script>
+
+</body>
+</html>

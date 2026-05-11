@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO PRINCIPAL ═══ -->
+  <title>Automatizar WhatsApp con Make y ChatGPT (2025) | Tutorial Paso a Paso | AutomatizaIA</title>
+  <meta name="description" content="Aprende a automatizar WhatsApp con Make y ChatGPT en 2025. Tutorial completo paso a paso en español: configura respuestas automáticas inteligentes para tu negocio. Gratis para México y Latinoamérica.">
+  <meta name="keywords" content="automatizar whatsapp make chatgpt, whatsapp business api tutorial, make.com whatsapp, chatgpt whatsapp bot, automatización whatsapp mexico, respuestas automáticas whatsapp, whatsapp make tutorial español, bot whatsapp con ia, integrar chatgpt whatsapp, make chatgpt whatsapp latinoamerica">
+  <meta name="author" content="AutomatizaIA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="MX">
+  <meta name="language" content="Spanish">
+  <meta name="revisit-after" content="5 days">
+  <link rel="canonical" href="https://automatizaia.com/tutorial-whatsapp-make-chatgpt/">
+
+  <!-- HREFLANG LATAM -->
+  <link rel="alternate" hreflang="es-mx" href="https://automatizaia.com/tutorial-whatsapp-make-chatgpt/">
+  <link rel="alternate" hreflang="es" href="https://automatizaia.com/tutorial-whatsapp-make-chatgpt/">
+  <link rel="alternate" hreflang="x-default" href="https://automatizaia.com/tutorial-whatsapp-make-chatgpt/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Automatizar WhatsApp con Make y ChatGPT (2025) — Tutorial Completo">
+  <meta property="og:description" content="Tutorial paso a paso: conecta WhatsApp Business con Make y ChatGPT para responder mensajes automáticamente con IA. En español para México y Latinoamérica.">
+  <meta property="og:url" content="https://automatizaia.com/tutorial-whatsapp-make-chatgpt/">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="AutomatizaIA">
+  <meta property="og:image" content="https://automatizaia.com/og-whatsapp-make.jpg">
+  <meta property="article:published_time" content="2025-05-01">
+  <meta property="article:modified_time" content="2025-05-10">
+  <meta property="article:author" content="AutomatizaIA">
+  <meta property="article:tag" content="Make, WhatsApp, ChatGPT, Automatización, IA">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@automatizaia">
+  <meta name="twitter:title" content="Automatizar WhatsApp con Make y ChatGPT (2025)">
+  <meta name="twitter:description" content="Tutorial completo: respuestas automáticas inteligentes en WhatsApp usando Make y ChatGPT. Paso a paso en español.">
+
+  <!-- SCHEMA: ARTICLE -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Cómo automatizar WhatsApp con Make y ChatGPT: Tutorial completo 2025",
+    "description": "Tutorial paso a paso para conectar WhatsApp Business con Make y ChatGPT y generar respuestas automáticas inteligentes para tu negocio.",
+    "image": "https://automatizaia.com/og-whatsapp-make.jpg",
+    "author": { "@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com" },
+    "publisher": { "@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com", "logo": { "@type": "ImageObject", "url": "https://automatizaia.com/logo.png" } },
+    "datePublished": "2025-05-01",
+    "dateModified": "2025-05-10",
+    "inLanguage": "es-MX",
+    "url": "https://automatizaia.com/tutorial-whatsapp-make-chatgpt/",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://automatizaia.com/tutorial-whatsapp-make-chatgpt/" },
+    "proficiencyLevel": "Beginner",
+    "timeRequired": "PT25M",
+    "keywords": "automatizar whatsapp, make chatgpt, whatsapp business api, bot whatsapp ia"
+  }
+  </script>
+
+  <!-- SCHEMA: HOW-TO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo automatizar WhatsApp con Make y ChatGPT",
+    "description": "Conecta WhatsApp Business con Make y ChatGPT para responder mensajes automáticamente con inteligencia artificial.",
+    "totalTime": "PT25M",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+    "tool": [
+      { "@type": "HowToTool", "name": "Make (antes Integromat)" },
+      { "@type": "HowToTool", "name": "WhatsApp Business API (360dialog o Meta)" },
+      { "@type": "HowToTool", "name": "OpenAI ChatGPT API" }
+    ],
+    "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Crear cuenta en Make", "text": "Regístrate gratis en make.com y activa tu cuenta." },
+      { "@type": "HowToStep", "position": 2, "name": "Conectar WhatsApp Business API", "text": "Configura el proveedor de WhatsApp Business API (360dialog recomendado) y obtén tu API Key." },
+      { "@type": "HowToStep", "position": 3, "name": "Crear el escenario en Make", "text": "Crea un nuevo escenario con el trigger de WhatsApp y configura el webhook." },
+      { "@type": "HowToStep", "position": 4, "name": "Conectar ChatGPT", "text": "Añade el módulo de OpenAI en Make y configura el prompt para generar respuestas." },
+      { "@type": "HowToStep", "position": 5, "name": "Enviar respuesta automática", "text": "Conecta la respuesta de ChatGPT al módulo de envío de WhatsApp y activa el escenario." }
+    ]
+  }
+  </script>
+
+  <!-- SCHEMA: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Necesito pagar para automatizar WhatsApp con Make?", "acceptedAnswer": { "@type": "Answer", "text": "Make tiene un plan gratuito con 1,000 operaciones al mes, suficiente para empezar. WhatsApp Business API tiene costos por mensaje según el país, pero los mensajes recibidos suelen ser gratuitos. OpenAI cobra por tokens usados, pero el costo es muy bajo (gpt-4o-mini cuesta fracciones de centavo por mensaje)." } },
+      { "@type": "Question", "name": "¿Puedo usar el número de WhatsApp de mi negocio actual?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, pero debes migrar ese número a WhatsApp Business API. El número no puede estar activo en la app de WhatsApp normal mientras uses la API. Se recomienda usar un número dedicado para la automatización." } },
+      { "@type": "Question", "name": "¿Qué tan inteligentes son las respuestas automáticas con ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Con un buen prompt y contexto sobre tu negocio, ChatGPT puede responder preguntas frecuentes, dar precios, agendar citas y hasta cerrar ventas simples. La clave está en escribir un prompt claro con información de tu empresa." } }
+    ]
+  }
+  </script>
+
+  <!-- PERFORMANCE -->
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+  <!-- ═══ GOOGLE ADSENSE — reemplaza con tu Publisher ID ═══ -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    /* ═══════════════════════════════════════════
+       DESIGN SYSTEM — idèntic a automatizacionsIA.html
+    ═══════════════════════════════════════════ */
+    :root {
+      --bg:        #0d0d0d;
+      --bg2:       #141414;
+      --bg3:       #1c1c1c;
+      --surface:   rgba(255,255,255,0.04);
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,140,0,0.25);
+      --amber:     #ff8c00;
+      --amber2:    #ffb347;
+      --amber-dim: rgba(255,140,0,0.12);
+      --green:     #39d353;
+      --red:       #f85149;
+      --blue:      #58a6ff;
+      --text:      #e6e6e6;
+      --muted:     #888;
+      --muted2:    #555;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Barlow', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; overflow-x: hidden; }
+
+    body::after {
+      content: ''; position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+      pointer-events: none; z-index: 9999;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    h1,h2,h3,h4,h5 { font-family: var(--sans); font-weight: 700; line-height: 1.2; }
+    code, pre { font-family: var(--mono); }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(13,13,13,0.92); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border); padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .logo { font-family: var(--mono); font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .logo-icon { width: 28px; height: 28px; background: var(--amber); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #000; font-size: 0.75rem; font-weight: 700; }
+    .logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 6px; transition: color 0.2s, background 0.2s; letter-spacing: 0.02em; }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+    .nav-back {
+      display: flex; align-items: center; gap: 6px;
+      color: var(--amber) !important; border: 1px solid var(--border2) !important;
+      background: var(--amber-dim) !important; font-family: var(--mono) !important;
+      font-size: 0.78rem !important; border-radius: 6px !important;
+    }
+    .nav-back:hover { opacity: 0.85; }
+    .nav-toggle { display: none; background: none; border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+
+    /* ── BREADCRUMB BAR ── */
+    .breadcrumb-bar {
+      background: var(--bg2); border-bottom: 1px solid var(--border);
+      padding: 0.75rem 5%;
+    }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 0.5rem; }
+    .breadcrumb { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--amber); cursor: pointer; transition: opacity 0.2s; }
+    .breadcrumb a:hover { opacity: 0.8; text-decoration: underline; }
+    .breadcrumb span { color: var(--muted2); }
+    .breadcrumb .current { color: var(--text); }
+
+    /* ── PROGRESS BAR ── */
+    .reading-progress {
+      position: fixed; top: 60px; left: 0; right: 0; height: 2px;
+      background: var(--bg3); z-index: 150;
+    }
+    .reading-progress-bar {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+      transition: width 0.1s linear;
+    }
+
+    /* ── LAYOUT ── */
+    .page-wrap {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 300px;
+      gap: 3rem; padding: 3rem 5% 6rem;
+    }
+
+    /* ── ARTICLE MAIN ── */
+    .article-main {
+        display: block;
+        width: 100%;
+    }
+
+    .article-meta-top {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .art-tag { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; color: var(--amber); background: var(--amber-dim); border: 1px solid var(--border2); padding: 3px 10px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .art-tag.blue { color: var(--blue); background: rgba(88,166,255,0.08); border-color: rgba(88,166,255,0.3); }
+    .art-tag.green { color: var(--green); background: rgba(57,211,83,0.08); border-color: rgba(57,211,83,0.3); }
+    .art-meta { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; gap: 1rem; flex-wrap: wrap; }
+    .art-meta span::before { content: '· '; color: var(--muted2); }
+
+    .article-main h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; }
+    .article-intro { font-size: 1.05rem; color: var(--muted); line-height: 1.85; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); font-weight: 300; }
+
+    /* OVERVIEW BOX */
+    .art-overview {
+      background: var(--bg2); border: 1px solid var(--border2);
+      border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .art-overview h4 { font-family: var(--mono); font-size: 0.78rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
+    .art-overview ul { list-style: none; }
+    .art-overview li { display: flex; gap: 10px; align-items: baseline; padding: 4px 0; font-size: 0.9rem; color: var(--muted); }
+    .art-overview li::before { content: '→'; color: var(--amber); font-size: 0.75rem; flex-shrink: 0; }
+
+    /* CONTENT */
+    .art-content h2 { font-size: 1.5rem; font-weight: 800; margin: 3rem 0 1rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+    .art-content h2:first-child { border-top: none; margin-top: 0; }
+    .art-content h3 { font-size: 1.1rem; font-weight: 700; color: var(--amber); margin: 2rem 0 0.75rem; font-family: var(--mono); }
+    .art-content p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.85; }
+    .art-content ul, .art-content ol { padding-left: 1.5rem; margin-bottom: 1.1rem; }
+    .art-content li { color: var(--muted); line-height: 1.8; margin-bottom: 0.5rem; }
+    .art-content strong { color: var(--text); font-weight: 600; }
+    .art-content a { color: var(--amber); text-decoration: underline; }
+    .art-content code { background: var(--bg3); border: 1px solid var(--border); padding: 2px 6px; border-radius: 3px; font-size: 0.85em; color: var(--amber2); }
+
+    /* STEP BLOCKS */
+    .step-block {
+      display: flex; gap: 1.25rem; margin: 2rem 0;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.5rem; align-items: flex-start;
+    }
+    .step-num {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: var(--amber); color: #000;
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 0.85rem; font-weight: 700;
+    }
+    .step-content h4 { font-weight: 700; margin-bottom: 0.5rem; font-size: 1rem; color: var(--text); }
+    .step-content p { color: var(--muted); font-size: 0.92rem; margin: 0; line-height: 1.75; }
+    .step-content p + p { margin-top: 0.6rem; }
+    .step-content ul { padding-left: 1.2rem; margin-top: 0.5rem; }
+    .step-content li { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.3rem; }
+
+    /* SCREENSHOT PLACEHOLDER */
+    .screenshot-placeholder {
+      background: var(--bg2); border: 2px dashed var(--border2);
+      border-radius: 10px; padding: 3rem 2rem;
+      text-align: center; margin: 1.5rem 0;
+      position: relative;
+    }
+    .screenshot-placeholder .ph-icon { font-size: 2.5rem; margin-bottom: 0.75rem; opacity: 0.5; }
+    .screenshot-placeholder .ph-label {
+      font-family: var(--mono); font-size: 0.78rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.3rem;
+    }
+    .screenshot-placeholder .ph-desc { font-size: 0.85rem; color: var(--muted2); }
+    .screenshot-placeholder .ph-badge {
+      position: absolute; top: 0.75rem; right: 0.75rem;
+      background: var(--amber-dim); border: 1px solid var(--border2);
+      color: var(--amber); font-family: var(--mono); font-size: 0.65rem;
+      padding: 2px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    /* Si pones una imagen real, oculta el placeholder y muestra la imagen */
+    .screenshot-placeholder img {
+      width: 100%; border-radius: 8px; display: block;
+    }
+
+    /* CODE BLOCKS */
+    .code-block {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden; margin: 1.5rem 0;
+      font-family: var(--mono);
+    }
+    .code-header {
+      background: rgba(255,255,255,0.03); padding: 8px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .code-lang { font-size: 0.7rem; color: var(--amber); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .code-copy { font-size: 0.7rem; color: var(--muted); cursor: pointer; background: none; border: 1px solid var(--border); padding: 3px 10px; border-radius: 3px; transition: color 0.2s; font-family: var(--mono); }
+    .code-copy:hover { color: var(--amber); }
+    .code-body { padding: 1.25rem 1.5rem; font-size: 0.82rem; line-height: 1.8; overflow-x: auto; white-space: pre; color: #e6e6e6; }
+    .code-body .kw  { color: #ff7b72; }
+    .code-body .str { color: #a5d6ff; }
+    .code-body .cm  { color: var(--muted2); font-style: italic; }
+    .code-body .fn  { color: #d2a8ff; }
+    .code-body .num { color: var(--amber2); }
+    .code-body .var { color: #79c0ff; }
+
+    /* CALLOUTS */
+    .callout { border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+    .callout.tip    { background: rgba(57,211,83,0.06);  border-left: 3px solid var(--green); }
+    .callout.warn   { background: rgba(255,140,0,0.06);  border-left: 3px solid var(--amber); }
+    .callout.info   { background: rgba(88,166,255,0.06); border-left: 3px solid var(--blue); }
+    .callout.danger { background: rgba(248,81,73,0.06);  border-left: 3px solid var(--red); }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .callout-body p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+    .callout-body strong { color: var(--text); }
+
+    /* COMPARISON TABLE */
+    .comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+    .comp-table th { background: var(--bg3); border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-family: var(--mono); font-size: 0.75rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; }
+    .comp-table td { border: 1px solid var(--border); padding: 10px 14px; color: var(--muted); line-height: 1.5; }
+    .comp-table tr:hover td { background: var(--surface); }
+    .check { color: var(--green); } .cross { color: var(--red); }
+
+    /* ── ADSENSE SLOTS ── */
+    .ad-slot {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1rem;
+      text-align: center; margin: 2rem 0;
+      min-height: 100px; display: flex; align-items: center; justify-content: center;
+    }
+    .ad-slot-label { font-family: var(--mono); font-size: 0.65rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* ── SIDEBAR ── */
+    .sidebar { position: relative; }
+    .sidebar-sticky { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .toc-box {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+    }
+    .toc-header {
+      background: var(--bg3); padding: 0.9rem 1.2rem;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono); font-size: 0.72rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.1em;
+    }
+    .toc-list { list-style: none; padding: 1rem; }
+    .toc-list li { margin-bottom: 0.3rem; }
+    .toc-list a {
+      font-size: 0.83rem; color: var(--muted); display: flex; align-items: flex-start; gap: 8px;
+      padding: 4px 6px; border-radius: 4px; transition: color 0.2s, background 0.2s;
+    }
+    .toc-list a::before { content: '#'; color: var(--muted2); font-family: var(--mono); font-size: 0.7rem; flex-shrink: 0; margin-top: 2px; }
+    .toc-list a:hover { color: var(--amber); background: var(--amber-dim); }
+    .toc-list a.active { color: var(--amber); }
+
+    .sidebar-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.2rem;
+    }
+    .sidebar-card h4 { font-family: var(--mono); font-size: 0.72rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+    .sidebar-tool { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .sidebar-tool:last-child { border-bottom: none; }
+    .sidebar-tool-icon { width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .sidebar-tool-icon.orange { background: rgba(255,140,0,0.15); }
+    .sidebar-tool-icon.blue   { background: rgba(88,166,255,0.15); }
+    .sidebar-tool-icon.green  { background: rgba(57,211,83,0.15); }
+    .sidebar-tool-name { font-size: 0.85rem; font-weight: 600; }
+    .sidebar-tool-badge { font-family: var(--mono); font-size: 0.62rem; color: var(--green); }
+
+    .sidebar-ad {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1rem;
+      text-align: center; min-height: 250px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+    }
+    .sidebar-ad .ad-label { font-family: var(--mono); font-size: 0.62rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* ── ARTICLE NAV ── */
+    .art-nav { display: flex; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .art-nav-btn { flex: 1; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.4rem; cursor: pointer; transition: border-color 0.2s; }
+    .art-nav-btn:hover { border-color: var(--border2); }
+    .art-nav-btn .nav-dir { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+    .art-nav-btn .nav-title { font-size: 0.9rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.5rem; }
+    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: border-color 0.2s; }
+    .faq-item[open] { border-color: var(--border2); }
+    .faq-q { padding: 1.1rem 1.4rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after { content: '+'; color: var(--amber); font-size: 1.3rem; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item[open] .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.4rem 1.1rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 3rem 5% 2rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.75rem; max-width: 260px; line-height: 1.7; }
+    .footer-col h4 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; color: var(--amber); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a { color: var(--muted); font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; color: var(--muted2); font-family: var(--mono); font-size: 0.75rem; flex-wrap: wrap; gap: 0.5rem; }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.animate-hidden { opacity: 0; transform: translateY(20px); }
+    .reveal.animate-hidden.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1rem 5%; gap: 0.5rem; }
+      .nav-toggle { display: block; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .art-nav { flex-direction: column; }
+      .step-block { flex-direction: column; }
+    }
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .art-meta { flex-direction: column; gap: 0.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── PROGRESS BAR DE LECTURA ── -->
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress-bar" id="progressBar"></div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="automatizacionsIA.html" class="logo" aria-label="AutomatizaIA - Volver al inicio">
+      <div class="logo-icon">AI</div>
+      Automatiza<span>IA</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menú" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li role="none"><a href="automatizacionsIA.html#tutoriales" role="menuitem">Tutoriales</a></li>
+      <li role="none"><a href="automatizacionsIA.html#herramientas" role="menuitem">Herramientas</a></li>
+      <li role="none"><a href="automatizacionsIA.html#faq" role="menuitem">FAQ</a></li>
+      <li role="none">
+        <a href="automatizacionsIA.html" class="nav-back" role="menuitem">← Volver al inicio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── BREADCRUMB ── -->
+<div class="breadcrumb-bar">
+  <div class="breadcrumb-inner">
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="automatizacionsIA.html">AutomatizaIA</a>
+      <span>›</span>
+      <a href="automatizacionsIA.html#tutoriales">Tutoriales</a>
+      <span>›</span>
+      <span class="current">WhatsApp + Make + ChatGPT</span>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══ CONTENIDO PRINCIPAL ═══ -->
+<div class="page-wrap">
+
+  <!-- ── ARTÍCULO ── -->
+  <article class="article-main" itemscope itemtype="https://schema.org/TechArticle">
+
+    <!-- Meta superior -->
+    <div class="article-meta-top">
+      <span class="art-tag">Make</span>
+      <span class="art-tag blue">WhatsApp</span>
+      <span class="art-tag green">Principiante</span>
+      <div class="art-meta">
+        <span itemprop="datePublished">Mayo 2025</span>
+        <span>⏱ 25 min de lectura</span>
+        <span>Actualizado 2025</span>
+      </div>
+    </div>
+
+    <h1 itemprop="headline">Cómo automatizar WhatsApp con Make y ChatGPT: Tutorial completo paso a paso (2025)</h1>
+
+    <p class="article-intro" itemprop="description">
+      Imagina que tu negocio responde mensajes de WhatsApp <strong>automáticamente las 24 horas</strong>, con respuestas inteligentes generadas por ChatGPT, sin que tú tengas que estar pegado al teléfono. En este tutorial completo te explicamos exactamente cómo hacerlo usando <strong>Make</strong> (antes Integromat) y la <strong>API de OpenAI</strong>, paso a paso, desde cero, sin necesidad de programar.
+    </p>
+
+    <!-- OVERVIEW BOX -->
+    <div class="art-overview reveal">
+      <h4>// Lo que vas a aprender en este tutorial</h4>
+      <ul>
+        <li>Qué es Make y por qué es la mejor opción para automatizar WhatsApp sin código</li>
+        <li>Cómo conectar WhatsApp Business API con Make usando 360dialog</li>
+        <li>Cómo configurar ChatGPT para que responda como el asistente de tu negocio</li>
+        <li>Cómo crear el flujo completo en Make: recibir mensaje → procesar con IA → responder</li>
+        <li>Cómo escribir un prompt efectivo para que las respuestas sean útiles y precisas</li>
+        <li>Errores comunes y cómo evitarlos</li>
+      </ul>
+    </div>
+
+    <!-- AD SLOT 1 — Banner horizontal superior (728x90 o responsive) -->
+    <div class="ad-slot" aria-label="Publicidad">
+      <!-- Reemplaza el comentario con tu código de AdSense -->
+      <!--
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <span class="ad-slot-label">// Espacio publicitario — Banner 728×90</span>
+    </div>
+
+    <!-- ══════════════════════════════════════ -->
+    <div class="art-content" itemprop="articleBody">
+
+      <h2 id="que-necesitas">¿Qué necesitas antes de empezar?</h2>
+
+      <p>Antes de entrar en materia, asegúrate de tener listo lo siguiente. No te preocupes si no tienes todo — en cada sección te explico cómo conseguirlo:</p>
+
+      <table class="comp-table" aria-label="Requisitos para el tutorial">
+        <thead>
+          <tr><th>Herramienta</th><th>Plan mínimo</th><th>Costo aproximado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Make</strong> (antes Integromat)</td><td>Free (1,000 ops/mes)</td><td>Gratis para empezar</td></tr>
+          <tr><td><strong>WhatsApp Business API</strong></td><td>360dialog Starter</td><td>~$5-10 USD/mes</td></tr>
+          <tr><td><strong>OpenAI API</strong> (ChatGPT)</td><td>Pay as you go</td><td>~$0.001-0.01 por mensaje</td></tr>
+          <tr><td><strong>Número de teléfono</strong></td><td>Un número dedicado</td><td>Variable</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout warn">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-body">
+          <p><strong>Importante:</strong> El número de WhatsApp que uses para la API <strong>no puede estar activo en la app de WhatsApp</strong> al mismo tiempo. Te recomendamos usar un número SIM dedicado o un número virtual para la automatización.</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="que-es-make">¿Qué es Make y por qué usarlo?</h2>
+
+      <p>Make es una plataforma de automatización visual que permite conectar miles de aplicaciones entre sí sin escribir código. Piensa en él como un "pegamento inteligente" entre WhatsApp, ChatGPT, Google Sheets, tu CRM, tu email y cualquier otra herramienta.</p>
+
+      <p>Para este tutorial, Make va a ser el cerebro central que:</p>
+      <ol>
+        <li><strong>Recibe</strong> los mensajes de WhatsApp en tiempo real</li>
+        <li><strong>Los envía</strong> a ChatGPT para generar una respuesta</li>
+        <li><strong>Regresa</strong> esa respuesta al usuario de WhatsApp automáticamente</li>
+      </ol>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Imagen sugerida</div>
+        <div class="ph-desc">Diagrama del flujo: WhatsApp → Make → ChatGPT → WhatsApp<br>O captura del dashboard de Make mostrando el escenario completo</div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="paso1-make">Paso 1 — Crear tu cuenta en Make</h2>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Regístrate en Make.com</h4>
+          <p>Ve a <a href="https://make.com" target="_blank" rel="noopener">make.com</a> y haz clic en <strong>"Get started free"</strong>. Puedes registrarte con tu email o con tu cuenta de Google. El plan gratuito incluye 1,000 operaciones al mes y es más que suficiente para empezar.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Pantalla de registro de Make.com / página de inicio con el botón "Get started free"</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Explora el dashboard</h4>
+          <p>Una vez dentro, verás el panel principal de Make. Lo más importante es la sección <strong>"Scenarios"</strong> (Escenarios) — aquí es donde vas a crear tu automatización. Por ahora solo familiarízate con la interfaz.</p>
+        </div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <p><strong>Tip:</strong> Make tiene la interfaz en inglés, pero los módulos funcionan igual en cualquier idioma. Si te pierdes en algún término, en este tutorial te explicamos cada paso en español.</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="paso2-whatsapp">Paso 2 — Configurar WhatsApp Business API</h2>
+
+      <p>WhatsApp no permite automatizaciones con la app normal. Necesitas acceso a la <strong>WhatsApp Business API</strong>, que es la versión oficial para empresas y desarrolladores. El proveedor más sencillo para empezar es <strong>360dialog</strong>.</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crear cuenta en 360dialog</h4>
+          <p>Ve a <a href="https://www.360dialog.com" target="_blank" rel="noopener">360dialog.com</a> y regístrate. 360dialog es un proveedor oficial de la API de WhatsApp Business (BSP — Business Solution Provider) que tiene integración nativa con Make.</p>
+          <p>El plan de entrada cuesta alrededor de <strong>$5-10 USD al mes</strong> e incluye un número de WhatsApp Business y acceso a la API.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Página de registro de 360dialog o panel de cliente con la sección de números de WhatsApp</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Conectar tu número de WhatsApp</h4>
+          <p>Dentro del panel de 360dialog, ve a <strong>"Numbers"</strong> y sigue el proceso para conectar tu número. Necesitarás:</p>
+          <ul>
+            <li>Un número de teléfono que pueda recibir SMS o llamadas (para verificación)</li>
+            <li>Una cuenta de Facebook Business Manager vinculada</li>
+            <li>El nombre de tu negocio y una descripción</li>
+          </ul>
+          <p>El proceso de verificación puede tardar entre 10 minutos y algunas horas.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Obtener tu API Key</h4>
+          <p>Una vez verificado tu número, en el panel de 360dialog ve a <strong>"API Keys"</strong> y copia tu clave. La vas a necesitar para conectar con Make. Guárdala en un lugar seguro — es como la contraseña de tu integración.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Sección "API Keys" del panel de 360dialog con el botón para copiar la clave (con la clave oculta/borrosa por seguridad)</div>
+      </div>
+
+      <!-- AD SLOT 2 — Dentro del contenido -->
+      <div class="ad-slot" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-slot-label">// Espacio publicitario — In-article</span>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="paso3-openai">Paso 3 — Obtener tu API Key de OpenAI (ChatGPT)</h2>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crear cuenta en OpenAI</h4>
+          <p>Ve a <a href="https://platform.openai.com" target="_blank" rel="noopener">platform.openai.com</a> y regístrate o inicia sesión. Es la misma cuenta que usas para ChatGPT, pero aquí accedes a la API para desarrolladores.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Añadir créditos de prepago</h4>
+          <p>En la plataforma de OpenAI ve a <strong>Settings → Billing</strong> y añade un monto inicial (recomendamos $5-10 USD para empezar). El modelo <code>gpt-4o-mini</code> cuesta aproximadamente $0.00015 por cada 1,000 tokens de entrada — es decir, <strong>puedes procesar miles de mensajes por muy poco dinero</strong>.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Generar tu API Key</h4>
+          <p>Ve a <strong>API Keys</strong> en el menú lateral y haz clic en <strong>"Create new secret key"</strong>. Dale un nombre descriptivo como "make-whatsapp-bot" y copia la clave que se genera. <strong>Importante: esta clave solo se muestra una vez</strong>, así que guárdala de inmediato.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Sección "API Keys" de platform.openai.com mostrando el botón "Create new secret key"</div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="paso4-escenario">Paso 4 — Crear el escenario en Make</h2>
+
+      <p>Ahora llega la parte más importante: crear el flujo de automatización en Make. El escenario tiene 3 módulos principales:</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crear un nuevo escenario</h4>
+          <p>En Make, ve a <strong>Scenarios → Create a new scenario</strong>. Verás un lienzo vacío con un gran botón <strong>"+"</strong> en el centro. Este es tu punto de partida.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Lienzo vacío de Make con el botón "+" central y el panel de módulos disponibles</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Módulo 1: Trigger de WhatsApp (360dialog)</h4>
+          <p>Haz clic en el "+" y busca <strong>"360dialog"</strong> en el buscador de módulos. Selecciona el módulo <strong>"Watch Messages"</strong> (Observar mensajes nuevos).</p>
+          <p>Te pedirá tus credenciales de 360dialog — usa la API Key que copiaste en el Paso 2. Una vez conectado, Make creará automáticamente un <strong>webhook</strong> que 360dialog usará para enviar los mensajes en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Módulo de 360dialog en Make con la pantalla de configuración de credenciales / el webhook URL generado</div>
+      </div>
+
+      <div class="callout info">
+        <div class="callout-icon">ℹ️</div>
+        <div class="callout-body">
+          <p><strong>¿Qué es un webhook?</strong> Es una URL especial que Make genera para que otros servicios (como 360dialog) puedan enviarle datos en tiempo real. Cada vez que alguien te manda un mensaje de WhatsApp, 360dialog "llama" a esa URL y Make inicia el escenario automáticamente.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Módulo 2: OpenAI — Generar respuesta con ChatGPT</h4>
+          <p>Añade un segundo módulo haciendo clic en el "+" después del primero. Busca <strong>"OpenAI (DALL-E, Whisper, ChatGPT)"</strong> y selecciona <strong>"Create a Completion"</strong>.</p>
+          <p>Conecta tu cuenta de OpenAI usando la API Key del Paso 3. Luego configura así:</p>
+          <ul>
+            <li><strong>Model:</strong> <code>gpt-4o-mini</code> (barato y muy capaz)</li>
+            <li><strong>System prompt:</strong> Aquí defines la personalidad y conocimiento de tu bot (ver Paso 5)</li>
+            <li><strong>User message:</strong> Usa la variable dinámica del mensaje recibido de 360dialog</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Configuración del módulo de OpenAI en Make: campos de Model, System prompt y User message con variable dinámica del mensaje de WhatsApp</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Módulo 3: 360dialog — Enviar respuesta</h4>
+          <p>Añade el tercer módulo: de nuevo <strong>360dialog</strong>, esta vez el módulo <strong>"Send a Message"</strong> (Enviar mensaje).</p>
+          <p>Configura:</p>
+          <ul>
+            <li><strong>To (número destino):</strong> Variable dinámica del número del remitente (del módulo 1)</li>
+            <li><strong>Message:</strong> Variable dinámica de la respuesta generada por OpenAI (del módulo 2)</li>
+          </ul>
+          <p>Este módulo toma la respuesta de ChatGPT y la envía de vuelta al usuario de WhatsApp automáticamente.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Módulo "Send a Message" de 360dialog en Make con los campos "To" y "Message" mapeados con variables dinámicas</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Guardar y activar el escenario</h4>
+          <p>Haz clic en el botón <strong>"Save"</strong> (disco en la esquina inferior izquierda) y luego activa el escenario con el interruptor que dice <strong>"Scheduling"</strong>. Selecciona <strong>"Immediately"</strong> para que se active en tiempo real con cada mensaje.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Escenario completo en Make con los 3 módulos conectados (360dialog → OpenAI → 360dialog) y el interruptor de activación en ON</div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="paso5-prompt">Paso 5 — Escribir un prompt efectivo para tu negocio</h2>
+
+      <p>La calidad de las respuestas de ChatGPT depende casi completamente del <strong>system prompt</strong> que escribas. Este prompt es las instrucciones que le das a la IA sobre quién es, qué sabe y cómo debe responder.</p>
+
+      <h3>// Estructura recomendada del prompt</h3>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">System Prompt — Plantilla base</span>
+          <button class="code-copy" onclick="copyCode(this)">Copiar</button>
+        </div>
+        <div class="code-body">Eres el asistente virtual de [NOMBRE DE TU NEGOCIO], una empresa de [TIPO DE NEGOCIO] ubicada en [CIUDAD, PAÍS].
+
+<span class="cm">## Tu personalidad</span>
+- Eres amable, profesional y conciso
+- Respondes siempre en español (español latinoamericano, tuteo)
+- Si no sabes algo, lo admites y ofreces contactar a un agente humano
+- No inventes información que no se te haya dado
+
+<span class="cm">## Información de nuestro negocio</span>
+Horario: Lunes a Viernes de 9am a 6pm (hora México)
+Teléfono para urgencias: [TU TELÉFONO]
+Email: [TU EMAIL]
+Sitio web: [TU WEB]
+
+<span class="cm">## Productos/Servicios que ofrecemos</span>
+[Lista aquí tus productos o servicios con precios si los tienes]
+
+<span class="cm">## Preguntas frecuentes</span>
+P: ¿Cuánto cuesta [SERVICIO]?
+R: [PRECIO Y DETALLES]
+
+P: ¿Hacen envíos?
+R: [TU POLÍTICA DE ENVÍOS]
+
+P: ¿Cómo puedo pagar?
+R: [MÉTODOS DE PAGO]
+
+<span class="cm">## Reglas importantes</span>
+- Siempre al final de una respuesta sobre precios, invita al usuario a confirmar su pedido
+- Si el usuario quiere hablar con una persona, responde: "Voy a transferirte con un asesor, en breve te contactamos."
+- Máximo 3-4 oraciones por respuesta. Sé directo.</div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <p><strong>Tip de experto:</strong> Cuanta más información específica le des al prompt (precios exactos, políticas, FAQ), mejores y más precisas serán las respuestas. Dedica 30 minutos a completar bien el prompt — es la inversión más importante de esta configuración.</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="paso6-prueba">Paso 6 — Probar la automatización</h2>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Enviar un mensaje de prueba</h4>
+          <p>Desde otro número de WhatsApp, envía un mensaje al número que configuraste. Algo simple como "Hola, ¿qué servicios ofrecen?" o "¿Cuál es el precio de X?"</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Revisar el historial de ejecuciones en Make</h4>
+          <p>En Make, dentro de tu escenario, verás el <strong>"History"</strong> (historial). Ahí puedes ver cada ejecución, si fue exitosa (verde) o tuvo un error (rojo), y exactamente qué datos procesó cada módulo. Es tu herramienta de diagnóstico más útil.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <div class="ph-icon">🖼️</div>
+        <div class="ph-label">Captura sugerida</div>
+        <div class="ph-desc">Historial de ejecuciones de Make mostrando una ejecución exitosa con los datos de entrada y salida de cada módulo</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Verificar la respuesta en WhatsApp</h4>
+          <p>Si todo está bien configurado, deberías recibir la respuesta generada por ChatGPT en WhatsApp en menos de 5 segundos. Si no recibes respuesta, revisa el historial de Make para ver dónde falló.</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="errores-comunes">Errores comunes y cómo solucionarlos</h2>
+
+      <table class="comp-table" aria-label="Errores comunes y soluciones">
+        <thead>
+          <tr><th>Error</th><th>Causa probable</th><th>Solución</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Webhook no recibe mensajes</td><td>360dialog no tiene el webhook configurado</td><td>Verifica en el panel de 360dialog que el webhook URL de Make está guardado correctamente</td></tr>
+          <tr><td>Error 401 de OpenAI</td><td>API Key incorrecta o sin créditos</td><td>Verifica la API Key y añade créditos en platform.openai.com</td></tr>
+          <tr><td>Respuestas en inglés</td><td>El prompt no especifica el idioma</td><td>Añade al prompt: "Responde siempre en español latinoamericano"</td></tr>
+          <tr><td>Respuestas muy largas</td><td>Sin límite de longitud en el prompt</td><td>Añade: "Responde en máximo 3-4 oraciones. Sé conciso."</td></tr>
+          <tr><td>El escenario no se activa</td><td>Scheduling en pausa</td><td>Activa el interruptor del escenario en Make</td></tr>
+        </tbody>
+      </table>
+
+      <!-- AD SLOT 3 — Después de tabla de errores -->
+      <div class="ad-slot" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-slot-label">// Espacio publicitario — Banner 728×90</span>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="mejoras">Mejoras opcionales para tu bot</h2>
+
+      <h3>// Guardar conversaciones en Google Sheets</h3>
+      <p>Añade un módulo de Google Sheets entre el módulo de OpenAI y el de envío de respuesta. Así registras automáticamente cada mensaje recibido, la respuesta generada y la fecha/hora — útil para analizar qué preguntan más tus clientes.</p>
+
+      <h3>// Detectar si el cliente quiere hablar con una persona</h3>
+      <p>Puedes añadir un módulo de <strong>Router</strong> en Make que analice si la respuesta de ChatGPT contiene frases como "transferirte con un asesor" y, en ese caso, envíe una notificación a tu equipo por email o Slack.</p>
+
+      <h3>// Horario de atención</h3>
+      <p>Añade un módulo de <strong>Tools → Set variable</strong> con la hora actual y una condición: si estás fuera de horario, envía un mensaje automático de "Fuera de horario, te respondemos mañana" sin gastar tokens de OpenAI.</p>
+
+      <div class="callout tip">
+        <div class="callout-icon">🚀</div>
+        <div class="callout-body">
+          <p><strong>Siguiente nivel:</strong> Una vez que tu bot básico funcione, considera añadir memoria de conversación enviando los últimos 5-10 mensajes del historial a ChatGPT. Así el bot recuerda el contexto y las conversaciones son mucho más naturales.</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="costos">¿Cuánto cuesta esta automatización al mes?</h2>
+
+      <p>Una de las preguntas más frecuentes. Aquí un cálculo realista para un negocio pequeño-mediano:</p>
+
+      <table class="comp-table" aria-label="Costos estimados mensuales">
+        <thead>
+          <tr><th>Componente</th><th>Uso estimado</th><th>Costo mensual aprox.</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Make (plan Core)</td><td>10,000 operaciones</td><td>$9 USD</td></tr>
+          <tr><td>360dialog</td><td>Plan básico</td><td>$7 USD</td></tr>
+          <tr><td>OpenAI (gpt-4o-mini)</td><td>500 mensajes/mes</td><td>$0.50-2 USD</td></tr>
+          <tr><td><strong>Total</strong></td><td></td><td><strong>~$16-18 USD/mes</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout info">
+        <div class="callout-icon">💰</div>
+        <div class="callout-body">
+          <p><strong>¿Vale la pena?</strong> Si tu bot responde aunque sea 2 consultas al día que sin él tendrías que responder manualmente (5 min cada una), ya estás ahorrando 5 horas al mes. A cualquier precio por hora, la automatización se paga sola.</p>
+        </div>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="faq">Preguntas frecuentes</h2>
+
+      <div class="faq-list">
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Necesito pagar para automatizar WhatsApp con Make?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Make tiene un plan gratuito con 1,000 operaciones al mes, suficiente para probar y empezar. WhatsApp Business API (360dialog) tiene costo desde ~$5-7 USD/mes. OpenAI cobra por uso real, generalmente centavos por día para un negocio pequeño. En total, puedes empezar por menos de $15 USD al mes.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Puedo usar mi número de WhatsApp actual?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí, pero debes migrarlo a WhatsApp Business API. Durante la migración el número no puede estar activo en la app normal. Muchos negocios prefieren usar un número dedicado (número virtual o SIM prepago) para la automatización y conservar su número principal para uso personal.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Las respuestas automáticas pueden parecer humanas?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Con un buen prompt, sí. ChatGPT puede responder de forma muy natural en español latinoamericano. La clave está en darle mucho contexto sobre tu negocio y definir bien el tono (formal, casual, etc.). Muchos clientes no sabrán que están hablando con un bot a menos que lo pregunten directamente.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Funciona en México, Colombia, Argentina y otros países LATAM?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí. WhatsApp Business API funciona en toda Latinoamérica. Make y OpenAI son servicios globales. La única consideración son los costos de WhatsApp por conversación, que varían según el país — México, Colombia y Argentina tienen tarifas similares y muy accesibles.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Qué pasa si ChatGPT da una respuesta incorrecta?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Por eso es crucial tener un buen prompt con información precisa de tu negocio, e instruir al bot para que reconozca cuando no sabe algo y ofrezca transferir a un humano. Te recomendamos revisar el historial de conversaciones periódicamente para identificar y corregir respuestas incorrectas actualizando el prompt.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- ══════════════ -->
+      <h2 id="conclusion">Conclusión</h2>
+
+      <p>Automatizar WhatsApp con Make y ChatGPT es una de las inversiones más rentables que puede hacer un negocio hoy en día. Por menos de $20 USD al mes, tienes un asistente que trabaja 24/7, responde en segundos y libera horas de tu tiempo cada semana.</p>
+
+      <p>Los pasos son claros: crear cuentas en Make, 360dialog y OpenAI, construir el escenario de 3 módulos, y escribir un buen prompt. Lo más importante es ese último punto — un prompt bien hecho es la diferencia entre un bot útil y uno frustrante.</p>
+
+      <div class="callout tip">
+        <div class="callout-icon">✅</div>
+        <div class="callout-body">
+          <p><strong>¿Listo para el siguiente paso?</strong> Una vez que tu bot de WhatsApp funcione, el siguiente tutorial te enseña a <strong>conectar un CRM</strong> para que cada conversación quede registrada automáticamente con los datos del cliente.</p>
+        </div>
+      </div>
+
+      <!-- NAVEGACIÓN ENTRE ARTÍCULOS -->
+      <div class="art-nav">
+        <div class="art-nav-btn" onclick="window.location.href='automatizacionsIA.html'">
+          <div class="nav-dir">← Volver</div>
+          <div class="nav-title">Página principal — Todos los tutoriales</div>
+        </div>
+        <div class="art-nav-btn" style="text-align:right; opacity:0.4; cursor:default;">
+          <div class="nav-dir">Siguiente →</div>
+          <div class="nav-title">Próximamente: WhatsApp + CRM con n8n</div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /art-content -->
+
+  </article>
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar" aria-label="Sidebar con tabla de contenidos y herramientas">
+    <div class="sidebar-sticky">
+
+      <!-- Tabla de contenidos -->
+      <nav class="toc-box" aria-label="Tabla de contenidos">
+        <div class="toc-header">// Contenido</div>
+        <ul class="toc-list">
+          <li><a href="#que-necesitas">Qué necesitas</a></li>
+          <li><a href="#que-es-make">¿Qué es Make?</a></li>
+          <li><a href="#paso1-make">Paso 1 — Crear cuenta Make</a></li>
+          <li><a href="#paso2-whatsapp">Paso 2 — WhatsApp API</a></li>
+          <li><a href="#paso3-openai">Paso 3 — OpenAI API Key</a></li>
+          <li><a href="#paso4-escenario">Paso 4 — Escenario en Make</a></li>
+          <li><a href="#paso5-prompt">Paso 5 — El prompt</a></li>
+          <li><a href="#paso6-prueba">Paso 6 — Prueba</a></li>
+          <li><a href="#errores-comunes">Errores comunes</a></li>
+          <li><a href="#mejoras">Mejoras opcionales</a></li>
+          <li><a href="#costos">Costos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Herramientas del tutorial -->
+      <div class="sidebar-card">
+        <h4>// Herramientas usadas</h4>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon orange">⚙️</div>
+          <div>
+            <div class="sidebar-tool-name">Make</div>
+            <div class="sidebar-tool-badge">Plan Free disponible</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon green">💬</div>
+          <div>
+            <div class="sidebar-tool-name">360dialog</div>
+            <div class="sidebar-tool-badge">~$7 USD/mes</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon blue">🤖</div>
+          <div>
+            <div class="sidebar-tool-name">OpenAI API</div>
+            <div class="sidebar-tool-badge">Pay as you go</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AD SLOT SIDEBAR (300x250) -->
+      <div class="sidebar-ad" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="rectangle"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-label">// Publicidad</span>
+        <span style="font-size:0.75rem;color:var(--muted2);">300 × 250</span>
+      </div>
+
+    </div>
+  </aside>
+
+</div>
+<!-- /page-wrap -->
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">AI</div>
+        Automatiza<span style="color:var(--amber)">IA</span>
+      </div>
+      <p>Tutoriales de automatización con inteligencia artificial en español, para México y Latinoamérica.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Tutoriales</h4>
+      <ul>
+        <li><a href="tutorial-whatsapp.html">WhatsApp + Make</a></li>
+        <li><a href="automatizacionsIA.html#tutoriales">Ver todos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Herramientas</h4>
+      <ul>
+        <li><a href="https://make.com" target="_blank" rel="noopener">Make</a></li>
+        <li><a href="https://www.360dialog.com" target="_blank" rel="noopener">360dialog</a></li>
+        <li><a href="https://platform.openai.com" target="_blank" rel="noopener">OpenAI</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Sitio</h4>
+      <ul>
+        <li><a href="automatizacionsIA.html">Inicio</a></li>
+        <li><a href="automatizacionsIA.html#faq">FAQ</a></li>
+        <li><a href="automatizacionsIA.html#newsletter">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AutomatizaIA · Tutoriales en español para LATAM</span>
+    <span>Hecho con ❤️ para México y Latinoamérica</span>
+  </div>
+</footer>
+
+<script>
+  // ── PROGRESS BAR DE LECTURA ──
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight) * 100;
+    document.getElementById('progressBar').style.width = scrolled + '%';
+  });
+
+  // ── MENU MÓVIL ──
+  function toggleMenu() {
+    const links = document.getElementById('nav-links');
+    const btn = document.querySelector('.nav-toggle');
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.textContent = open ? '✕' : '☰';
+  }
+
+  // ── COPIAR CÓDIGO ──
+  function copyCode(btn) {
+    const code = btn.closest('.code-block').querySelector('.code-body').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      btn.textContent = '✓ Copiado';
+      setTimeout(() => btn.textContent = 'Copiar', 2000);
+    });
+  }
+
+  // ── TOC ACTIVO AL HACER SCROLL ──
+  const tocLinks = document.querySelectorAll('.toc-list a');
+  const sections = document.querySelectorAll('.art-content h2[id]');
+
+  const tocObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => tocObserver.observe(s));
+
+  // ── SCROLL REVEAL ──
+  document.addEventListener('DOMContentLoaded', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => el.classList.add('animate-hidden'));
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => io.observe(el));
+  });
+</script>
+
+</body>
+</html>
