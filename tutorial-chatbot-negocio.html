@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO PRINCIPAL ═══ -->
+  <title>Cómo Crear un Chatbot para tu Negocio con ChatGPT (2025) | AutomatizaIA</title>
+  <meta name="description" content="Aprende a crear un chatbot con ChatGPT para tu negocio paso a paso en 2025. Sin programar, gratis o muy económico. Tutorial completo en español para México y Latinoamérica.">
+  <meta name="keywords" content="crear chatbot chatgpt, chatbot para negocio, chatbot whatsapp chatgpt, chatbot gratis español, como hacer un chatbot, chatbot mexico, chatbot latinoamerica, chatbot sin programar, chatbot openai, asistente virtual chatgpt negocio, chatbot ia español, chatgpt negocio tutorial, chatbot ventas chatgpt">
+  <meta name="author" content="AutomatizaIA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="MX">
+  <meta name="language" content="Spanish">
+  <meta name="revisit-after" content="5 days">
+  <link rel="canonical" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+
+  <!-- HREFLANG LATAM -->
+  <link rel="alternate" hreflang="es-mx" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <link rel="alternate" hreflang="es-co" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <link rel="alternate" hreflang="es-ar" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <link rel="alternate" hreflang="es-cl" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <link rel="alternate" hreflang="es-pe" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <link rel="alternate" hreflang="es" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <link rel="alternate" hreflang="x-default" href="https://automatizaia.com/crear-chatbot-chatgpt/">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cómo Crear un Chatbot para tu Negocio con ChatGPT (2025) — Tutorial Completo">
+  <meta property="og:description" content="Crea tu propio chatbot con ChatGPT para atender clientes 24/7. Tutorial paso a paso sin programar, en español para México y LATAM.">
+  <meta property="og:url" content="https://automatizaia.com/crear-chatbot-chatgpt/">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="AutomatizaIA">
+  <meta property="og:image" content="https://automatizaia.com/og-chatbot-chatgpt.jpg">
+  <meta property="article:published_time" content="2025-05-01">
+  <meta property="article:modified_time" content="2025-05-12">
+  <meta property="article:author" content="AutomatizaIA">
+  <meta property="article:tag" content="ChatGPT, Chatbot, IA, Negocio, Automatización">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@automatizaia">
+  <meta name="twitter:title" content="Crear Chatbot para tu Negocio con ChatGPT (2025)">
+  <meta name="twitter:description" content="Tutorial completo para crear tu chatbot con IA. Sin programar, en español, para México y LATAM.">
+
+  <!-- SCHEMA: ARTICLE -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Cómo crear un chatbot para tu negocio con ChatGPT: Tutorial completo 2025",
+    "description": "Tutorial paso a paso para crear un chatbot con ChatGPT que atienda clientes automáticamente. Sin programar, gratis o muy económico.",
+    "image": "https://automatizaia.com/og-chatbot-chatgpt.jpg",
+    "author": { "@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com" },
+    "publisher": { "@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com", "logo": { "@type": "ImageObject", "url": "https://automatizaia.com/logo.png" } },
+    "datePublished": "2025-05-01",
+    "dateModified": "2025-05-12",
+    "inLanguage": "es-MX",
+    "url": "https://automatizaia.com/crear-chatbot-chatgpt/",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://automatizaia.com/crear-chatbot-chatgpt/" },
+    "proficiencyLevel": "Beginner",
+    "timeRequired": "PT35M",
+    "keywords": "chatbot chatgpt, chatbot negocio, chatbot sin programar, asistente virtual ia"
+  }
+  </script>
+
+  <!-- SCHEMA: HOW-TO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo crear un chatbot para tu negocio con ChatGPT",
+    "description": "Crea un chatbot con ChatGPT que responda preguntas de tus clientes automáticamente, sin programar.",
+    "totalTime": "PT35M",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+    "tool": [
+      { "@type": "HowToTool", "name": "Cuenta de OpenAI (ChatGPT)" },
+      { "@type": "HowToTool", "name": "CustomGPT o Botpress (opcional)" },
+      { "@type": "HowToTool", "name": "Make o n8n para integraciones" }
+    ],
+    "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Definir el objetivo del chatbot", "text": "Decide qué va a hacer tu chatbot: responder FAQ, tomar pedidos, agendar citas o vender." },
+      { "@type": "HowToStep", "position": 2, "name": "Elegir la plataforma", "text": "Selecciona entre ChatGPT personalizado, Botpress, Tidio u otra plataforma según tu caso de uso." },
+      { "@type": "HowToStep", "position": 3, "name": "Escribir el prompt del sistema", "text": "Redacta el prompt que define la personalidad, conocimiento y límites del chatbot." },
+      { "@type": "HowToStep", "position": 4, "name": "Entrenar con información de tu negocio", "text": "Sube documentos, FAQs y datos de tu negocio para que el chatbot los use como base." },
+      { "@type": "HowToStep", "position": 5, "name": "Probar e integrar", "text": "Prueba el chatbot con preguntas reales y conéctalo a tu web, WhatsApp o redes sociales." }
+    ]
+  }
+  </script>
+
+  <!-- SCHEMA: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta crear un chatbot con ChatGPT?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Depende del método. Con ChatGPT GPTs personalizados (ChatGPT Plus) cuesta $20 USD/mes. Con la API de OpenAI pagas por uso: aproximadamente $0.001-0.01 por conversación con gpt-4o-mini. Con plataformas como Tidio o Botpress hay planes gratuitos para empezar." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito saber programar para crear un chatbot con ChatGPT?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Existen varias formas de crear chatbots con ChatGPT sin código: usando los GPTs personalizados de ChatGPT Plus, plataformas como Tidio, Botpress o CustomGPT, o herramientas de automatización como Make o n8n que conectan ChatGPT a tu web o WhatsApp sin programar." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puede un chatbot de ChatGPT atender clientes de mi negocio en México?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí, perfectamente. ChatGPT responde en español latinoamericano de forma natural. Puedes configurarlo para que use el español y tono de México, Colombia, Argentina u otro país. Puede responder preguntas sobre precios, productos, horarios y hasta tomar pedidos." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre un chatbot y un GPT personalizado?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Un GPT personalizado es el chatbot que puedes crear dentro de ChatGPT Plus, con instrucciones y documentos propios, sin código. Un chatbot más avanzado usa la API de OpenAI y se puede integrar en tu web, WhatsApp o app propia. Ambos usan la misma IA pero con diferente nivel de personalización e integración." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- PERFORMANCE -->
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE ADSENSE — reemplaza con tu Publisher ID -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    :root {
+      --bg:        #0d0d0d;
+      --bg2:       #141414;
+      --bg3:       #1c1c1c;
+      --surface:   rgba(255,255,255,0.04);
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,140,0,0.25);
+      --amber:     #ff8c00;
+      --amber2:    #ffb347;
+      --amber-dim: rgba(255,140,0,0.12);
+      --green:     #39d353;
+      --red:       #f85149;
+      --blue:      #58a6ff;
+      --purple:    #bc8cff;
+      --text:      #e6e6e6;
+      --muted:     #888;
+      --muted2:    #555;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Barlow', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; overflow-x: hidden; }
+    body::after { content: ''; position: fixed; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px); pointer-events: none; z-index: 9999; }
+
+    a { color: inherit; text-decoration: none; }
+    h1,h2,h3,h4,h5 { font-family: var(--sans); font-weight: 700; line-height: 1.2; }
+    code, pre { font-family: var(--mono); }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+    /* ── NAV ── */
+    nav { position: sticky; top: 0; z-index: 200; background: rgba(13,13,13,0.95); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 5%; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: var(--mono); font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .logo-icon { width: 28px; height: 28px; background: var(--amber); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #000; font-size: 0.75rem; font-weight: 700; }
+    .logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+    .nav-links a { color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 8px 14px; border-radius: 6px; transition: color 0.2s, background 0.2s; letter-spacing: 0.02em; }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+    .nav-back { color: var(--amber) !important; border: 1px solid var(--border2) !important; background: var(--amber-dim) !important; font-family: var(--mono) !important; font-size: 0.78rem !important; }
+    .nav-toggle { display: none; background: none; border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb-bar { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.7rem 5%; }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; }
+    .breadcrumb { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .breadcrumb a { color: var(--amber); transition: opacity 0.2s; }
+    .breadcrumb a:hover { opacity: 0.8; text-decoration: underline; }
+    .breadcrumb .sep { color: var(--muted2); }
+    .breadcrumb .current { color: var(--text); }
+
+    /* ── READING PROGRESS ── */
+    .reading-progress { position: fixed; top: 60px; left: 0; right: 0; height: 2px; background: var(--bg3); z-index: 150; }
+    .reading-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--amber), var(--amber2)); transition: width 0.1s linear; }
+
+    /* ── LAYOUT ── */
+    .page-wrap { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 3rem; padding: 3rem 5% 6rem; }
+
+    /* ── META ── */
+    .article-meta-top { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .art-tag { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; color: var(--amber); background: var(--amber-dim); border: 1px solid var(--border2); padding: 3px 10px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .art-tag.green  { color: var(--green);  background: rgba(57,211,83,0.08);  border-color: rgba(57,211,83,0.3); }
+    .art-tag.blue   { color: var(--blue);   background: rgba(88,166,255,0.08); border-color: rgba(88,166,255,0.3); }
+    .art-tag.purple { color: var(--purple); background: rgba(188,140,255,0.08);border-color: rgba(188,140,255,0.3); }
+    .art-meta { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); display: flex; gap: 1rem; flex-wrap: wrap; }
+    .art-meta span::before { content: '· '; color: var(--muted2); }
+
+    /* ── ARTICLE ── */
+    .article-main h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; }
+    .article-intro { font-size: 1.05rem; color: var(--muted); line-height: 1.85; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); font-weight: 300; }
+
+    .art-content h2 { font-size: 1.45rem; font-weight: 800; margin: 3rem 0 1rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .art-content h2:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+    .art-content h3 { font-size: 1.05rem; font-weight: 700; color: var(--amber); margin: 2rem 0 0.75rem; font-family: var(--mono); }
+    .art-content p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.85; }
+    .art-content ul, .art-content ol { padding-left: 1.5rem; margin-bottom: 1.1rem; }
+    .art-content li { color: var(--muted); line-height: 1.8; margin-bottom: 0.5rem; }
+    .art-content strong { color: var(--text); font-weight: 600; }
+    .art-content a { color: var(--amber); text-decoration: underline; }
+    .art-content code { background: var(--bg3); border: 1px solid var(--border); padding: 2px 6px; border-radius: 3px; font-size: 0.85em; color: var(--amber2); }
+
+    /* OVERVIEW */
+    .art-overview { background: var(--bg2); border: 1px solid var(--border2); border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .art-overview h4 { font-family: var(--mono); font-size: 0.78rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
+    .art-overview ul { list-style: none; }
+    .art-overview li { display: flex; gap: 10px; align-items: baseline; padding: 5px 0; font-size: 0.9rem; color: var(--muted); }
+    .art-overview li::before { content: '→'; color: var(--amber); font-size: 0.75rem; flex-shrink: 0; }
+
+    /* STEP BLOCKS */
+    .step-block { display: flex; gap: 1.25rem; margin: 1.5rem 0; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem; align-items: flex-start; transition: border-color 0.2s; }
+    .step-block:hover { border-color: var(--border2); }
+    .step-num { width: 36px; height: 36px; flex-shrink: 0; background: var(--amber); color: #000; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 0.85rem; font-weight: 700; }
+    .step-content h4 { font-weight: 700; margin-bottom: 0.5rem; font-size: 1rem; color: var(--text); }
+    .step-content p { color: var(--muted); font-size: 0.92rem; margin: 0; line-height: 1.75; }
+    .step-content p + p { margin-top: 0.6rem; }
+    .step-content ul { padding-left: 1.2rem; margin-top: 0.6rem; }
+    .step-content li { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.35rem; }
+    .step-content code { background: var(--bg3); border: 1px solid var(--border); padding: 2px 6px; border-radius: 3px; font-size: 0.82em; color: var(--amber2); font-family: var(--mono); }
+
+    /* SCREENSHOT PLACEHOLDER */
+    .screenshot-placeholder { background: var(--bg2); border: 2px dashed var(--border2); border-radius: 10px; padding: 2.5rem 2rem; text-align: center; margin: 1.5rem 0; position: relative; transition: border-color 0.2s; }
+    .screenshot-placeholder:hover { border-color: var(--amber); }
+    .ph-badge { position: absolute; top: 0.75rem; right: 0.75rem; background: var(--amber-dim); border: 1px solid var(--border2); color: var(--amber); font-family: var(--mono); font-size: 0.62rem; padding: 2px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .ph-icon { font-size: 2rem; margin-bottom: 0.6rem; opacity: 0.4; display: block; }
+    .ph-label { font-family: var(--mono); font-size: 0.75rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.35rem; display: block; }
+    .ph-desc { font-size: 0.82rem; color: var(--muted2); line-height: 1.6; display: block; }
+
+    /* CODE BLOCKS */
+    .code-block { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin: 1.25rem 0; }
+    .code-header { background: rgba(255,255,255,0.03); padding: 8px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+    .code-lang { font-size: 0.7rem; color: var(--amber); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--mono); }
+    .code-copy { font-size: 0.7rem; color: var(--muted); cursor: pointer; background: none; border: 1px solid var(--border); padding: 3px 10px; border-radius: 3px; transition: color 0.2s; font-family: var(--mono); }
+    .code-copy:hover { color: var(--amber); border-color: var(--border2); }
+    .code-body { padding: 1.2rem 1.5rem; font-size: 0.83rem; line-height: 1.9; overflow-x: auto; white-space: pre; color: #e6e6e6; font-family: var(--mono); }
+    .code-body .cm  { color: var(--muted2); font-style: italic; }
+    .code-body .str { color: #a5d6ff; }
+    .code-body .kw  { color: #ff7b72; }
+    .code-body .ok  { color: var(--green); }
+    .code-body .var { color: #79c0ff; }
+    .code-body .hl  { color: var(--amber2); }
+
+    /* CALLOUTS */
+    .callout { border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start; }
+    .callout.tip    { background: rgba(57,211,83,0.06);  border-left: 3px solid var(--green); }
+    .callout.warn   { background: rgba(255,140,0,0.08);  border-left: 3px solid var(--amber); }
+    .callout.info   { background: rgba(88,166,255,0.06); border-left: 3px solid var(--blue); }
+    .callout.danger { background: rgba(248,81,73,0.06);  border-left: 3px solid var(--red); }
+    .callout.pro    { background: rgba(188,140,255,0.06);border-left: 3px solid var(--purple); }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .callout-body p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+    .callout-body strong { color: var(--text); }
+    .callout-body code { background: rgba(255,255,255,0.08); padding: 1px 5px; border-radius: 3px; font-size: 0.85em; font-family: var(--mono); }
+
+    /* PLATFORM CARDS */
+    .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .platform-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.4rem; transition: border-color 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+    .platform-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+    .platform-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--amber), var(--amber2)); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+    .platform-card:hover::before { transform: scaleX(1); }
+    .platform-icon { font-size: 1.8rem; margin-bottom: 0.75rem; display: block; }
+    .platform-name { font-family: var(--sans); font-weight: 700; font-size: 1rem; margin-bottom: 0.3rem; color: var(--text); }
+    .platform-badge { font-family: var(--mono); font-size: 0.65rem; padding: 2px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; display: inline-block; }
+    .platform-badge.free    { background: rgba(57,211,83,0.12);  color: var(--green); border: 1px solid rgba(57,211,83,0.3); }
+    .platform-badge.paid    { background: rgba(255,140,0,0.12);  color: var(--amber); border: 1px solid var(--border2); }
+    .platform-badge.freemium{ background: rgba(88,166,255,0.12); color: var(--blue);  border: 1px solid rgba(88,166,255,0.3); }
+    .platform-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+    .platform-best { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); margin-top: 0.75rem; }
+    .platform-best strong { color: var(--amber); }
+
+    /* CHAT DEMO */
+    .chat-demo { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 1.5rem 0; }
+    .chat-demo-header { background: var(--bg3); padding: 0.8rem 1.2rem; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+    .chat-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .chat-dot.green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+    .chat-demo-title { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+    .chat-demo-body { padding: 1.2rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    .chat-msg { max-width: 82%; padding: 0.75rem 1rem; border-radius: 10px; font-size: 0.88rem; line-height: 1.6; }
+    .chat-msg.user { background: var(--amber-dim); border: 1px solid var(--border2); color: var(--text); align-self: flex-end; border-radius: 10px 10px 2px 10px; }
+    .chat-msg.bot  { background: var(--surface); border: 1px solid var(--border); color: var(--muted); align-self: flex-start; border-radius: 10px 10px 10px 2px; }
+    .chat-msg.bot strong { color: var(--amber); }
+    .chat-label { font-family: var(--mono); font-size: 0.65rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.15rem; }
+
+    /* COMPARISON TABLE */
+    .comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+    .comp-table th { background: var(--bg3); border: 1px solid var(--border); padding: 10px 14px; text-align: left; font-family: var(--mono); font-size: 0.75rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.06em; }
+    .comp-table td { border: 1px solid var(--border); padding: 10px 14px; color: var(--muted); line-height: 1.5; vertical-align: top; }
+    .comp-table tr:hover td { background: var(--surface); }
+    .check { color: var(--green); font-weight: 700; }
+    .cross { color: var(--red); }
+
+    /* AD SLOTS */
+    .ad-slot { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; text-align: center; margin: 2rem 0; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+    .ad-slot-label { font-family: var(--mono); font-size: 0.65rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.5rem; }
+    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: border-color 0.2s; }
+    .faq-item[open] { border-color: var(--border2); }
+    .faq-q { padding: 1.1rem 1.4rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after { content: '+'; color: var(--amber); font-size: 1.3rem; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item[open] .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.4rem 1.1rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+
+    /* ART NAV */
+    .art-nav { display: flex; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+    .art-nav-btn { flex: 1; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.4rem; cursor: pointer; transition: border-color 0.2s; text-decoration: none; display: block; }
+    .art-nav-btn:hover { border-color: var(--border2); }
+    .nav-dir { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+    .nav-title { font-size: 0.9rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+
+    /* SIDEBAR */
+    .sidebar { position: relative; }
+    .sidebar-sticky { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.5rem; }
+    .toc-box { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .toc-header { background: var(--bg3); padding: 0.9rem 1.2rem; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 0.72rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; }
+    .toc-list { list-style: none; padding: 0.75rem; }
+    .toc-list li { margin-bottom: 0.2rem; }
+    .toc-list a { font-size: 0.82rem; color: var(--muted); display: flex; align-items: flex-start; gap: 7px; padding: 4px 6px; border-radius: 4px; transition: color 0.2s, background 0.2s; }
+    .toc-list a::before { content: '#'; color: var(--muted2); font-family: var(--mono); font-size: 0.68rem; flex-shrink: 0; margin-top: 2px; }
+    .toc-list a:hover, .toc-list a.active { color: var(--amber); background: var(--amber-dim); }
+    .toc-sep { height: 1px; background: var(--border); margin: 0.4rem 0.6rem; }
+    .sidebar-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; }
+    .sidebar-card h4 { font-family: var(--mono); font-size: 0.72rem; color: var(--amber); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+    .sidebar-tool { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .sidebar-tool:last-child { border-bottom: none; }
+    .sidebar-tool-icon { width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .sidebar-tool-icon.orange { background: rgba(255,140,0,0.15); }
+    .sidebar-tool-icon.blue   { background: rgba(88,166,255,0.15); }
+    .sidebar-tool-icon.green  { background: rgba(57,211,83,0.15); }
+    .sidebar-tool-icon.purple { background: rgba(188,140,255,0.15); }
+    .sidebar-tool-name { font-size: 0.85rem; font-weight: 600; }
+    .sidebar-tool-badge { font-family: var(--mono); font-size: 0.62rem; color: var(--green); }
+    .sidebar-ad { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; text-align: center; min-height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; }
+    .sidebar-ad .ad-label { font-family: var(--mono); font-size: 0.62rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* REVEAL */
+    .reveal { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.animate-hidden { opacity: 0; transform: translateY(20px); }
+    .reveal.animate-hidden.visible { opacity: 1; transform: translateY(0); }
+
+    /* FOOTER */
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 3rem 5% 2rem; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.75rem; max-width: 260px; line-height: 1.7; }
+    .footer-col h4 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; color: var(--amber); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a { color: var(--muted); font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; color: var(--muted2); font-family: var(--mono); font-size: 0.75rem; flex-wrap: wrap; gap: 0.5rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1rem 5%; gap: 0.5rem; z-index: 100; }
+      .nav-toggle { display: block; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .art-nav { flex-direction: column; }
+      .platform-grid { grid-template-columns: 1fr; }
+      .step-block { flex-direction: column; }
+      .chat-msg { max-width: 95%; }
+    }
+    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="reading-progress" aria-hidden="true">
+  <div class="reading-progress-bar" id="progressBar"></div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="automatizacionsIA.html" class="logo" aria-label="AutomatizaIA - Inicio">
+      <div class="logo-icon">AI</div>
+      Automatiza<span>IA</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li><a href="automatizacionsIA.html#tutoriales" role="menuitem">Tutoriales</a></li>
+      <li><a href="automatizacionsIA.html#herramientas" role="menuitem">Herramientas</a></li>
+      <li><a href="automatizacionsIA.html#faq" role="menuitem">FAQ</a></li>
+      <li><a href="automatizacionsIA.html" class="nav-back" role="menuitem">← Volver al inicio</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="breadcrumb-inner">
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="automatizacionsIA.html">AutomatizaIA</a>
+      <span class="sep">›</span>
+      <a href="automatizacionsIA.html#tutoriales">Tutoriales</a>
+      <span class="sep">›</span>
+      <span class="current">Chatbot con ChatGPT para tu negocio</span>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══ CONTENIDO ═══ -->
+<div class="page-wrap">
+
+  <article class="article-main" itemscope itemtype="https://schema.org/TechArticle">
+
+    <div class="article-meta-top">
+      <span class="art-tag">ChatGPT</span>
+      <span class="art-tag purple">Chatbot</span>
+      <span class="art-tag green">Sin código</span>
+      <span class="art-tag blue">Principiante</span>
+      <div class="art-meta">
+        <span itemprop="datePublished">Mayo 2025</span>
+        <span>⏱ 35 min lectura</span>
+        <span>Actualizado 2025</span>
+      </div>
+    </div>
+
+    <h1 itemprop="headline">Cómo crear un chatbot para tu negocio con ChatGPT: Tutorial completo paso a paso (2025)</h1>
+
+    <p class="article-intro" itemprop="description">
+      ¿Te imaginas tener un asistente que atiende a tus clientes <strong>las 24 horas, los 7 días de la semana</strong>, responde preguntas, da precios, agenda citas y hasta cierra ventas — sin que tú tengas que estar presente? Eso es exactamente lo que puedes lograr con un chatbot basado en <strong>ChatGPT</strong>. En este tutorial completo te enseñamos a crear uno para tu negocio, paso a paso, <strong>sin necesitar programar</strong> y con opciones desde completamente gratis hasta muy económicas.
+    </p>
+
+    <!-- OVERVIEW -->
+    <div class="art-overview reveal">
+      <h4>// Lo que aprenderás en este tutorial</h4>
+      <ul>
+        <li>Qué es un chatbot con ChatGPT y cómo puede transformar tu negocio</li>
+        <li>Las 4 formas de crear un chatbot con IA (sin código, semi-técnico y avanzado)</li>
+        <li>Cómo crear un GPT personalizado en ChatGPT Plus — el método más rápido</li>
+        <li>Cómo configurar Tidio o Botpress con ChatGPT para tu sitio web</li>
+        <li>Cómo escribir el prompt perfecto para que el chatbot hable como tu negocio</li>
+        <li>Cómo entrenar tu chatbot con documentos e información de tu empresa</li>
+        <li>Cómo conectar tu chatbot a WhatsApp, Instagram y tu web</li>
+        <li>Errores comunes y cómo evitar respuestas incorrectas</li>
+      </ul>
+    </div>
+
+    <!-- AD SLOT 1 — Banner superior -->
+    <div class="ad-slot" aria-label="Publicidad">
+      <!--
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <span class="ad-slot-label">// Espacio AdSense — Banner 728×90 / Responsive</span>
+    </div>
+
+    <div class="art-content" itemprop="articleBody">
+
+      <!-- ══ QUÉ ES ══ -->
+      <h2 id="que-es">¿Qué es un chatbot con ChatGPT y para qué sirve en un negocio?</h2>
+
+      <p>Un chatbot con ChatGPT es un asistente virtual que usa la inteligencia artificial de OpenAI para <strong>mantener conversaciones naturales</strong> con tus clientes. A diferencia de los chatbots tradicionales (que solo responden opciones predefinidas), un chatbot con IA puede:</p>
+
+      <ul>
+        <li>Entender preguntas escritas de forma natural, con errores de ortografía incluidos</li>
+        <li>Responder en español latinoamericano, con el tono que tú definas</li>
+        <li>Recordar el contexto de la conversación (saber de qué se habló antes)</li>
+        <li>Dar respuestas detalladas sobre tus productos, precios y servicios</li>
+        <li>Detectar cuándo el cliente necesita hablar con una persona real</li>
+      </ul>
+
+      <!-- DEMO DE CHAT -->
+      <div class="chat-demo reveal" aria-label="Ejemplo de conversación con chatbot">
+        <div class="chat-demo-header">
+          <div class="chat-dot green"></div>
+          <span class="chat-demo-title">// Ejemplo real — Chatbot para restaurante</span>
+        </div>
+        <div class="chat-demo-body">
+          <div>
+            <div class="chat-label">Cliente</div>
+            <div class="chat-msg user">Hola! ¿Tienen opciones vegetarianas? Y ¿a qué hora abren los domingos?</div>
+          </div>
+          <div>
+            <div class="chat-label">Chatbot IA</div>
+            <div class="chat-msg bot">¡Hola! 👋 Claro que sí. Tenemos <strong>6 platillos vegetarianos</strong> en nuestra carta, incluyendo pasta primavera, ensalada mediterránea y nuestra famosa pizza de verduras asadas. Los domingos abrimos de <strong>12:00 a 20:00 hrs</strong>. ¿Te gustaría ver el menú completo o hacer una reservación?</div>
+          </div>
+          <div>
+            <div class="chat-label">Cliente</div>
+            <div class="chat-msg user">Sí quiero hacer una reservación para 4 personas el próximo sábado</div>
+          </div>
+          <div>
+            <div class="chat-label">Chatbot IA</div>
+            <div class="chat-msg bot">Perfecto! Para confirmar tu reservación del sábado para 4 personas, necesito tu nombre y la hora que prefieres (abrimos de 13:00 a 22:00 hrs los sábados). También puedes reservar directamente en nuestro sitio: <strong>restaurante.com/reservar</strong> 🍽️</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <p><strong>Dato clave:</strong> Según estudios, el <strong>68% de los clientes</strong> prefieren resolver dudas simples con un chatbot antes de hablar con una persona, especialmente fuera de horario de oficina. Para negocios en México y LATAM, esto representa un enorme potencial de ventas perdidas sin automatización.</p>
+        </div>
+      </div>
+
+      <!-- ══ CUÁNDO USAR ══ -->
+      <h2 id="cuando-usar">¿Cuándo conviene un chatbot con IA para tu negocio?</h2>
+
+      <p>Un chatbot con ChatGPT es ideal para ti si:</p>
+
+      <table class="comp-table" aria-label="Casos de uso del chatbot">
+        <thead>
+          <tr><th>Tipo de negocio</th><th>Qué puede hacer el chatbot</th><th>Beneficio principal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Tienda / eCommerce</strong></td><td>Consultar disponibilidad, precios, estado de pedidos</td><td>Reducir mensajes repetitivos</td></tr>
+          <tr><td><strong>Restaurante / Comida</strong></td><td>Mostrar menú, tomar reservaciones, informar horarios</td><td>Atención 24/7 sin personal</td></tr>
+          <tr><td><strong>Salón / Spa</strong></td><td>Agendar citas, precios de servicios, disponibilidad</td><td>Llenar agenda automáticamente</td></tr>
+          <tr><td><strong>Servicios profesionales</strong></td><td>Calificar prospectos, dar información inicial, agendar llamadas</td><td>Filtrar clientes listos para comprar</td></tr>
+          <tr><td><strong>Inmobiliaria</strong></td><td>Propiedades disponibles, precios, visitas virtuales</td><td>Atender más prospectos en paralelo</td></tr>
+          <tr><td><strong>Clínica / Médico</strong></td><td>Información de servicios, agendar consultas, preguntas frecuentes</td><td>Descongestionar la recepción</td></tr>
+        </tbody>
+      </table>
+
+      <!-- AD SLOT 2 — In-article -->
+      <div class="ad-slot" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-slot-label">// Espacio AdSense — In-article / Fluid</span>
+      </div>
+
+      <!-- ══ PLATAFORMAS ══ -->
+      <h2 id="plataformas">Las 4 formas de crear tu chatbot con ChatGPT</h2>
+
+      <p>Hay varios métodos para crear un chatbot con ChatGPT. Te explicamos cada uno, de más simple a más avanzado:</p>
+
+      <div class="platform-grid">
+
+        <div class="platform-card reveal">
+          <span class="platform-icon">🤖</span>
+          <div class="platform-name">GPT Personalizado</div>
+          <span class="platform-badge paid">ChatGPT Plus — $20/mes</span>
+          <p class="platform-desc">Crea tu propio GPT dentro de ChatGPT con instrucciones, documentos y nombre de tu negocio. Sin código, en 15 minutos.</p>
+          <p class="platform-best">Mejor para: <strong>Empezar rápido, uso interno o compartir por link</strong></p>
+        </div>
+
+        <div class="platform-card reveal">
+          <span class="platform-icon">💬</span>
+          <div class="platform-name">Tidio</div>
+          <span class="platform-badge freemium">Plan gratis disponible</span>
+          <p class="platform-desc">Plataforma de chat en vivo con integración de ChatGPT. Se instala en tu web con un snippet de código. Muy fácil de usar.</p>
+          <p class="platform-best">Mejor para: <strong>Chatbot en tu sitio web + atención humana combinada</strong></p>
+        </div>
+
+        <div class="platform-card reveal">
+          <span class="platform-icon">⚙️</span>
+          <div class="platform-name">Botpress</div>
+          <span class="platform-badge freemium">Gratis hasta 1K mensajes/mes</span>
+          <p class="platform-desc">Plataforma open source con IA integrada. Permite crear flujos visuales y conectar ChatGPT para respuestas inteligentes.</p>
+          <p class="platform-best">Mejor para: <strong>Flujos complejos, integraciones con CRM y múltiples canales</strong></p>
+        </div>
+
+        <div class="platform-card reveal">
+          <span class="platform-icon">🔗</span>
+          <div class="platform-name">Make + ChatGPT API</div>
+          <span class="platform-badge freemium">Desde gratis</span>
+          <p class="platform-desc">Conecta la API de OpenAI con WhatsApp, Instagram, email y tu web usando Make. Máxima flexibilidad sin programar.</p>
+          <p class="platform-best">Mejor para: <strong>WhatsApp Business, multi-canal, integraciones avanzadas</strong></p>
+        </div>
+
+      </div>
+
+      <div class="callout info">
+        <div class="callout-icon">ℹ️</div>
+        <div class="callout-body">
+          <p><strong>¿Cuál elegir?</strong> Si eres nuevo en esto, empieza con el <strong>GPT Personalizado</strong> (Método 1) para entender cómo funciona. Si ya tienes un sitio web y quieres atender clientes, usa <strong>Tidio</strong>. Si necesitas integrarlo a WhatsApp, usa <strong>Make + ChatGPT API</strong>.</p>
+        </div>
+      </div>
+
+      <!-- ══ MÉTODO 1: GPT ══ -->
+      <h2 id="metodo-gpt">Método 1 — GPT Personalizado en ChatGPT (más rápido)</h2>
+
+      <p>Este es el método más sencillo y rápido. Si tienes <strong>ChatGPT Plus</strong> ($20 USD/mes), puedes crear tu propio GPT personalizado en menos de 20 minutos, con el nombre, personalidad y conocimiento de tu negocio.</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Acceder al constructor de GPTs</h4>
+          <p>Ve a <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a> y asegúrate de tener el plan Plus activo. En el menú lateral izquierdo, haz clic en <strong>"Explorar GPTs"</strong> y luego en el botón <strong>"+ Crear"</strong> (esquina superior derecha).</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Panel de "Mis GPTs" en ChatGPT con el botón "+ Crear" resaltado en la esquina superior derecha</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Usar el asistente de creación (GPT Builder)</h4>
+          <p>ChatGPT abre un chat especial donde te hace preguntas para configurar tu GPT automáticamente. Simplemente dile en lenguaje natural qué quieres que haga tu chatbot. Por ejemplo:</p>
+          <p><code>"Quiero crear un asistente para mi tienda de ropa en México. Se llama StyleBot. Debe responder preguntas sobre tallas, precios, envíos y devoluciones en español. Debe ser amable y usar emojis de moda."</code></p>
+          <p>El builder configurará automáticamente las instrucciones, nombre e ícono de tu GPT.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Interfaz del GPT Builder mostrando la conversación de configuración automática y la vista previa del chatbot en tiempo real</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Personalizar en la pestaña "Configurar"</h4>
+          <p>Haz clic en la pestaña <strong>"Configurar"</strong> para ajustar manualmente todos los detalles:</p>
+          <ul>
+            <li><strong>Nombre:</strong> El nombre de tu chatbot</li>
+            <li><strong>Descripción:</strong> Qué hace (aparece en la galería de GPTs)</li>
+            <li><strong>Instrucciones:</strong> El prompt completo con todo el conocimiento de tu negocio (ver Sección de Prompt más abajo)</li>
+            <li><strong>Iniciadores de conversación:</strong> Botones de preguntas frecuentes que aparecen al abrir el chat</li>
+            <li><strong>Conocimiento:</strong> Sube documentos PDF, Word o TXT con información de tu empresa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Pestaña "Configurar" del GPT Builder mostrando los campos de Nombre, Instrucciones, Iniciadores de conversación y el botón para subir archivos de conocimiento</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Subir documentos de tu negocio</h4>
+          <p>En la sección <strong>"Conocimiento"</strong>, sube archivos con información de tu negocio. El chatbot los usará como base para responder. Puedes subir:</p>
+          <ul>
+            <li>PDF con tu catálogo de productos y precios</li>
+            <li>Word con preguntas frecuentes y sus respuestas</li>
+            <li>TXT con políticas de envío, devolución y términos</li>
+            <li>Excel con lista de servicios y tarifas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Sección "Conocimiento" del GPT Builder con archivos ya subidos (PDF catálogo, Word FAQ, etc.) y el botón para agregar más archivos</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Probar y publicar tu GPT</h4>
+          <p>En el panel derecho verás una <strong>vista previa en tiempo real</strong>. Prueba con preguntas reales de tus clientes. Cuando estés satisfecho, haz clic en <strong>"Guardar"</strong> y elige la visibilidad:</p>
+          <ul>
+            <li><strong>Solo yo:</strong> Para uso personal o interno de tu equipo</li>
+            <li><strong>Cualquiera con el link:</strong> Puedes compartir el link a tus clientes</li>
+            <li><strong>Público:</strong> Aparece en la galería de GPTs de OpenAI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Pantalla de publicación del GPT mostrando las opciones de visibilidad (Solo yo / Con link / Público) y el botón "Guardar"</span>
+      </div>
+
+      <div class="callout warn">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-body">
+          <p><strong>Limitación importante:</strong> Los GPTs personalizados solo son accesibles para usuarios con ChatGPT (gratis o Plus). No se pueden incrustar directamente en tu web ni en WhatsApp. Para eso, necesitas los métodos 2, 3 o 4 de este tutorial.</p>
+        </div>
+      </div>
+
+      <!-- ══ MÉTODO 2: TIDIO ══ -->
+      <h2 id="metodo-tidio">Método 2 — Tidio en tu sitio web (sin código)</h2>
+
+      <p>Tidio es la plataforma de chat más popular para pequeñas y medianas empresas. Tiene una integración nativa con ChatGPT (llamada <strong>Lyro AI</strong>) que puedes configurar en minutos y agregar a cualquier web.</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crear cuenta en Tidio</h4>
+          <p>Ve a <a href="https://www.tidio.com" target="_blank" rel="noopener">tidio.com</a> y regístrate gratis. El plan gratuito incluye 50 conversaciones de IA al mes, suficiente para empezar. Ingresa el nombre de tu negocio y sitio web.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Pantalla de registro de Tidio.com con los campos de nombre, email, nombre del negocio y URL del sitio web</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Instalar Tidio en tu web</h4>
+          <p>Tidio te dará un pequeño código JavaScript para pegar en tu sitio web. Depende de tu plataforma:</p>
+          <ul>
+            <li><strong>WordPress:</strong> Instala el plugin oficial de Tidio desde el directorio de plugins</li>
+            <li><strong>Shopify:</strong> Agrega desde la tienda de apps de Shopify</li>
+            <li><strong>Wix / Squarespace:</strong> Pega el código en la sección de código personalizado</li>
+            <li><strong>HTML puro:</strong> Pega el snippet antes del cierre de la etiqueta <code>&lt;/body&gt;</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Panel de Tidio mostrando el código de instalación y las opciones para diferentes plataformas (WordPress, Shopify, HTML)</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Activar y configurar Lyro AI (ChatGPT)</h4>
+          <p>En el panel de Tidio, ve a <strong>Lyro AI → Configuración</strong>. Aquí puedes:</p>
+          <ul>
+            <li>Escribir las preguntas frecuentes que el bot debe responder</li>
+            <li>Definir el tono de respuesta (formal, casual, amigable)</li>
+            <li>Configurar cuándo transferir al agente humano</li>
+            <li>Personalizar el mensaje de bienvenida</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Panel de configuración de Lyro AI en Tidio mostrando el editor de FAQ, configuración de tono y el toggle para activar/desactivar el bot</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Personalizar el widget de chat</h4>
+          <p>En <strong>Apariencia</strong>, personaliza el widget para que combine con tu marca:</p>
+          <ul>
+            <li>Color principal del chat (ponlo del color de tu marca)</li>
+            <li>Nombre del agente (ej: "Asistente de TuNegocio")</li>
+            <li>Avatar del chatbot</li>
+            <li>Posición en la pantalla (esquina derecha recomendada)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Editor de apariencia de Tidio con el selector de color, nombre del agente y vista previa del widget de chat en tiempo real</span>
+      </div>
+
+      <!-- ══ EL PROMPT PERFECTO ══ -->
+      <h2 id="el-prompt">El prompt perfecto para tu chatbot de negocio</h2>
+
+      <p>El <strong>prompt del sistema</strong> es el corazón de tu chatbot. Es el texto que le dice a la IA quién es, qué sabe y cómo debe comportarse. Un prompt bien escrito marca la diferencia entre un bot útil y uno que da respuestas incorrectas o irrelevantes.</p>
+
+      <h3>// Estructura recomendada del prompt</h3>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">Prompt del sistema — Plantilla completa</span>
+          <button class="code-copy" onclick="copyCode(this)">Copiar</button>
+        </div>
+        <div class="code-body"><span class="cm">## IDENTIDAD</span>
+Eres [NOMBRE DEL BOT], el asistente virtual oficial de [NOMBRE DEL NEGOCIO].
+Somos una empresa de [TIPO DE NEGOCIO] ubicada en [CIUDAD, PAÍS].
+Tu rol es atender a nuestros clientes con amabilidad, eficiencia y precisión.
+
+<span class="cm">## PERSONALIDAD Y TONO</span>
+- Habla siempre en español latinoamericano, de manera [formal/casual/amigable]
+- Usa el tuteo (tú, no usted) a menos que el cliente use usted primero
+- Sé conciso: responde en 2-4 oraciones máximo salvo que se pida más detalle
+- Usa emojis con moderación (1-2 por mensaje máximo)
+- Nunca uses lenguaje técnico innecesario
+
+<span class="cm">## INFORMACIÓN DE NUESTRO NEGOCIO</span>
+Nombre: [NOMBRE]
+Dirección: [DIRECCIÓN COMPLETA]
+Teléfono: [NÚMERO]
+WhatsApp: [NÚMERO]
+Email: [EMAIL]
+Sitio web: [URL]
+Redes sociales: [INSTAGRAM, FACEBOOK, ETC]
+
+Horario de atención:
+- Lunes a Viernes: [HORARIO]
+- Sábados: [HORARIO]
+- Domingos y festivos: [HORARIO o CERRADO]
+
+<span class="cm">## PRODUCTOS / SERVICIOS</span>
+[Lista aquí tus productos o servicios principales con precios si aplica]
+
+Ejemplo:
+- Corte de cabello hombre: $150 MXN / 30 min
+- Corte + barba: $220 MXN / 45 min
+- Tinte completo: desde $350 MXN / 90 min
+
+<span class="cm">## PREGUNTAS FRECUENTES</span>
+P: ¿Tienen estacionamiento?
+R: Sí, contamos con estacionamiento gratuito para clientes.
+
+P: ¿Aceptan tarjeta?
+R: Aceptamos todas las tarjetas, transferencia y efectivo.
+
+P: ¿Cómo hago una cita?
+R: Puedes agendar por WhatsApp al [NÚMERO], por teléfono o en nuestro sitio web.
+
+<span class="cm">## REGLAS OBLIGATORIAS</span>
+1. NUNCA inventes información. Si no sabes algo, dilo claramente.
+2. Si el cliente pregunta algo fuera de tu conocimiento, ofrece: 
+   "Te comunico con un asesor para resolver eso. ¿Me das tu nombre?"
+3. Si el cliente quiere hablar con una persona, responde:
+   "Con gusto te conecto con un asesor. Un momento por favor."
+4. No des precios de la competencia ni hagas comparaciones.
+5. Si detectas una queja seria, prioriza la empatía sobre la información.
+6. Siempre al final de responder, invita a hacer una acción concreta.</div>
+      </div>
+
+      <div class="callout pro">
+        <div class="callout-icon">🎯</div>
+        <div class="callout-body">
+          <p><strong>Consejo de experto:</strong> El prompt más efectivo no es el más largo — es el más específico. Dedica tiempo a escribir las respuestas exactas a las 10 preguntas más frecuentes de tus clientes y ponlas en el prompt. Eso solo ya mejora las respuestas en un 80%.</p>
+        </div>
+      </div>
+
+      <!-- ══ ENTRENAR CON DOCS ══ -->
+      <h2 id="entrenar">Cómo entrenar tu chatbot con información de tu negocio</h2>
+
+      <p>Más allá del prompt, puedes mejorar enormemente tu chatbot subiendo documentos con información detallada. Aquí te explicamos qué subir y cómo organizarlo:</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crea un documento de FAQ completo</h4>
+          <p>Escribe un documento Word o PDF con las <strong>30-50 preguntas más frecuentes</strong> de tus clientes y sus respuestas exactas. Organízalo por categorías:</p>
+          <ul>
+            <li><strong>Sobre los productos/servicios</strong> — características, materiales, tallas, etc.</li>
+            <li><strong>Sobre precios y pagos</strong> — tarifas, descuentos, métodos de pago</li>
+            <li><strong>Sobre entregas y envíos</strong> — tiempos, costos, cobertura</li>
+            <li><strong>Sobre garantías y devoluciones</strong> — política completa</li>
+            <li><strong>Sobre la empresa</strong> — historia, equipo, ubicación</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Sube tu catálogo de productos</h4>
+          <p>Exporta tu catálogo como PDF o crea un Excel con columnas: Nombre del producto, Descripción, Precio, Disponibilidad, Variantes. El chatbot podrá buscar en este documento para dar información precisa sobre cualquier producto.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Sección de "Conocimiento" en el GPT Builder con varios archivos subidos: FAQ.pdf, Catalogo-2025.xlsx, Politicas-envio.docx</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Agrega testimonios y casos de éxito</h4>
+          <p>Sube un documento con reseñas reales de clientes satisfechos. Cuando alguien pregunte "¿Son confiables?" o "¿Tienen experiencia?", el chatbot podrá citar ejemplos reales. Esto aumenta la credibilidad y ayuda a cerrar ventas.</p>
+        </div>
+      </div>
+
+      <!-- AD SLOT 3 — Mid content -->
+      <div class="ad-slot" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-slot-label">// Espacio AdSense — Banner 728×90 / Responsive</span>
+      </div>
+
+      <!-- ══ INTEGRAR WHATSAPP ══ -->
+      <h2 id="whatsapp">Cómo conectar tu chatbot a WhatsApp e Instagram</h2>
+
+      <p>Para conectar ChatGPT a WhatsApp o Instagram necesitas el <strong>Método 4</strong> (Make + API de OpenAI). Aquí te explicamos el proceso general:</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Obtener acceso a WhatsApp Business API</h4>
+          <p>Necesitas un proveedor oficial de WhatsApp Business API. Los más accesibles para LATAM son:</p>
+          <ul>
+            <li><strong>360dialog</strong> — ~$7 USD/mes, integración nativa con Make</li>
+            <li><strong>Meta directamente</strong> — gratuito pero más técnico de configurar</li>
+            <li><strong>Twilio</strong> — pago por uso, muy flexible</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Crear el flujo en Make</h4>
+          <p>En Make, crea un escenario con estos 3 módulos en secuencia:</p>
+          <ul>
+            <li><strong>360dialog / Webhook</strong> → recibe el mensaje de WhatsApp</li>
+            <li><strong>OpenAI — Create Completion</strong> → procesa el mensaje con ChatGPT y tu prompt</li>
+            <li><strong>360dialog — Send Message</strong> → devuelve la respuesta al cliente</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="screenshot-placeholder">
+        <div class="ph-badge">Captura pendiente</div>
+        <span class="ph-icon">🖼️</span>
+        <span class="ph-label">Captura sugerida</span>
+        <span class="ph-desc">Escenario completo en Make.com con los 3 módulos conectados: 360dialog (trigger) → OpenAI ChatGPT → 360dialog (send message)</span>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Para Instagram y Facebook Messenger</h4>
+          <p>El proceso es similar pero usando el módulo de <strong>Facebook Messenger</strong> en Make. También puedes usar <strong>ManyChat</strong>, que tiene integración con ChatGPT y es específicamente diseñado para Instagram y Messenger con plantilla visual sin código.</p>
+        </div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <p><strong>Consejo:</strong> Consulta nuestro tutorial completo <a href="tutorial-whatsapp.html">Automatizar WhatsApp con Make y ChatGPT</a> donde explicamos paso a paso todo el proceso de conexión con capturas de pantalla.</p>
+        </div>
+      </div>
+
+      <!-- ══ ERRORES COMUNES ══ -->
+      <h2 id="errores">Errores comunes y cómo evitarlos</h2>
+
+      <table class="comp-table" aria-label="Errores comunes en chatbots con ChatGPT">
+        <thead>
+          <tr><th>Error</th><th>Por qué ocurre</th><th>Cómo evitarlo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>El bot inventa información</strong></td>
+            <td>Prompt sin suficiente contexto o sin reglas claras</td>
+            <td>Agrega al prompt: "NUNCA inventes datos. Si no sabes, dilo y ofrece conectar con un humano."</td>
+          </tr>
+          <tr>
+            <td><strong>Respuestas muy largas</strong></td>
+            <td>Sin límite de longitud en el prompt</td>
+            <td>Escribe: "Responde máximo en 3-4 oraciones. Sé directo y conciso."</td>
+          </tr>
+          <tr>
+            <td><strong>Responde en inglés</strong></td>
+            <td>El prompt no especifica el idioma</td>
+            <td>Primera línea del prompt: "Responde SIEMPRE en español latinoamericano."</td>
+          </tr>
+          <tr>
+            <td><strong>No sabe cuándo pasar a humano</strong></td>
+            <td>Sin criterios claros en el prompt</td>
+            <td>Define exactamente cuándo escalar: quejas, precios personalizados, pedidos urgentes.</td>
+          </tr>
+          <tr>
+            <td><strong>Da precios incorrectos</strong></td>
+            <td>Precios no actualizados en el prompt o documentos</td>
+            <td>Actualiza el prompt cada vez que cambien tus precios. Considera no dar precios y dirigir a cotización.</td>
+          </tr>
+          <tr>
+            <td><strong>Tono inapropiado</strong></td>
+            <td>Prompt sin definición de personalidad</td>
+            <td>Define el tono con ejemplos concretos: "Habla como lo haría un amigo experto en el tema."</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ══ COSTOS ══ -->
+      <h2 id="costos">¿Cuánto cuesta tener un chatbot con ChatGPT?</h2>
+
+      <table class="comp-table" aria-label="Comparativa de costos de chatbots">
+        <thead>
+          <tr><th>Método</th><th>Costo mensual</th><th>Mensajes incluidos</th><th>Mejor para</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>GPT Personalizado</strong></td><td>$20 USD (ChatGPT Plus)</td><td>Ilimitados (para ti y quien comparta el link)</td><td>Uso personal o interno</td></tr>
+          <tr><td><strong>Tidio + Lyro AI</strong></td><td>Gratis / $29+ USD</td><td>50 gratis / 200+ de pago</td><td>Chat en sitio web</td></tr>
+          <tr><td><strong>Botpress</strong></td><td>Gratis / $89+ USD</td><td>1,000 gratis / ilimitados</td><td>Flujos complejos</td></tr>
+          <tr><td><strong>Make + OpenAI API</strong></td><td>$9-20 USD + uso API</td><td>Miles de mensajes por <$5 USD</td><td>WhatsApp y multi-canal</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout tip">
+        <div class="callout-icon">💰</div>
+        <div class="callout-body">
+          <p><strong>¿Vale la inversión?</strong> Si tu chatbot atiende 20 consultas al día que antes tomaban 5 minutos cada una, estás ahorrando casi <strong>50 horas al mes</strong>. Incluso con el plan más caro ($89 USD/mes), el retorno es inmediato para cualquier negocio con volumen de mensajes.</p>
+        </div>
+      </div>
+
+      <!-- ══ MÉTRICAS ══ -->
+      <h2 id="metricas">Cómo medir si tu chatbot está funcionando bien</h2>
+
+      <p>Una vez que tu chatbot está activo, estas son las métricas más importantes para monitorear:</p>
+
+      <ul>
+        <li><strong>Tasa de resolución:</strong> % de conversaciones que el bot resuelve sin necesitar humano (meta: 60-80%)</li>
+        <li><strong>Tiempo de respuesta:</strong> Debe ser menor a 3 segundos</li>
+        <li><strong>Tasa de abandono:</strong> % de usuarios que se van sin obtener respuesta útil</li>
+        <li><strong>Preguntas sin respuesta:</strong> Qué preguntas no sabe responder (para mejorar el prompt)</li>
+        <li><strong>Satisfacción del cliente:</strong> Agrega una pregunta "¿Fue útil esta respuesta? 👍 / 👎" al final de cada conversación</li>
+      </ul>
+
+      <div class="callout info">
+        <div class="callout-icon">📊</div>
+        <div class="callout-body">
+          <p><strong>Consejo:</strong> Revisa el historial de conversaciones al menos <strong>una vez por semana</strong> durante el primer mes. Identifica las preguntas que el bot no respondió bien y actualiza el prompt con esas respuestas. Tu chatbot mejora con cada iteración.</p>
+        </div>
+      </div>
+
+      <!-- ══ FAQ ══ -->
+      <h2 id="faq">Preguntas frecuentes sobre chatbots con ChatGPT</h2>
+
+      <div class="faq-list">
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Cuánto cuesta crear un chatbot con ChatGPT?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Depende del método. La opción más económica es el GPT Personalizado de ChatGPT Plus a $20 USD/mes. Con la API de OpenAI y Make puedes construir algo más completo por $15-25 USD/mes en total. Plataformas como Tidio o Botpress tienen planes gratuitos para empezar. En todos los casos, es una inversión que se recupera rápidamente.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Necesito saber programar para crear un chatbot con ChatGPT?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">No. Los GPTs personalizados de ChatGPT Plus no requieren ningún código. Tidio y Botpress tienen interfaces visuales. Solo el método avanzado con la API de OpenAI directa puede requerir algo de conocimiento técnico, pero incluso ahí Make permite hacer todo de forma visual sin programar.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Puede el chatbot responder en el español de México, Colombia o Argentina?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí, perfectamente. Solo necesitas especificarlo en el prompt del sistema. Por ejemplo: "Responde siempre en español mexicano, usando expresiones locales y el tuteo. Evita palabras de España como 'vale' o 'coger'." ChatGPT entiende y respeta estas instrucciones con precisión.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Mi chatbot puede cerrar ventas o solo dar información?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Un chatbot con ChatGPT puede hacer mucho más que dar información. Con el prompt correcto puede calificar prospectos, explicar beneficios, manejar objeciones básicas y dirigir al cliente hacia la compra o la cita. Para ventas más complejas que requieren negociación personalizada, se recomienda que el bot transfiera a un humano.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Qué pasa si el chatbot da una respuesta incorrecta a un cliente?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Este es el riesgo principal de cualquier chatbot con IA. Para minimizarlo: 1) Dale información muy específica y precisa en el prompt y documentos. 2) Instrúyele para que diga "no lo sé" en lugar de inventar. 3) Revisa el historial regularmente. 4) Para información crítica como precios, considera que el bot dirija al cliente a confirmar con un humano.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary class="faq-q" itemprop="name">¿Puedo tener el chatbot en mi web Y en WhatsApp a la vez?</summary>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Sí, y es lo ideal. Puedes usar Tidio para tu web y Make + 360dialog para WhatsApp, compartiendo el mismo prompt del sistema para que la personalidad del bot sea consistente en todos los canales. Incluso puedes conectar Instagram Messenger con el mismo flujo.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- ══ CONCLUSIÓN ══ -->
+      <h2 id="conclusion">Conclusión: tu negocio nunca más sin atención</h2>
+
+      <p>Crear un chatbot con ChatGPT para tu negocio ya no es cosa de grandes empresas ni de programadores expertos. Con las herramientas de hoy, cualquier emprendedor o dueño de negocio en México y Latinoamérica puede tener su propio asistente virtual inteligente en pocas horas.</p>
+
+      <p>El secreto está en <strong>tres cosas</strong>: elegir la plataforma correcta para tu caso, escribir un prompt detallado con toda la información de tu negocio, y revisar y mejorar las respuestas de forma continua durante las primeras semanas.</p>
+
+      <div class="callout tip">
+        <div class="callout-icon">🚀</div>
+        <div class="callout-body">
+          <p><strong>Tu plan de acción esta semana:</strong> Empieza con el GPT Personalizado de ChatGPT Plus (Método 1). Dedica 30 minutos a escribir tu prompt con la información de tu negocio. Comparte el link con 5 clientes y pídeles feedback. Con ese aprendizaje, decide si necesitas escalar a una integración más completa con tu web o WhatsApp.</p>
+        </div>
+      </div>
+
+      <!-- ART NAV -->
+      <div class="art-nav">
+        <a class="art-nav-btn" href="automatizacionsIA.html">
+          <div class="nav-dir">← Volver</div>
+          <div class="nav-title">Página principal — Todos los tutoriales</div>
+        </a>
+        <a class="art-nav-btn" href="tutorial-whatsapp.html" style="text-align:right">
+          <div class="nav-dir">Tutorial relacionado →</div>
+          <div class="nav-title">Automatizar WhatsApp con Make y ChatGPT</div>
+        </a>
+      </div>
+
+    </div>
+    <!-- /art-content -->
+
+  </article>
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar" aria-label="Sidebar — tabla de contenidos y herramientas">
+    <div class="sidebar-sticky">
+
+      <nav class="toc-box" aria-label="Tabla de contenidos">
+        <div class="toc-header">// Contenido</div>
+        <ul class="toc-list">
+          <li><a href="#que-es">¿Qué es un chatbot con IA?</a></li>
+          <li><a href="#cuando-usar">¿Cuándo conviene?</a></li>
+          <li><a href="#plataformas">Las 4 formas de crearlo</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#metodo-gpt">Método 1 — GPT Personalizado</a></li>
+          <li><a href="#metodo-tidio">Método 2 — Tidio en tu web</a></li>
+          <li><a href="#el-prompt">El prompt perfecto</a></li>
+          <li><a href="#entrenar">Entrenar con documentos</a></li>
+          <li><a href="#whatsapp">Conectar a WhatsApp</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#errores">Errores comunes</a></li>
+          <li><a href="#costos">Costos</a></li>
+          <li><a href="#metricas">Métricas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-card">
+        <h4>// Herramientas del tutorial</h4>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon orange">🤖</div>
+          <div>
+            <div class="sidebar-tool-name">ChatGPT Plus</div>
+            <div class="sidebar-tool-badge">$20 USD/mes</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon blue">💬</div>
+          <div>
+            <div class="sidebar-tool-name">Tidio</div>
+            <div class="sidebar-tool-badge">Plan gratis disponible</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon green">⚙️</div>
+          <div>
+            <div class="sidebar-tool-name">Botpress</div>
+            <div class="sidebar-tool-badge">Gratis hasta 1K msg/mes</div>
+          </div>
+        </div>
+        <div class="sidebar-tool">
+          <div class="sidebar-tool-icon purple">🔗</div>
+          <div>
+            <div class="sidebar-tool-name">Make + OpenAI API</div>
+            <div class="sidebar-tool-badge">Desde $9 USD/mes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AD SIDEBAR 300x250 -->
+      <div class="sidebar-ad" aria-label="Publicidad">
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        <span class="ad-label">// Publicidad</span>
+        <span style="font-size:0.75rem;color:var(--muted2);">300 × 250</span>
+      </div>
+
+    </div>
+  </aside>
+
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo" style="margin-bottom:0.5rem;">
+        <div class="logo-icon">AI</div>
+        Automatiza<span style="color:var(--amber)">IA</span>
+      </div>
+      <p>Tutoriales de automatización con inteligencia artificial en español, para México y Latinoamérica.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Tutoriales</h4>
+      <ul>
+        <li><a href="tutorial-chatbot-chatgpt.html">Chatbot con ChatGPT</a></li>
+        <li><a href="tutorial-whatsapp.html">WhatsApp + Make</a></li>
+        <li><a href="tutorial-instalar-n8n.html">Instalar n8n</a></li>
+        <li><a href="automatizacionsIA.html#tutoriales">Ver todos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Herramientas</h4>
+      <ul>
+        <li><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a></li>
+        <li><a href="https://tidio.com" target="_blank" rel="noopener">Tidio</a></li>
+        <li><a href="https://botpress.com" target="_blank" rel="noopener">Botpress</a></li>
+        <li><a href="https://make.com" target="_blank" rel="noopener">Make</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Sitio</h4>
+      <ul>
+        <li><a href="automatizacionsIA.html">Inicio</a></li>
+        <li><a href="automatizacionsIA.html#faq">FAQ</a></li>
+        <li><a href="automatizacionsIA.html#newsletter">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AutomatizaIA · Tutoriales en español para México y LATAM</span>
+    <span>Hecho con ❤️ para Latinoamérica</span>
+  </div>
+</footer>
+
+<script>
+  // ── PROGRESS BAR ──
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const pct = doc.scrollTop / (doc.scrollHeight - doc.clientHeight) * 100;
+    document.getElementById('progressBar').style.width = Math.min(pct, 100) + '%';
+  });
+
+  // ── MOBILE MENU ──
+  function toggleMenu() {
+    const links = document.getElementById('nav-links');
+    const btn = document.querySelector('.nav-toggle');
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.textContent = open ? '✕' : '☰';
+  }
+
+  // ── COPY CODE ──
+  function copyCode(btn) {
+    const code = btn.closest('.code-block').querySelector('.code-body').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      btn.textContent = '✓ Copiado';
+      setTimeout(() => btn.textContent = 'Copiar', 2000);
+    });
+  }
+
+  // ── TOC ACTIVE ──
+  const tocLinks = document.querySelectorAll('.toc-list a[href^="#"]');
+  const headings = document.querySelectorAll('.art-content h2[id]');
+  const tocObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        const a = document.querySelector(`.toc-list a[href="#${e.target.id}"]`);
+        if (a) a.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  headings.forEach(h => tocObs.observe(h));
+
+  // ── SCROLL REVEAL ──
+  document.addEventListener('DOMContentLoaded', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => el.classList.add('animate-hidden'));
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => io.observe(el));
+  });
+</script>
+
+</body>
+</html>
