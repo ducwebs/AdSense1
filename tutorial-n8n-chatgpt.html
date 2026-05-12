@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO PRINCIPAL ═══ -->
+  <title>Conectar n8n con ChatGPT: Flujos de Trabajo Inteligentes Paso a Paso (2026)</title>
+  <meta name="description" content="Aprende a conectar n8n con ChatGPT API paso a paso. Crea flujos de trabajo inteligentes con IA: clasifica textos, genera respuestas, resume contenidos. Tutorial completo en español para México y Latinoamérica.">
+  <meta name="keywords" content="conectar n8n con chatgpt, n8n chatgpt tutorial, n8n openai, flujos de trabajo n8n, n8n tutorial español, n8n inteligencia artificial, automatizacion n8n chatgpt, n8n api openai mexico, n8n workflow chatgpt, openai n8n nodo, automatizar con chatgpt, n8n chatgpt paso a paso, n8n workflows inteligentes, automatizacion ia latam">
+  <meta name="author" content="AutomatizaIA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="geo.region" content="MX">
+  <meta name="geo.placename" content="México">
+  <meta name="language" content="Spanish">
+  <meta name="revisit-after" content="5 days">
+  <link rel="canonical" href="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+
+  <!-- HREFLANG LATAM -->
+  <link rel="alternate" hreflang="es-mx" href="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+  <link rel="alternate" hreflang="es-ar" href="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+  <link rel="alternate" hreflang="es-co" href="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+  <link rel="alternate" hreflang="es" href="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+  <link rel="alternate" hreflang="x-default" href="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Conectar n8n con ChatGPT: Flujos de Trabajo Inteligentes (2026)">
+  <meta property="og:description" content="Tutorial paso a paso para conectar n8n con la API de ChatGPT. Crea automatizaciones inteligentes: clasificación de textos, respuestas automáticas, resumen de contenido y más. Gratis, en español.">
+  <meta property="og:url" content="https://automatizaia.com/tutorial-n8n-chatgpt.html">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="AutomatizaIA">
+  <meta property="og:image" content="https://automatizaia.com/og-n8n-chatgpt.jpg">
+  <meta property="article:published_time" content="2026-05-01T00:00:00-06:00">
+  <meta property="article:modified_time" content="2026-05-12T00:00:00-06:00">
+  <meta property="article:author" content="AutomatizaIA">
+  <meta property="article:section" content="Tutorial">
+  <meta property="article:tag" content="n8n">
+  <meta property="article:tag" content="ChatGPT">
+  <meta property="article:tag" content="Automatización">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@automatizaia">
+  <meta name="twitter:title" content="Conectar n8n con ChatGPT: Tutorial Paso a Paso 2026">
+  <meta name="twitter:description" content="Aprende a usar la API de OpenAI dentro de n8n. Flujos de trabajo inteligentes con IA. Tutorial completo en español.">
+  <meta name="twitter:image" content="https://automatizaia.com/og-n8n-chatgpt.jpg">
+
+  <!-- SCHEMA: ARTICLE -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Conectar n8n con ChatGPT: Flujos de Trabajo Inteligentes Paso a Paso",
+    "description": "Tutorial completo para conectar n8n con la API de OpenAI (ChatGPT). Aprende a crear automatizaciones inteligentes con clasificación de textos, generación de respuestas y resumen de contenidos.",
+    "image": "https://automatizaia.com/og-n8n-chatgpt.jpg",
+    "author": {"@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com"},
+    "publisher": {"@type": "Organization", "name": "AutomatizaIA", "url": "https://automatizaia.com", "logo": {"@type": "ImageObject", "url": "https://automatizaia.com/logo.png"}},
+    "datePublished": "2026-05-01",
+    "dateModified": "2026-05-12",
+    "inLanguage": "es-MX",
+    "url": "https://automatizaia.com/tutorial-n8n-chatgpt.html",
+    "mainEntityOfPage": "https://automatizaia.com/tutorial-n8n-chatgpt.html",
+    "articleSection": "Tutorial",
+    "keywords": "n8n, ChatGPT, OpenAI, automatización, flujos de trabajo, tutorial español",
+    "timeRequired": "PT25M",
+    "educationalLevel": "intermediate",
+    "about": [
+      {"@type": "SoftwareApplication", "name": "n8n", "url": "https://n8n.io"},
+      {"@type": "SoftwareApplication", "name": "ChatGPT API", "url": "https://openai.com"}
+    ]
+  }
+  </script>
+
+  <!-- SCHEMA: BREADCRUMB -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "AutomatizaIA", "item": "https://automatizaia.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Tutoriales", "item": "https://automatizaia.com/#tutoriales"},
+      {"@type": "ListItem", "position": 3, "name": "Conectar n8n con ChatGPT", "item": "https://automatizaia.com/tutorial-n8n-chatgpt.html"}
+    ]
+  }
+  </script>
+
+  <!-- SCHEMA: HOW TO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo conectar n8n con ChatGPT API",
+    "description": "Guía paso a paso para integrar n8n con la API de OpenAI y crear flujos de trabajo inteligentes",
+    "totalTime": "PT25M",
+    "estimatedCost": {"@type": "MonetaryAmount", "currency": "USD", "value": "0"},
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "Obtener API Key de OpenAI", "text": "Accede a platform.openai.com, crea una cuenta y genera tu clave API desde la sección API Keys."},
+      {"@type": "HowToStep", "position": 2, "name": "Configurar credencial en n8n", "text": "En n8n, ve a Settings > Credentials > New Credential, selecciona OpenAI API y pega tu API Key."},
+      {"@type": "HowToStep", "position": 3, "name": "Crear el workflow base", "text": "Crea un nuevo workflow en n8n con un nodo disparador (Trigger) apropiado para tu caso de uso."},
+      {"@type": "HowToStep", "position": 4, "name": "Agregar el nodo OpenAI", "text": "Agrega el nodo OpenAI, selecciona la operación 'Message a Model', elige el modelo y configura el prompt."},
+      {"@type": "HowToStep", "position": 5, "name": "Configurar el prompt con datos dinámicos", "text": "Usa expresiones de n8n para insertar datos dinámicos de pasos anteriores en tu prompt de ChatGPT."},
+      {"@type": "HowToStep", "position": 6, "name": "Procesar la respuesta", "text": "Usa un nodo Code o Set para extraer y formatear la respuesta de ChatGPT y enviarla al siguiente paso del flujo."},
+      {"@type": "HowToStep", "position": 7, "name": "Activar y probar el workflow", "text": "Guarda el workflow, ejecútalo en modo de prueba y verifica los resultados en cada nodo antes de activarlo en producción."}
+    ]
+  }
+  </script>
+
+  <!-- SCHEMA: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Necesito pagar para usar ChatGPT API con n8n?",
+        "acceptedAnswer": {"@type": "Answer", "text": "La API de OpenAI tiene un costo por uso (tokens procesados). n8n en su versión local o self-hosted es gratuito. OpenAI ofrece créditos gratuitos al registrarte por primera vez. Para automatizaciones básicas, el costo mensual puede ser menor a 5 USD."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué modelo de ChatGPT debo usar en n8n?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Para la mayoría de automatizaciones se recomienda gpt-4o-mini por su excelente relación calidad-precio. Para tareas que requieren mayor precisión o razonamiento complejo, usa gpt-4o. Evita modelos antiguos como gpt-3.5-turbo en flujos nuevos."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿n8n tiene un nodo nativo de ChatGPT?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sí. n8n tiene un nodo oficial de OpenAI que permite enviar mensajes, generar imágenes, crear transcripciones y más, sin necesidad de hacer llamadas HTTP manuales. Está disponible desde la versión 1.x de n8n."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo usar n8n con ChatGPT de forma gratuita?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sí, puedes instalar n8n localmente gratis con Docker o Node.js. Para la API de OpenAI, necesitas una cuenta con créditos. OpenAI ofrece créditos gratuitos al crear una cuenta nueva. Para proyectos de prueba, el costo es prácticamente cero."}
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuántos nodos puedo encadenar en un workflow de n8n con ChatGPT?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No hay un límite fijo de nodos. Puedes crear workflows tan complejos como necesites. Lo importante es gestionar bien el contexto que envías a ChatGPT para no incurrir en costos excesivos de tokens."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- PERFORMANCE -->
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+
+  <!-- AdSense placeholder — reemplaza con tu código real -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    /* ═══════════════════════════════════════════
+       DESIGN SYSTEM — INDUSTRIAL / TÉCNICO
+       Paleta: negro profundo + naranja ámbar + blanco roto
+       Tipografía: JetBrains Mono + Barlow
+    ═══════════════════════════════════════════ */
+    :root {
+      --bg:        #0d0d0d;
+      --bg2:       #141414;
+      --bg3:       #1c1c1c;
+      --surface:   rgba(255,255,255,0.04);
+      --border:    rgba(255,255,255,0.08);
+      --border2:   rgba(255,140,0,0.25);
+      --amber:     #ff8c00;
+      --amber2:    #ffb347;
+      --amber-dim: rgba(255,140,0,0.12);
+      --green:     #39d353;
+      --red:       #f85149;
+      --blue:      #58a6ff;
+      --text:      #e6e6e6;
+      --muted:     #888;
+      --muted2:    #555;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Barlow', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* SCAN LINE texture */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+      pointer-events: none; z-index: 9999;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    h1,h2,h3,h4,h5 { font-family: var(--sans); font-weight: 700; line-height: 1.2; }
+    code, pre { font-family: var(--mono); }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+    /* ════════════════════════════════
+       NAV
+    ════════════════════════════════ */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: rgba(13,13,13,0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-family: var(--mono);
+      font-size: 1rem; font-weight: 700;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .logo-icon {
+      width: 28px; height: 28px;
+      background: var(--amber); border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      color: #000; font-size: 0.75rem; font-weight: 700;
+    }
+    .logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+    .nav-links a {
+      color: var(--muted); font-size: 0.85rem; font-weight: 600;
+      padding: 8px 14px; border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+      letter-spacing: 0.02em;
+    }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+    .nav-back {
+      display: flex; align-items: center; gap: 7px;
+      color: var(--amber) !important;
+      border: 1px solid var(--border2) !important;
+      background: var(--amber-dim) !important;
+    }
+    .nav-back:hover { background: rgba(255,140,0,0.2) !important; }
+    .nav-pill {
+      background: var(--amber); color: #000 !important;
+      border-radius: 6px; font-weight: 700 !important;
+    }
+    .nav-pill:hover { opacity: 0.85; background: var(--amber) !important; }
+    .nav-toggle {
+      display: none; background: none; border: 1px solid var(--border);
+      color: var(--text); padding: 6px 10px; border-radius: 6px;
+      cursor: pointer; font-size: 1rem;
+    }
+
+    /* ════════════════════════════════
+       BREADCRUMB BAR
+    ════════════════════════════════ */
+    .breadcrumb-bar {
+      background: var(--bg2); border-bottom: 1px solid var(--border);
+      padding: 0.7rem 5%;
+    }
+    .breadcrumb-bar .inner { max-width: 1200px; margin: 0 auto; }
+    .breadcrumb {
+      font-family: var(--mono); font-size: 0.75rem;
+      color: var(--muted); display: flex; align-items: center; gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--amber); cursor: pointer; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb .sep { color: var(--muted2); }
+
+    /* ════════════════════════════════
+       ARTICLE HERO HEADER
+    ════════════════════════════════ */
+    .article-hero {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 5% 3rem;
+      position: relative; overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,140,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,140,0,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 100% 100% at 0% 0%, black 30%, transparent 80%);
+    }
+    .article-hero-glow {
+      position: absolute; width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(255,140,0,0.06) 0%, transparent 65%);
+      top: -100px; right: -80px; pointer-events: none;
+    }
+    .article-hero-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+
+    .art-tags-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+    .tag {
+      font-family: var(--mono); font-size: 0.68rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 3px;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      border: 1px solid var(--border); color: var(--muted);
+      background: var(--surface);
+    }
+    .tag.amber { color: var(--amber); border-color: var(--border2); background: var(--amber-dim); }
+    .tag.green { color: var(--green); border-color: rgba(57,211,83,0.3); background: rgba(57,211,83,0.08); }
+    .tag.blue { color: var(--blue); border-color: rgba(88,166,255,0.3); background: rgba(88,166,255,0.08); }
+
+    .article-hero h1 {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 900; line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .article-hero h1 em { font-style: normal; color: var(--amber); }
+
+    .article-hero-intro {
+      font-size: 1.05rem; color: var(--muted);
+      line-height: 1.8; font-weight: 300;
+      max-width: 700px; margin-bottom: 2rem;
+    }
+    .article-hero-intro strong { color: var(--text); font-weight: 600; }
+
+    .article-meta-row {
+      display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+      font-family: var(--mono); font-size: 0.75rem; color: var(--muted2);
+      border-top: 1px solid var(--border); padding-top: 1.25rem;
+    }
+    .meta-item { display: flex; align-items: center; gap: 0.4rem; }
+    .meta-item strong { color: var(--muted); }
+
+    /* ════════════════════════════════
+       MAIN LAYOUT — SIDEBAR + CONTENT
+    ════════════════════════════════ */
+    .page-layout {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0 5% 5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ── ARTICLE CONTENT ── */
+    .article-main { padding-top: 3rem; }
+
+    /* OVERVIEW BOX */
+    .art-overview {
+      background: var(--bg2); border: 1px solid var(--border2);
+      border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem;
+    }
+    .art-overview-label {
+      font-family: var(--mono); font-size: 0.72rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .art-overview-label::before { content: '//'; opacity: 0.5; }
+    .art-overview ul { list-style: none; }
+    .art-overview li {
+      display: flex; gap: 10px; align-items: baseline;
+      padding: 5px 0; font-size: 0.9rem; color: var(--muted);
+      border-bottom: 1px solid var(--border);
+    }
+    .art-overview li:last-child { border-bottom: none; }
+    .art-overview li::before { content: '→'; color: var(--amber); font-size: 0.75rem; flex-shrink: 0; font-family: var(--mono); }
+
+    /* CONTENT STYLES */
+    .art-content h2 {
+      font-size: 1.55rem; font-weight: 800;
+      margin: 3rem 0 1rem; padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 80px;
+    }
+    .art-content h3 {
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--amber); margin: 2rem 0 0.75rem;
+      font-family: var(--mono);
+    }
+    .art-content h4 { font-size: 0.98rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+    .art-content p { color: var(--muted); margin-bottom: 1.1rem; line-height: 1.85; }
+    .art-content ul, .art-content ol { padding-left: 1.5rem; margin-bottom: 1.1rem; }
+    .art-content li { color: var(--muted); line-height: 1.8; margin-bottom: 0.4rem; }
+    .art-content strong { color: var(--text); font-weight: 600; }
+    .art-content a { color: var(--amber); text-decoration: underline; text-underline-offset: 3px; }
+    .art-content code {
+      background: var(--bg3); border: 1px solid var(--border);
+      padding: 2px 7px; border-radius: 4px;
+      font-size: 0.82em; color: var(--amber2);
+    }
+
+    /* STEP BLOCKS */
+    .step-block {
+      display: flex; gap: 1.25rem; margin: 2rem 0;
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.5rem; align-items: flex-start;
+      transition: border-color 0.2s;
+    }
+    .step-block:hover { border-color: var(--border2); }
+    .step-num {
+      width: 38px; height: 38px; flex-shrink: 0;
+      background: var(--amber); color: #000;
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 0.9rem; font-weight: 700;
+    }
+    .step-content h4 { font-weight: 700; margin-bottom: 0.5rem; font-size: 1rem; color: var(--text); }
+    .step-content p { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.6rem; line-height: 1.75; }
+    .step-content p:last-child { margin-bottom: 0; }
+
+    /* IMAGE PLACEHOLDER */
+    .img-placeholder {
+      width: 100%; margin: 1.5rem 0;
+      background: var(--bg3); border: 2px dashed var(--border2);
+      border-radius: 10px; overflow: hidden;
+    }
+    .img-placeholder-inner {
+      padding: 2.5rem 1.5rem; text-align: center;
+    }
+    .img-placeholder-icon { font-size: 2rem; margin-bottom: 0.75rem; opacity: 0.5; }
+    .img-placeholder-label {
+      font-family: var(--mono); font-size: 0.75rem; color: var(--muted2);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem;
+    }
+    .img-placeholder-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+    .img-placeholder-caption {
+      background: rgba(255,140,0,0.06); border-top: 1px solid var(--border2);
+      padding: 0.6rem 1.5rem;
+      font-family: var(--mono); font-size: 0.72rem; color: var(--amber);
+    }
+
+    /* Imagen real cuando se añada */
+    .tutorial-img {
+      width: 100%; border-radius: 8px;
+      border: 1px solid var(--border);
+      margin: 1.5rem 0; display: block;
+    }
+    figcaption {
+      font-family: var(--mono); font-size: 0.73rem; color: var(--muted2);
+      text-align: center; margin-top: -1rem; margin-bottom: 1.5rem;
+    }
+
+    /* CODE BLOCKS */
+    .code-block {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden; margin: 1.5rem 0;
+      font-family: var(--mono);
+    }
+    .code-header {
+      background: rgba(255,255,255,0.03); padding: 8px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .code-lang { font-size: 0.7rem; color: var(--amber); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .code-copy {
+      font-size: 0.7rem; color: var(--muted); cursor: pointer;
+      background: none; border: 1px solid var(--border);
+      padding: 3px 10px; border-radius: 3px; transition: color 0.2s;
+    }
+    .code-copy:hover { color: var(--amber); }
+    .code-body { padding: 1.25rem 1.5rem; font-size: 0.82rem; line-height: 1.8; overflow-x: auto; white-space: pre; color: #e6e6e6; }
+    .code-body .kw { color: #ff7b72; }
+    .code-body .str { color: #a5d6ff; }
+    .code-body .cm { color: var(--muted2); font-style: italic; }
+    .code-body .fn { color: #d2a8ff; }
+    .code-body .num { color: var(--amber2); }
+    .code-body .var { color: #79c0ff; }
+    .code-body .key { color: #7ee787; }
+
+    /* CALLOUT */
+    .callout {
+      border-radius: 8px; padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0; display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .callout.tip    { background: rgba(57,211,83,0.06);  border-left: 3px solid var(--green); }
+    .callout.warn   { background: rgba(255,140,0,0.07);  border-left: 3px solid var(--amber); }
+    .callout.info   { background: rgba(88,166,255,0.06); border-left: 3px solid var(--blue); }
+    .callout.danger { background: rgba(248,81,73,0.06);  border-left: 3px solid var(--red); }
+    .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+    .callout-body p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+    .callout-body p + p { margin-top: 0.5rem; }
+    .callout-body strong { color: var(--text); }
+    .callout-body code { background: rgba(255,255,255,0.08); padding: 1px 6px; border-radius: 3px; font-size: 0.82em; }
+
+    /* TABLE */
+    .comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; overflow-x: auto; display: block; }
+    .comp-table thead { display: table-header-group; }
+    .comp-table tbody { display: table-row-group; }
+    .comp-table tr { display: table-row; }
+    .comp-table th {
+      background: var(--bg3); border: 1px solid var(--border);
+      padding: 10px 14px; text-align: left;
+      font-family: var(--mono); font-size: 0.73rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap;
+    }
+    .comp-table td { border: 1px solid var(--border); padding: 10px 14px; color: var(--muted); line-height: 1.5; }
+    .comp-table tr:hover td { background: var(--surface); }
+    .check { color: var(--green); }
+    .cross { color: var(--red); }
+
+    /* WORKFLOW DIAGRAM */
+    .workflow-diagram {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 2rem 1.5rem; margin: 2rem 0;
+      overflow-x: auto;
+    }
+    .workflow-label {
+      font-family: var(--mono); font-size: 0.7rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem;
+    }
+    .workflow-label::before { content: '// '; opacity: 0.5; }
+    .wf-nodes {
+      display: flex; align-items: center; gap: 0; flex-wrap: nowrap;
+      min-width: max-content;
+    }
+    .wf-node {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 8px; padding: 0.8rem 1rem; text-align: center;
+      min-width: 110px;
+    }
+    .wf-node.active { border-color: var(--border2); }
+    .wf-node.chatgpt { border-color: rgba(57,211,83,0.35); }
+    .wf-node-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
+    .wf-node-label { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem; }
+    .wf-node-name { font-size: 0.82rem; font-weight: 600; color: var(--text); }
+    .wf-arrow { color: var(--amber); font-family: var(--mono); font-size: 1.2rem; padding: 0 0.5rem; flex-shrink: 0; }
+
+    /* ADSENSE SLOTS */
+    .adsense-slot {
+      width: 100%; min-height: 90px;
+      background: var(--bg2); border: 1px dashed var(--border);
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      margin: 2.5rem 0; position: relative; overflow: hidden;
+    }
+    .adsense-slot-label {
+      font-family: var(--mono); font-size: 0.68rem;
+      color: var(--muted2); text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    /* Quita este estilo cuando pongas el código real de AdSense */
+    .adsense-slot::after {
+      content: 'ESPACIO PUBLICITARIO — ADSENSE';
+      font-family: var(--mono); font-size: 0.65rem;
+      color: var(--muted2); position: absolute;
+    }
+
+    .adsense-sidebar {
+      width: 100%; min-height: 250px;
+      background: var(--bg2); border: 1px dashed var(--border);
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem; position: relative;
+    }
+    .adsense-sidebar::after {
+      content: 'ADSENSE\nSIDEBAR\n300×250';
+      font-family: var(--mono); font-size: 0.65rem;
+      color: var(--muted2); white-space: pre; text-align: center;
+      line-height: 2;
+    }
+
+    /* ═══ SIDEBAR ═══ */
+    .sidebar { padding-top: 3rem; }
+    .sidebar-widget {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.4rem; margin-bottom: 1.5rem;
+    }
+    .widget-title {
+      font-family: var(--mono); font-size: 0.7rem; color: var(--amber);
+      text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .widget-title::before { content: '//'; opacity: 0.5; }
+
+    /* TOC */
+    .toc-list { list-style: none; }
+    .toc-list li { border-bottom: 1px solid var(--border); }
+    .toc-list li:last-child { border-bottom: none; }
+    .toc-list a {
+      display: flex; align-items: center; gap: 8px;
+      color: var(--muted); font-size: 0.83rem; padding: 0.55rem 0;
+      transition: color 0.2s;
+    }
+    .toc-list a:hover { color: var(--amber); }
+    .toc-list a::before {
+      content: '→'; color: var(--amber); font-family: var(--mono);
+      font-size: 0.7rem; flex-shrink: 0; opacity: 0.6;
+    }
+
+    /* Related posts */
+    .related-item {
+      display: flex; gap: 0.75rem; align-items: flex-start;
+      padding: 0.75rem 0; border-bottom: 1px solid var(--border);
+      cursor: pointer; transition: opacity 0.2s;
+    }
+    .related-item:hover { opacity: 0.8; }
+    .related-item:last-child { border-bottom: none; }
+    .related-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: var(--bg3); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+    }
+    .related-title { font-size: 0.82rem; font-weight: 600; color: var(--text); line-height: 1.35; }
+    .related-time { font-family: var(--mono); font-size: 0.68rem; color: var(--muted2); margin-top: 0.2rem; }
+
+    /* Share buttons */
+    .share-btns { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .share-btn {
+      flex: 1; min-width: 80px; padding: 8px 12px; border-radius: 6px;
+      border: 1px solid var(--border); background: var(--bg3);
+      color: var(--muted); font-family: var(--mono); font-size: 0.72rem;
+      cursor: pointer; transition: border-color 0.2s, color 0.2s;
+      text-align: center; font-weight: 600; letter-spacing: 0.03em;
+    }
+    .share-btn:hover { border-color: var(--border2); color: var(--amber); }
+
+    /* Progress bar */
+    .progress-bar-wrap {
+      background: var(--bg3); border-radius: 4px; height: 4px;
+      margin-bottom: 0.6rem; overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%; background: linear-gradient(90deg, var(--amber), var(--amber2));
+      border-radius: 4px; width: 0%; transition: width 0.3s ease;
+    }
+    .progress-label {
+      font-family: var(--mono); font-size: 0.68rem; color: var(--muted2);
+      display: flex; justify-content: space-between;
+    }
+
+    /* FAQ SECTION */
+    .faq-section { margin-top: 3rem; }
+    .faq-item {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; margin-bottom: 0.75rem; overflow: hidden;
+    }
+    .faq-item[open] { border-color: var(--border2); }
+    .faq-q {
+      padding: 1rem 1.4rem; cursor: pointer;
+      font-weight: 600; font-size: 0.95rem;
+      display: flex; align-items: center; justify-content: space-between;
+      list-style: none; user-select: none;
+    }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after {
+      content: '+'; font-family: var(--mono); color: var(--amber);
+      font-size: 1.2rem; transition: transform 0.2s; flex-shrink: 0;
+    }
+    .faq-item[open] .faq-q::after { transform: rotate(45deg); }
+    .faq-a { padding: 0 1.4rem 1.1rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
+    .faq-a p { margin-bottom: 0.5rem; }
+    .faq-a code { background: var(--bg3); padding: 1px 6px; border-radius: 3px; font-size: 0.82em; color: var(--amber2); }
+
+    /* ARTICLE NAV */
+    .art-nav-section {
+      margin-top: 3rem; padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    }
+    .art-nav-btn {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1.1rem 1.4rem; cursor: pointer;
+      transition: border-color 0.2s; display: block; text-decoration: none;
+    }
+    .art-nav-btn:hover { border-color: var(--border2); }
+    .nav-dir { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+    .nav-title { font-size: 0.88rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+
+    /* NEWSLETTER INLINE */
+    .nl-inline {
+      background: var(--bg2); border: 1px solid var(--border2);
+      border-radius: 10px; padding: 2rem; margin: 3rem 0; text-align: center;
+    }
+    .nl-inline h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .nl-inline p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .nl-form { display: flex; gap: 0.75rem; max-width: 480px; margin: 0 auto; }
+    .nl-input {
+      flex: 1; background: var(--bg3); border: 1px solid var(--border);
+      color: var(--text); padding: 11px 14px; border-radius: 6px;
+      font-family: var(--mono); font-size: 0.85rem;
+      transition: border-color 0.2s; outline: none;
+    }
+    .nl-input:focus { border-color: var(--amber); }
+    .nl-input::placeholder { color: var(--muted2); }
+    .nl-btn {
+      background: var(--amber); color: #000; border: none;
+      padding: 11px 20px; border-radius: 6px;
+      font-family: var(--mono); font-size: 0.82rem; font-weight: 700;
+      cursor: pointer; transition: opacity 0.2s; white-space: nowrap;
+    }
+    .nl-btn:hover { opacity: 0.85; }
+    #nl-msg { font-family: var(--mono); font-size: 0.75rem; color: var(--muted2); margin-top: 0.75rem; }
+
+    /* SCROLL REVEAL */
+    .reveal { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.animate-hidden { opacity: 0; transform: translateY(20px); }
+    .reveal.animate-hidden.visible { opacity: 1; transform: translateY(0); }
+
+    /* READING PROGRESS TOP BAR */
+    #reading-progress {
+      position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 9998;
+      background: linear-gradient(90deg, var(--amber), var(--amber2));
+      transform-origin: left; transform: scaleX(0);
+      transition: transform 0.1s linear;
+    }
+
+    /* ════════════════════════════════
+       FOOTER
+    ════════════════════════════════ */
+    footer {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 3rem 5% 2rem;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem;
+    }
+    .footer-brand p { color: var(--muted); font-size: 0.88rem; margin-top: 0.75rem; max-width: 260px; line-height: 1.7; }
+    .footer-col h4 { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; color: var(--amber); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+    .footer-col a { color: var(--muted); font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--amber); }
+    .footer-bottom {
+      max-width: 1200px; margin: 2rem auto 0;
+      padding-top: 1.5rem; border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      color: var(--muted2); font-family: var(--mono); font-size: 0.75rem; flex-wrap: wrap; gap: 0.5rem;
+    }
+
+    /* ════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════ */
+    @media (max-width: 900px) {
+      .page-layout { grid-template-columns: 1fr; }
+      .sidebar { padding-top: 0; order: -1; }
+      .adsense-sidebar { min-height: 90px; }
+      .adsense-sidebar::after { content: 'ADSENSE 728×90'; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 60px; left: 0; right: 0;
+        background: var(--bg2); border-bottom: 1px solid var(--border);
+        padding: 1rem 5%; gap: 0.5rem;
+      }
+      .nav-toggle { display: block; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .nl-form { flex-direction: column; }
+      .art-nav-section { grid-template-columns: 1fr; }
+      .wf-nodes { flex-direction: column; min-width: 0; align-items: flex-start; }
+      .wf-arrow { transform: rotate(90deg); align-self: center; }
+    }
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .article-hero h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- READING PROGRESS BAR -->
+<div id="reading-progress" role="progressbar" aria-label="Progreso de lectura"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="automatizacionsIA.html" class="logo" aria-label="AutomatizaIA - Inicio">
+      <div class="logo-icon">AI</div>
+      Automatiza<span>IA</span>
+    </a>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li role="none"><a href="automatizacionsIA.html#tutoriales" role="menuitem">Tutoriales</a></li>
+      <li role="none"><a href="automatizacionsIA.html#herramientas" role="menuitem">Herramientas</a></li>
+      <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+      <li role="none">
+        <a href="automatizacionsIA.html" class="nav-back" role="menuitem" aria-label="Volver a la página principal">
+          ← Inicio
+        </a>
+      </li>
+      <li role="none"><a href="automatizacionsIA.html#newsletter" class="nav-pill" role="menuitem">Newsletter</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══ BREADCRUMB ═══ -->
+<div class="breadcrumb-bar" aria-label="Ruta de navegación">
+  <div class="inner">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="automatizacionsIA.html">AutomatizaIA</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <a href="automatizacionsIA.html#tutoriales">Tutoriales</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span aria-current="page">Conectar n8n con ChatGPT</span>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══ ARTICLE HERO ═══ -->
+<header class="article-hero" role="banner">
+  <div class="article-hero-glow" aria-hidden="true"></div>
+  <div class="article-hero-inner">
+    <div class="art-tags-row" role="list" aria-label="Categorías del artículo">
+      <span class="tag amber" role="listitem">Tutorial</span>
+      <span class="tag green" role="listitem">n8n</span>
+      <span class="tag blue" role="listitem">ChatGPT API</span>
+      <span class="tag" role="listitem">Automatización IA</span>
+      <span class="tag" style="color:#a78bfa;border-color:rgba(167,139,250,0.3);background:rgba(167,139,250,0.08)" role="listitem">Avanzado</span>
+    </div>
+
+    <h1>Conecta <em>n8n</em> con ChatGPT:<br>flujos de trabajo inteligentes</h1>
+
+    <p class="article-hero-intro">
+      Aprende a integrar la <strong>API de OpenAI (ChatGPT)</strong> dentro de n8n para crear automatizaciones que realmente <strong>piensan</strong>: clasifican textos, generan respuestas, resumen contenidos y toman decisiones, todo de forma automática. Tutorial completo en español, sin rodeos.
+    </p>
+
+    <div class="article-meta-row" role="contentinfo">
+      <span class="meta-item">📅 <strong>12 mayo 2026</strong></span>
+      <span class="meta-item">⏱ <strong>25 min de lectura</strong></span>
+      <span class="meta-item">⚙️ <strong>n8n 1.x+ &amp; GPT-4o</strong></span>
+      <span class="meta-item">🌎 <strong>México · Latam</strong></span>
+      <span class="meta-item">🆓 <strong>Gratis para empezar</strong></span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ AD — BANNER TOP ═══ -->
+<!-- Reemplaza este bloque con tu unidad de anuncio de AdSense real -->
+<div style="max-width:1200px;margin:1.5rem auto;padding:0 5%;">
+  <div class="adsense-slot" style="min-height:90px;" aria-hidden="true">
+    <!-- AdSense 728x90 leaderboard / 320x50 mobile -->
+    <!--
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+</div>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<div class="page-layout">
+
+  <!-- ────────────────────────────────
+       ARTICLE CONTENT (LEFT)
+  ──────────────────────────────── -->
+  <main class="article-main" id="article-main" role="main">
+
+    <!-- OVERVIEW BOX -->
+    <div class="art-overview reveal" aria-label="Contenido del tutorial">
+      <p class="art-overview-label">Lo que vas a aprender</p>
+      <ul>
+        <li>Qué es n8n y por qué combinarlo con ChatGPT es tan poderoso</li>
+        <li>Cómo obtener tu API Key de OpenAI y configurarla en n8n</li>
+        <li>Crear tu primer workflow básico: trigger → ChatGPT → acción</li>
+        <li>Usar prompts dinámicos con variables de n8n</li>
+        <li>Workflow avanzado: clasificar emails y responder automáticamente</li>
+        <li>Parsear respuestas JSON de ChatGPT en n8n</li>
+        <li>Optimizar costos: gpt-4o-mini vs gpt-4o</li>
+        <li>Errores comunes y cómo evitarlos</li>
+      </ul>
+    </div>
+
+    <!-- ═══════════════════════════════
+         SECCIÓN 1 — INTRO
+    ═══════════════════════════════ -->
+    <div class="art-content">
+      <h2 id="intro">¿Por qué conectar n8n con ChatGPT?</h2>
+
+      <p>
+        <strong>n8n</strong> es una plataforma de automatización de código abierto que te permite conectar cientos de aplicaciones y servicios mediante flujos de trabajo visuales. <strong>ChatGPT</strong> (a través de la API de OpenAI) es el motor de inteligencia artificial más versátil disponible hoy. Cuando los combinas, obtienes automatizaciones que no solo mueven datos, sino que los <em>entienden</em>.
+      </p>
+      <p>
+        Un flujo de trabajo tradicional puede mover un correo a una carpeta. Un flujo inteligente con ChatGPT puede leer ese correo, determinar si es urgente, redactar una respuesta personalizada, agendar una reunión y notificarte por WhatsApp, todo sin que toques un botón.
+      </p>
+
+      <div class="callout info">
+        <div class="callout-icon">🌎</div>
+        <div class="callout-body">
+          <p><strong>Para México y Latinoamérica:</strong> n8n self-hosted es completamente gratuito y puedes instalarlo en tu computadora o en un servidor de bajo costo (desde $5 USD/mes en DigitalOcean, Vultr o Contabo). La API de OpenAI se paga en dólares, pero los costos son mínimos: con $5 USD puedes procesar miles de mensajes con <code>gpt-4o-mini</code>.</p>
+        </div>
+      </div>
+
+      <!-- WORKFLOW DIAGRAM -->
+      <div class="workflow-diagram reveal" aria-label="Diagrama de flujo n8n + ChatGPT">
+        <p class="workflow-label">Flujo básico: n8n + ChatGPT</p>
+        <div class="wf-nodes" role="list">
+          <div class="wf-node active" role="listitem">
+            <div class="wf-node-icon">⚡</div>
+            <div class="wf-node-label">Trigger</div>
+            <div class="wf-node-name">Disparador</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node" role="listitem">
+            <div class="wf-node-icon">📥</div>
+            <div class="wf-node-label">Input</div>
+            <div class="wf-node-name">Datos</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node chatgpt" role="listitem">
+            <div class="wf-node-icon">🤖</div>
+            <div class="wf-node-label">OpenAI</div>
+            <div class="wf-node-name">ChatGPT</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node" role="listitem">
+            <div class="wf-node-icon">⚙️</div>
+            <div class="wf-node-label">Process</div>
+            <div class="wf-node-name">Parsear</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node active" role="listitem">
+            <div class="wf-node-icon">📤</div>
+            <div class="wf-node-label">Output</div>
+            <div class="wf-node-name">Acción</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 2 — PREREQUISITOS
+      ═══════════════════════════════ -->
+      <h2 id="requisitos">Requisitos antes de empezar</h2>
+      <p>Antes de comenzar el tutorial, asegúrate de tener lo siguiente listo:</p>
+
+      <table class="comp-table" aria-label="Requisitos del tutorial">
+        <thead>
+          <tr><th>Requisito</th><th>Dónde obtenerlo</th><th>Costo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>n8n instalado</strong></td><td>n8n.io o Docker</td><td class="check">Gratis (self-hosted)</td></tr>
+          <tr><td><strong>Cuenta OpenAI</strong></td><td>platform.openai.com</td><td class="check">Gratis (con créditos)</td></tr>
+          <tr><td><strong>API Key de OpenAI</strong></td><td>platform.openai.com/api-keys</td><td class="check">Gratis obtenerla</td></tr>
+          <tr><td><strong>Saldo en OpenAI</strong></td><td>platform.openai.com/billing</td><td>Desde $5 USD</td></tr>
+          <tr><td><strong>Navegador web moderno</strong></td><td>Chrome, Firefox, Edge</td><td class="check">Gratis</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout warn">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-body">
+          <p><strong>Si aún no tienes n8n instalado:</strong> Revisa primero nuestro tutorial <a href="tutorial-n8n-local.html">Cómo instalar n8n en tu computadora</a> y regresa aquí. Todo el proceso toma unos 20 minutos.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 3 — API KEY
+      ═══════════════════════════════ -->
+      <h2 id="api-key">Paso 1: Obtener tu API Key de OpenAI</h2>
+
+      <p>La API Key es la "contraseña" que le da acceso a n8n para usar los modelos de OpenAI. Sigue estos pasos para obtenerla:</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Accede a la plataforma de OpenAI</h4>
+          <p>Ve a <a href="https://platform.openai.com" target="_blank" rel="noopener noreferrer">platform.openai.com</a> e inicia sesión con tu cuenta de OpenAI. Si no tienes cuenta, créala en el mismo sitio. Los nuevos usuarios reciben créditos gratuitos para empezar.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Pantalla de inicio de platform.openai.com mostrando el panel principal después de iniciar sesión</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 1 — Dashboard de OpenAI Platform</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Navega a la sección de API Keys</h4>
+          <p>En el menú lateral izquierdo, busca la sección <strong>"API Keys"</strong> o ve directamente a <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer">platform.openai.com/api-keys</a>. Aquí verás un listado de tus claves existentes (si las tienes).</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Crear una nueva clave</h4>
+          <p>Haz clic en el botón <strong>"Create new secret key"</strong> (crear nueva clave secreta). Asígnale un nombre descriptivo, por ejemplo: <code>n8n-automatizacion</code>. Esto te ayuda a identificarla si después quieres revocarla o crear nuevas.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Ventana modal de creación de API Key en OpenAI Platform, mostrando el campo de nombre y el botón "Create"</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 2 — Crear nueva API Key en OpenAI</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Copia y guarda tu clave</h4>
+          <p>OpenAI te mostrará la clave <strong>solo una vez</strong>. Empieza con <code>sk-proj-...</code>. Cópiala inmediatamente y guárdala en un lugar seguro (no la compartas ni la subas a repositorios de código). Si la pierdes, tendrás que crear una nueva.</p>
+        </div>
+      </div>
+
+      <div class="callout danger">
+        <div class="callout-icon">🔐</div>
+        <div class="callout-body">
+          <p><strong>Seguridad importante:</strong> Tu API Key tiene acceso a tu facturación de OpenAI. Nunca la escribas directamente en el código de un flujo de n8n visible, no la compartas en foros ni grupos de WhatsApp, y no la subas a GitHub. En n8n, siempre guárdala como una credencial segura (te explicamos cómo en el siguiente paso).</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 4 — CREDENCIAL EN N8N
+      ═══════════════════════════════ -->
+      <h2 id="credencial-n8n">Paso 2: Configurar la credencial en n8n</h2>
+
+      <p>Ahora vamos a agregar tu API Key de OpenAI en n8n de forma segura, para que todos tus flujos puedan usarla sin necesidad de escribirla cada vez.</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Abre n8n en tu navegador</h4>
+          <p>Si instalaste n8n localmente, ve a <code>http://localhost:5678</code>. Si usas n8n Cloud, accede a tu instancia desde n8n.cloud. Inicia sesión si es necesario.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Ve a Settings → Credentials</h4>
+          <p>En el menú lateral, haz clic en <strong>Settings</strong> (el ícono de engranaje) y luego selecciona <strong>Credentials</strong>. También puedes acceder desde el menú superior cuando estás dentro de un workflow haciendo clic en <strong>"Add credential"</strong>.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Panel de Credentials en n8n mostrando el botón "Add Credential" y la lista de credenciales existentes</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 3 — Sección Credentials en n8n</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Busca "OpenAI" y selecciona la credencial</h4>
+          <p>Haz clic en <strong>"Add Credential"</strong> o <strong>"New"</strong>. En el buscador, escribe <code>OpenAI</code>. Selecciona <strong>"OpenAI API"</strong> de la lista de opciones. Aparecerá un formulario con un campo para tu API Key.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Pega tu API Key y guarda</h4>
+          <p>Pega tu clave en el campo <strong>"API Key"</strong>. Dale un nombre descriptivo a la credencial, por ejemplo: <code>OpenAI - AutomatizaIA</code>. Haz clic en <strong>"Save"</strong>. n8n verificará automáticamente que la clave sea válida y mostrará un mensaje de confirmación verde.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Formulario de configuración de credencial OpenAI en n8n, con el campo de API Key rellenado y el mensaje de "Connection tested successfully"</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 4 — Credencial OpenAI configurada exitosamente en n8n</div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">✅</div>
+        <div class="callout-body">
+          <p><strong>¡Listo!</strong> Una vez guardada, esta credencial estará disponible en todos tus workflows de n8n. Solo la configuras una vez y puedes usarla en infinitos flujos.</p>
+        </div>
+      </div>
+
+      <!-- AD INLINE 1 -->
+      <div class="adsense-slot" style="min-height:90px;" aria-hidden="true">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 5 — PRIMER WORKFLOW
+      ═══════════════════════════════ -->
+      <h2 id="primer-workflow">Paso 3: Tu primer workflow con ChatGPT</h2>
+
+      <p>Vamos a crear el workflow más básico posible: un trigger manual que envía un texto a ChatGPT y muestra la respuesta. Es la base de todo lo que haremos después.</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Crear un nuevo workflow</h4>
+          <p>En n8n, haz clic en <strong>"New Workflow"</strong> (botón naranja o el símbolo "+" en la barra lateral). Se abrirá el editor de flujos con un canvas vacío. Dale un nombre al workflow haciendo clic en "My Workflow" en la parte superior: ponle algo descriptivo como <strong>"Test ChatGPT API"</strong>.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Editor de workflows de n8n mostrando el canvas vacío con el cursor listo para añadir el primer nodo</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 5 — Canvas vacío en el editor de n8n</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Agregar el nodo Manual Trigger</h4>
+          <p>Haz clic en el botón <strong>"+"</strong> en el canvas o en "Add first step". Busca <strong>"Manual Trigger"</strong> y agrégalo. Este nodo sirve para ejecutar el workflow manualmente con un clic, perfecto para pruebas. En producción lo reemplazarás por un disparador real (webhook, email, formulario, etc.).</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Agregar el nodo OpenAI</h4>
+          <p>Haz clic en el símbolo <strong>"+"</strong> que aparece a la derecha del nodo Manual Trigger para agregar el siguiente nodo. Busca <strong>"OpenAI"</strong> en el panel de nodos. Selecciona el nodo <strong>"OpenAI"</strong>. En el panel de configuración que se abre a la derecha, configura lo siguiente:</p>
+          <p>• <strong>Credential:</strong> Selecciona la credencial que creaste en el paso anterior.<br>
+             • <strong>Resource:</strong> Message a Model<br>
+             • <strong>Model:</strong> gpt-4o-mini (recomendado para pruebas)<br>
+             • <strong>Messages:</strong> Haz clic en "Add Message" → Role: user → Content: <code>¿Cuál es la capital de México? Responde en una sola oración.</code></p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Panel de configuración del nodo OpenAI en n8n, mostrando los campos de Credential, Model, Resource y Messages ya configurados</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 6 — Configuración del nodo OpenAI en n8n</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Ejecutar el workflow y ver el resultado</h4>
+          <p>Haz clic en <strong>"Test Workflow"</strong> (el botón de ejecutar en la parte inferior). Luego haz clic en el nodo Manual Trigger y pulsa <strong>"Execute Node"</strong>. Verás cómo el flujo se ejecuta y en el nodo OpenAI aparecerá la respuesta de ChatGPT en verde. ¡Tu primer flujo inteligente funciona!</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Resultado de ejecución del workflow en n8n mostrando la respuesta de ChatGPT en el panel de Output del nodo OpenAI</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 7 — Resultado exitoso del primer workflow con ChatGPT</div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">🎉</div>
+        <div class="callout-body">
+          <p><strong>¡Funciona!</strong> La respuesta de ChatGPT aparece en el campo <code>message.content</code> dentro del objeto JSON de salida del nodo. Este valor lo usarás en los siguientes nodos de tu workflow con la expresión <code>{{ $json.message.content }}</code>.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 6 — PROMPTS DINÁMICOS
+      ═══════════════════════════════ -->
+      <h2 id="prompts-dinamicos">Paso 4: Prompts dinámicos con datos reales</h2>
+
+      <p>La verdadera magia ocurre cuando el prompt que envías a ChatGPT no es estático, sino que incluye datos dinámicos del flujo: el texto de un email, el mensaje de un cliente, el contenido de un formulario. Para eso usamos las expresiones de n8n.</p>
+
+      <h3>// Expresiones de n8n</h3>
+      <p>En cualquier campo de texto de n8n puedes usar <code>{{ }}</code> para insertar el valor de datos anteriores en el flujo. Por ejemplo, si el nodo anterior entregó un campo llamado <code>emailBody</code>, puedes usarlo así:</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">n8n Expression — Prompt dinámico</span>
+          <button class="code-copy" onclick="copyCode(this)" aria-label="Copiar código">Copiar</button>
+        </div>
+        <div class="code-body"><span class="cm">// En el campo "Content" del nodo OpenAI:</span>
+Eres un asistente de soporte para una empresa mexicana.
+Analiza el siguiente correo de un cliente y determina:
+1. ¿Es una queja, consulta o solicitud de reembolso?
+2. ¿Qué tan urgente es del 1 al 10?
+3. Redacta una respuesta amable y profesional en español.
+
+Correo del cliente:
+{{ $json.emailBody }}
+
+Nombre del cliente: {{ $json.customerName }}
+Asunto: {{ $json.emailSubject }}
+
+Responde ÚNICAMENTE en formato JSON con esta estructura:
+{
+  "tipo": "queja|consulta|reembolso",
+  "urgencia": 1-10,
+  "respuesta": "texto de la respuesta"
+}</div>
+      </div>
+
+      <div class="callout info">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <p><strong>Truco pro:</strong> Siempre que necesites que ChatGPT te devuelva datos estructurados (para usarlos en nodos posteriores), pídele que responda en formato JSON. Esto hace que parsear la respuesta sea trivial. En la sección siguiente te mostramos cómo extraer esos datos.</p>
+        </div>
+      </div>
+
+      <h3>// System Prompt: dale personalidad a tu IA</h3>
+      <p>En el nodo OpenAI puedes agregar un mensaje con el rol <code>system</code> antes del mensaje del usuario. El system prompt le dice a ChatGPT cómo debe comportarse en todo el flujo:</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">System Prompt — Ejemplo soporte empresarial</span>
+          <button class="code-copy" onclick="copyCode(this)" aria-label="Copiar código">Copiar</button>
+        </div>
+        <div class="code-body">Eres María, la asistente virtual de Servicios Rápidos México SA de CV.
+Tu objetivo es clasificar y responder mensajes de clientes de forma 
+profesional, empática y en español mexicano.
+
+REGLAS:
+- Siempre responde en español
+- Usa un tono amable pero profesional
+- Si no puedes resolver algo, escala a un humano
+- No inventes información sobre productos o precios
+- Siempre firma con "María - Asistente Virtual"</div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Nodo OpenAI en n8n con dos mensajes configurados: el primero con role "system" y el system prompt, y el segundo con role "user" y el prompt dinámico con expresiones</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 8 — System prompt + User prompt con variables dinámicas en n8n</div>
+      </div>
+
+      <!-- AD INLINE 2 -->
+      <div class="adsense-slot" style="min-height:90px;" aria-hidden="true">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 7 — PARSEAR RESPUESTA
+      ═══════════════════════════════ -->
+      <h2 id="parsear-respuesta">Paso 5: Parsear la respuesta de ChatGPT</h2>
+
+      <p>Cuando ChatGPT responde con un JSON, la respuesta llega como texto plano en el campo <code>message.content</code>. Para usar esos datos en nodos posteriores (guardar en Airtable, enviar por email, etc.), necesitas convertirlos de texto a un objeto JSON real. Para eso usamos un nodo <strong>Code</strong> en n8n.</p>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Agregar un nodo Code después del nodo OpenAI</h4>
+          <p>Haz clic en el <strong>"+"</strong> después del nodo OpenAI. Busca <strong>"Code"</strong> y agrégalo. Selecciona el lenguaje <strong>JavaScript</strong>. Este nodo te permite escribir código que transforma los datos entre nodos.</p>
+        </div>
+      </div>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">JavaScript — Nodo Code de n8n</span>
+          <button class="code-copy" onclick="copyCode(this)" aria-label="Copiar código">Copiar</button>
+        </div>
+        <div class="code-body"><span class="cm">// Obtener el texto de respuesta de ChatGPT</span>
+<span class="kw">const</span> <span class="var">aiText</span> = <span class="var">$input</span>.first().json.message.content;
+
+<span class="kw">try</span> {
+  <span class="cm">// Limpiar posibles bloques de código markdown (```json ... ```)</span>
+  <span class="kw">let</span> <span class="var">clean</span> = <span class="var">aiText</span>.trim();
+  <span class="kw">if</span> (<span class="var">clean</span>.startsWith(<span class="str">'```'</span>)) {
+    <span class="var">clean</span> = <span class="var">clean</span>.replace(<span class="fn">/```json\n?/g</span>, <span class="str">''</span>).replace(<span class="fn">/```/g</span>, <span class="str">''</span>).trim();
+  }
+  
+  <span class="cm">// Extraer el JSON (por si hay texto antes o después)</span>
+  <span class="kw">const</span> <span class="var">start</span> = <span class="var">clean</span>.indexOf(<span class="str">'{'</span>);
+  <span class="kw">const</span> <span class="var">end</span> = <span class="var">clean</span>.lastIndexOf(<span class="str">'}'</span>) + <span class="num">1</span>;
+  <span class="kw">const</span> <span class="var">jsonStr</span> = <span class="var">clean</span>.substring(<span class="var">start</span>, <span class="var">end</span>);
+  
+  <span class="cm">// Parsear el JSON</span>
+  <span class="kw">const</span> <span class="var">parsed</span> = <span class="fn">JSON</span>.parse(<span class="var">jsonStr</span>);
+  
+  <span class="cm">// Retornar el objeto parseado + el texto original por si lo necesitas</span>
+  <span class="kw">return</span> [{ 
+    json: { 
+      ...<span class="var">parsed</span>, 
+      rawResponse: <span class="var">aiText</span>,
+      processedAt: <span class="kw">new</span> <span class="fn">Date</span>().toISOString()
+    } 
+  }];
+  
+} <span class="kw">catch</span> (e) {
+  <span class="cm">// Si falla el parse, retornar el texto como está para no romper el flujo</span>
+  <span class="kw">return</span> [{ 
+    json: { 
+      error: <span class="str">'No se pudo parsear la respuesta'</span>, 
+      raw: <span class="var">aiText</span>,
+      errorMessage: e.message
+    } 
+  }];
+}</div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Nodo Code en n8n con el código JavaScript de parseo ya escrito, y en la pestaña Output el resultado JSON parseado correctamente con los campos "tipo", "urgencia" y "respuesta"</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 9 — Respuesta de ChatGPT parseada como JSON en n8n</div>
+      </div>
+
+      <div class="callout tip">
+        <div class="callout-icon">✅</div>
+        <div class="callout-body">
+          <p><strong>Resultado:</strong> Después del nodo Code, tendrás disponibles los campos individuales: <code>{{ $json.tipo }}</code>, <code>{{ $json.urgencia }}</code>, <code>{{ $json.respuesta }}</code>. Puedes usarlos en cualquier nodo posterior para tomar decisiones, enviar emails o guardar en bases de datos.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 8 — WORKFLOW COMPLETO
+      ═══════════════════════════════ -->
+      <h2 id="workflow-completo">Paso 6: Workflow completo — Clasificar emails automáticamente</h2>
+
+      <p>Ahora vamos a construir un ejemplo real y útil: un sistema que lee los emails nuevos de Gmail, los clasifica con ChatGPT, y si son urgentes, envía una notificación automática a Slack o por email.</p>
+
+      <!-- WORKFLOW DIAGRAM COMPLETO -->
+      <div class="workflow-diagram reveal" aria-label="Diagrama del workflow completo de clasificación de emails">
+        <p class="workflow-label">Workflow completo: Gmail → ChatGPT → Clasificación → Acción</p>
+        <div class="wf-nodes" role="list">
+          <div class="wf-node active" role="listitem">
+            <div class="wf-node-icon">📧</div>
+            <div class="wf-node-label">Trigger</div>
+            <div class="wf-node-name">Gmail</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node chatgpt" role="listitem">
+            <div class="wf-node-icon">🤖</div>
+            <div class="wf-node-label">OpenAI</div>
+            <div class="wf-node-name">Clasificar</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node" role="listitem">
+            <div class="wf-node-icon">⚙️</div>
+            <div class="wf-node-label">Code</div>
+            <div class="wf-node-name">Parsear JSON</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node" role="listitem">
+            <div class="wf-node-icon">🔀</div>
+            <div class="wf-node-label">If</div>
+            <div class="wf-node-name">Urgente?</div>
+          </div>
+          <div class="wf-arrow" aria-hidden="true">→</div>
+          <div class="wf-node active" role="listitem">
+            <div class="wf-node-icon">🔔</div>
+            <div class="wf-node-label">Slack/Email</div>
+            <div class="wf-node-name">Notificar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Nodo 1: Gmail Trigger (disparador)</h4>
+          <p>Agrega el nodo <strong>Gmail Trigger</strong>. Conéctalo con tu cuenta de Google (necesitarás crear una credencial de Gmail en n8n, el proceso es similar al de OpenAI). Configura la opción <strong>"Trigger On"</strong> como <code>New Email</code>. Puedes filtrar por etiqueta o carpeta si solo quieres procesar ciertos correos.</p>
+          <p>Este nodo se activará automáticamente cada vez que llegue un email nuevo a tu cuenta de Gmail.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Configuración del nodo Gmail Trigger en n8n con la credencial de Google conectada y la opción "New Email" seleccionada</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 10 — Gmail Trigger configurado en n8n</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Nodo 2: OpenAI — Clasificar el email</h4>
+          <p>Agrega el nodo <strong>OpenAI</strong> con la configuración de clasificación. Usa el siguiente prompt dinámico que toma los datos del email anterior:</p>
+        </div>
+      </div>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">n8n — Prompt para clasificar emails</span>
+          <button class="code-copy" onclick="copyCode(this)" aria-label="Copiar código">Copiar</button>
+        </div>
+        <div class="code-body"><span class="cm">// SYSTEM MESSAGE (role: system):</span>
+Eres un clasificador de emails para una empresa latinoamericana.
+Analiza emails y responde SOLO con JSON válido, sin texto adicional.
+
+<span class="cm">// USER MESSAGE (role: user):</span>
+Analiza este email y devuelve un JSON con este formato exacto:
+{
+  "categoria": "queja|consulta|pedido|reembolso|spam|otro",
+  "urgencia": 1-10,
+  "requiere_humano": true/false,
+  "resumen": "máximo 50 palabras",
+  "respuesta_sugerida": "respuesta completa para el cliente"
+}
+
+DATOS DEL EMAIL:
+- Remitente: {{ $json.from.value[0].address }}
+- Asunto: {{ $json.subject }}
+- Contenido: {{ $json.text }}
+- Fecha: {{ $json.date }}</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Nodo 3: Code — Parsear la respuesta JSON</h4>
+          <p>Agrega el <strong>nodo Code</strong> con el script de parseo que vimos en el paso anterior. Esto convierte el texto JSON que devuelve ChatGPT en un objeto real que n8n puede usar en los siguientes nodos.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Nodo 4: IF — ¿Es urgente?</h4>
+          <p>Agrega el nodo <strong>"IF"</strong> (filtro condicional). Configura la condición: si <code>{{ $json.urgencia }}</code> es mayor o igual a <code>7</code> O si <code>{{ $json.requiere_humano }}</code> es <code>true</code>, entonces ejecuta el camino "True" (notificación urgente). En el camino "False" puedes enviar la respuesta automática directamente.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Nodo IF en n8n con las condiciones configuradas: urgencia >= 7 OR requiere_humano = true, mostrando los dos caminos de ejecución "True" y "False"</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 11 — Nodo IF con condiciones basadas en la clasificación de ChatGPT</div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Nodo 5A (True): Notificación urgente — Slack o Email</h4>
+          <p>En el camino "True" (urgente), agrega un nodo de <strong>Slack</strong> o <strong>Gmail Send</strong> para notificar al equipo. El mensaje puede incluir: remitente, asunto, urgencia, resumen generado por ChatGPT y la respuesta sugerida, todo con variables dinámicas.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <h4>Nodo 5B (False): Responder automáticamente</h4>
+          <p>En el camino "False" (no urgente), agrega un nodo <strong>Gmail Send</strong> para enviar la respuesta automática al cliente usando la <code>respuesta_sugerida</code> generada por ChatGPT. El "To" será <code>{{ $json.from.value[0].address }}</code> y el body será <code>{{ $json.respuesta_sugerida }}</code>.</p>
+        </div>
+      </div>
+
+      <!-- ESPACIO PARA CAPTURA DE PANTALLA -->
+      <div class="img-placeholder reveal" role="img" aria-label="Espacio reservado para captura de pantalla">
+        <div class="img-placeholder-inner">
+          <div class="img-placeholder-icon">🖼️</div>
+          <div class="img-placeholder-label">Captura de pantalla</div>
+          <div class="img-placeholder-desc">Vista completa del workflow en el canvas de n8n mostrando todos los nodos conectados: Gmail Trigger → OpenAI → Code → IF → (Slack / Gmail Send)</div>
+        </div>
+        <div class="img-placeholder-caption">📸 Captura 12 — Workflow completo de clasificación de emails con ChatGPT en n8n</div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 9 — OPTIMIZACIÓN
+      ═══════════════════════════════ -->
+      <h2 id="optimizacion">Paso 7: Optimizar costos y rendimiento</h2>
+
+      <p>La API de OpenAI cobra por tokens (unidades de texto). Un token es aproximadamente 4 caracteres en inglés o 3 en español. Optimizar el uso de tokens puede reducir tu costo mensual hasta un 90%.</p>
+
+      <h3>// ¿Qué modelo usar?</h3>
+
+      <table class="comp-table" aria-label="Comparativa de modelos de OpenAI por caso de uso">
+        <thead>
+          <tr><th>Tarea</th><th>Modelo recomendado</th><th>Costo aproximado</th><th>Por qué</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Clasificar emails/textos</td><td><code>gpt-4o-mini</code></td><td class="check">Muy bajo</td><td>Tarea simple, alta precisión</td></tr>
+          <tr><td>Extraer datos JSON</td><td><code>gpt-4o-mini</code></td><td class="check">Muy bajo</td><td>Suficientemente preciso</td></tr>
+          <tr><td>Responder a clientes</td><td><code>gpt-4o-mini</code></td><td class="check">Bajo</td><td>Buena calidad, texto natural</td></tr>
+          <tr><td>Resumen de documentos</td><td><code>gpt-4o-mini</code></td><td class="check">Bajo</td><td>Excelente relación calidad-precio</td></tr>
+          <tr><td>Análisis legal o técnico</td><td><code>gpt-4o</code></td><td>Medio</td><td>Requiere mayor razonamiento</td></tr>
+          <tr><td>Redacción de alto nivel</td><td><code>gpt-4o</code></td><td>Medio</td><td>Mejor calidad de escritura</td></tr>
+          <tr><td>Decisiones críticas de negocio</td><td><code>gpt-4o</code></td><td>Medio</td><td>No te puedes dar errores</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout tip">
+        <div class="callout-icon">💰</div>
+        <div class="callout-body">
+          <p><strong>Regla de oro para Latam:</strong> Usa <code>gpt-4o-mini</code> para el 80-90% de tus automatizaciones. Es aproximadamente 30 veces más barato que <code>gpt-4o</code> y para clasificación, extracción y respuestas simples la calidad es prácticamente igual. Con $5 USD puedes procesar decenas de miles de emails cortos.</p>
+        </div>
+      </div>
+
+      <h3>// Tips para reducir tokens</h3>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">Mejores prácticas — Prompts eficientes</span>
+          <button class="code-copy" onclick="copyCode(this)" aria-label="Copiar código">Copiar</button>
+        </div>
+        <div class="code-body"><span class="cm">// ❌ INEFICIENTE: prompt largo y vago</span>
+Por favor, si no te importa, podrías analizar muy amablemente este 
+correo electrónico que te voy a compartir a continuación y decirme...
+
+<span class="cm">// ✅ EFICIENTE: directo y con estructura clara</span>
+Clasifica este email. Responde solo JSON:
+{"categoria":"...","urgencia":1-10}
+
+Email: {{ $json.text.substring(0, 500) }}
+<span class="cm">// Limitar el texto de entrada también reduce tokens</span>
+
+<span class="cm">// ✅ LIMITAR TOKENS DE SALIDA en el nodo OpenAI:</span>
+Max Tokens: 300  <span class="cm">// Para respuestas cortas y clasificación</span>
+Max Tokens: 800  <span class="cm">// Para respuestas a clientes</span>
+Max Tokens: 2000 <span class="cm">// Para resúmenes o redacción larga</span></div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 10 — ERRORES COMUNES
+      ═══════════════════════════════ -->
+      <h2 id="errores-comunes">Errores comunes y cómo solucionarlos</h2>
+
+      <div class="step-block reveal">
+        <div class="step-num" style="background:var(--red);">!</div>
+        <div class="step-content">
+          <h4>Error: "Authentication failed" o "Invalid API Key"</h4>
+          <p><strong>Causa:</strong> La API Key está mal copiada, tiene espacios al inicio/final, o fue revocada en OpenAI.</p>
+          <p><strong>Solución:</strong> Ve a n8n Settings → Credentials, edita la credencial de OpenAI y vuelve a pegar la clave desde platform.openai.com/api-keys. Verifica que no tenga espacios extra.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num" style="background:var(--red);">!</div>
+        <div class="step-content">
+          <h4>Error: "Insufficient quota" o "You exceeded your current quota"</h4>
+          <p><strong>Causa:</strong> Te quedaste sin créditos en OpenAI o tu límite mensual fue alcanzado.</p>
+          <p><strong>Solución:</strong> Ve a platform.openai.com/billing y agrega saldo. Puedes configurar un límite máximo mensual para no gastar de más. Recomendamos comenzar con $10 USD.</p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num" style="background:var(--red);">!</div>
+        <div class="step-content">
+          <h4>Error: JSON.parse falla en el nodo Code</h4>
+          <p><strong>Causa:</strong> ChatGPT no devolvió un JSON válido. A veces agrega texto introductorio como "Aquí está el JSON solicitado:" antes del objeto.</p>
+          <p><strong>Solución:</strong> Usa el script de parseo con limpieza de markdown que te dimos arriba. Si el problema persiste, agrega al prompt: <em>"Responde ÚNICAMENTE con el JSON, sin ningún texto adicional, sin backticks, sin explicaciones."</em></p>
+        </div>
+      </div>
+
+      <div class="step-block reveal">
+        <div class="step-num" style="background:var(--red);">!</div>
+        <div class="step-content">
+          <h4>El workflow no se activa con el Gmail Trigger</h4>
+          <p><strong>Causa:</strong> El workflow no está activado (solo guardado) o la credencial de Gmail expiró.</p>
+          <p><strong>Solución:</strong> Asegúrate de hacer clic en el toggle <strong>"Active"</strong> en la esquina superior derecha del editor. Verifica también que la credencial de Google siga autorizada en tu cuenta.</p>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           SECCIÓN 11 — CASOS DE USO
+      ═══════════════════════════════ -->
+      <h2 id="casos-de-uso">Casos de uso reales para México y Latinoamérica</h2>
+
+      <p>Aquí te compartimos los casos de uso más populares entre emprendedores y empresas de la región que ya usan n8n con ChatGPT:</p>
+
+      <div class="art-overview" style="margin-top: 1rem;">
+        <p class="art-overview-label">Casos de uso probados</p>
+        <ul>
+          <li><strong>Atención a clientes 24/7:</strong> Responder mensajes de WhatsApp, email y redes sociales automáticamente, con escalamiento a humano cuando es necesario</li>
+          <li><strong>Clasificación de pedidos:</strong> Leer pedidos por WhatsApp o formulario, extraer datos (producto, cantidad, dirección) y registrarlos en Google Sheets o Airtable</li>
+          <li><strong>Generación de contenido:</strong> Crear publicaciones para redes sociales, newsletters o descripciones de productos de forma automática y masiva</li>
+          <li><strong>Análisis de comentarios:</strong> Monitorear reseñas de Google Maps o comentarios en redes y generar informes de sentimiento automáticamente</li>
+          <li><strong>Facturación inteligente:</strong> Leer emails con solicitudes de factura, extraer datos del cliente y generar el XML del SAT automáticamente (México)</li>
+          <li><strong>Soporte técnico tier-1:</strong> Responder preguntas frecuentes de clientes con base en tu documentación, sin necesidad de operadores humanos</li>
+          <li><strong>Resumen de reuniones:</strong> Transcribir y resumir audios de juntas usando Whisper API + ChatGPT, enviando el resumen al equipo por Slack</li>
+        </ul>
+      </div>
+
+      <!-- AD INLINE 3 -->
+      <div class="adsense-slot" style="min-height:90px;" aria-hidden="true">
+        <!--
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+
+      <!-- ═══════════════════════════════
+           FAQ SECTION
+      ═══════════════════════════════ -->
+      <div class="faq-section" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+
+        <details class="faq-item">
+          <summary class="faq-q">¿Necesito saber programar para conectar n8n con ChatGPT?</summary>
+          <div class="faq-a">
+            <p>No necesitas ser programador para hacer flujos básicos e intermedios. n8n tiene una interfaz visual donde arrastras y sueltas nodos. El único momento donde se usa código es en el nodo Code para parsear respuestas JSON, y en este tutorial te damos el código listo para copiar y pegar.</p>
+            <p>Para flujos avanzados, conocer conceptos básicos de JavaScript ayuda, pero no es obligatorio para empezar.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">¿Cuánto cuesta usar ChatGPT API con n8n en México?</summary>
+          <div class="faq-a">
+            <p>n8n self-hosted (instalado en tu computadora o servidor) es completamente gratuito. La API de OpenAI tiene un costo por uso:</p>
+            <p>• <code>gpt-4o-mini</code>: $0.15 USD por millón de tokens de entrada y $0.60 por millón de salida. Con $5 USD puedes procesar decenas de miles de mensajes cortos.<br>
+               • <code>gpt-4o</code>: Aproximadamente 30 veces más caro que mini.</p>
+            <p>Para una pequeña empresa que procesa 500 emails al mes, el costo con gpt-4o-mini sería menor a $1 USD mensual.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">¿n8n funciona en español?</summary>
+          <div class="faq-a">
+            <p>La interfaz de n8n está principalmente en inglés, pero no necesitas saber inglés avanzado para usarlo. Los nombres de los nodos son descriptivos y hay muchos tutoriales en español (como este). ChatGPT, por su parte, entiende y responde en español perfectamente, incluyendo modismos mexicanos y latinoamericanos.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">¿Qué diferencia hay entre usar el nodo HTTP Request y el nodo OpenAI en n8n?</summary>
+          <div class="faq-a">
+            <p>El <strong>nodo OpenAI</strong> es la forma recomendada: tiene todos los campos pre-configurados, maneja la autenticación automáticamente y es más fácil de mantener. El <strong>nodo HTTP Request</strong> te permite hacer llamadas directas a la API de OpenAI (o cualquier otra API) con más control, pero requiere configurar manualmente los headers, el body y la autenticación. Para la mayoría de los casos, usa el nodo nativo de OpenAI.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">¿Puedo usar n8n Cloud en lugar de instalarlo en mi computadora?</summary>
+          <div class="faq-a">
+            <p>Sí. n8n Cloud es la opción hosted (en la nube) que no requiere instalación. Tiene una prueba gratuita de 14 días. Después cuesta desde $20 USD/mes. La ventaja es que funciona 24/7 sin necesidad de tener tu computadora encendida. Para empezar y aprender, usar n8n self-hosted en tu computadora es perfectamente válido y gratis.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">¿ChatGPT recuerda las conversaciones anteriores en los workflows de n8n?</summary>
+          <div class="faq-a">
+            <p>No por defecto. Cada llamada a la API de OpenAI es independiente. Si quieres que ChatGPT "recuerde" el contexto de una conversación (por ejemplo, para un chatbot multi-turno), debes incluir el historial de mensajes anteriores en cada nueva llamada a la API. n8n tiene el nodo <strong>"AI Agent"</strong> que facilita esto con memoria integrada. En tutoriales posteriores cubriremos cómo construir chatbots con memoria usando n8n.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- NEWSLETTER INLINE -->
+      <div class="nl-inline reveal">
+        <h3>🤖 Recibe tutoriales como este cada semana</h3>
+        <p>Automatizaciones con IA, n8n, Make y ChatGPT. En español, sin spam, para México y Latinoamérica.</p>
+        <div class="nl-form">
+          <input type="email" id="nl-email" class="nl-input" placeholder="tu@correo.com" aria-label="Tu correo electrónico">
+          <button class="nl-btn" onclick="subscribeNL()" aria-label="Suscribirse al newsletter">Suscribirme</button>
+        </div>
+        <p id="nl-msg" aria-live="polite"></p>
+      </div>
+
+      <!-- ARTICLE NAV -->
+      <div class="art-nav-section" role="navigation" aria-label="Artículos relacionados">
+        <a href="tutorial-n8n-local.html" class="art-nav-btn">
+          <div class="nav-dir">← Anterior</div>
+          <div class="nav-title">Cómo instalar n8n en tu computadora (Windows, Mac y Linux)</div>
+        </a>
+        <a href="tutorial-chatbot-negocio.html" class="art-nav-btn" style="text-align:right">
+          <div class="nav-dir">Siguiente →</div>
+          <div class="nav-title">Cómo crear un chatbot para tu negocio con ChatGPT (sin programar)</div>
+        </a>
+      </div>
+
+    </div><!-- /art-content -->
+  </main>
+
+  <!-- ────────────────────────────────
+       SIDEBAR (RIGHT)
+  ──────────────────────────────── -->
+  <aside class="sidebar" aria-label="Barra lateral">
+
+    <!-- PROGRESS WIDGET -->
+    <div class="sidebar-widget">
+      <p class="widget-title">Progreso de lectura</p>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="sidebar-progress"></div>
+      </div>
+      <div class="progress-label">
+        <span id="progress-pct">0%</span>
+        <span>Completado</span>
+      </div>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="sidebar-widget">
+      <p class="widget-title">Contenido del tutorial</p>
+      <ul class="toc-list" role="list">
+        <li><a href="#intro">¿Por qué n8n + ChatGPT?</a></li>
+        <li><a href="#requisitos">Requisitos previos</a></li>
+        <li><a href="#api-key">Obtener API Key OpenAI</a></li>
+        <li><a href="#credencial-n8n">Configurar credencial en n8n</a></li>
+        <li><a href="#primer-workflow">Tu primer workflow</a></li>
+        <li><a href="#prompts-dinamicos">Prompts dinámicos</a></li>
+        <li><a href="#parsear-respuesta">Parsear respuesta JSON</a></li>
+        <li><a href="#workflow-completo">Workflow completo</a></li>
+        <li><a href="#optimizacion">Optimizar costos</a></li>
+        <li><a href="#errores-comunes">Errores comunes</a></li>
+        <li><a href="#casos-de-uso">Casos de uso Latam</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <!-- ADSENSE SIDEBAR -->
+    <div class="adsense-sidebar" aria-hidden="true">
+      <!--
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+    </div>
+
+    <!-- SHARE BUTTONS -->
+    <div class="sidebar-widget">
+      <p class="widget-title">Compartir tutorial</p>
+      <div class="share-btns">
+        <button class="share-btn" onclick="shareTwitter()" aria-label="Compartir en X (Twitter)">𝕏 Twitter</button>
+        <button class="share-btn" onclick="shareFacebook()" aria-label="Compartir en Facebook">Facebook</button>
+        <button class="share-btn" onclick="shareWhatsApp()" aria-label="Compartir en WhatsApp">WhatsApp</button>
+        <button class="share-btn" onclick="shareLinkedIn()" aria-label="Compartir en LinkedIn">LinkedIn</button>
+      </div>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <div class="sidebar-widget">
+      <p class="widget-title">Tutoriales relacionados</p>
+
+      <a href="tutorial-n8n-local.html" class="related-item" aria-label="Tutorial: Instalar n8n localmente">
+        <div class="related-icon">💻</div>
+        <div>
+          <div class="related-title">Instalar n8n en tu computadora</div>
+          <div class="related-time">⏱ 20 min · Intermedio</div>
+        </div>
+      </a>
+
+      <a href="tutorial-whatsapp.html" class="related-item" aria-label="Tutorial: Automatizar WhatsApp con Make">
+        <div class="related-icon">💬</div>
+        <div>
+          <div class="related-title">Automatiza WhatsApp con Make e IA</div>
+          <div class="related-time">⏱ 25 min · Principiante</div>
+        </div>
+      </a>
+
+      <a href="tutorial-chatbot-negocio.html" class="related-item" aria-label="Tutorial: Crear chatbot para tu negocio">
+        <div class="related-icon">🤖</div>
+        <div>
+          <div class="related-title">Chatbot para tu negocio sin programar</div>
+          <div class="related-time">⏱ 30 min · Intermedio</div>
+        </div>
+      </a>
+
+      <a href="tutorial-email-ia.html" class="related-item" aria-label="Tutorial: Automatizar emails con IA">
+        <div class="related-icon">📧</div>
+        <div>
+          <div class="related-title">Automatiza correos con Gmail + Make</div>
+          <div class="related-time">⏱ 15 min · Principiante</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- ADSENSE SIDEBAR 2 -->
+    <div class="adsense-sidebar" aria-hidden="true">
+      <!--
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+    </div>
+
+    <!-- BACK TO HOME BUTTON -->
+    <div class="sidebar-widget" style="text-align:center;">
+      <a href="automatizacionsIA.html" class="btn-primary" style="display:block;text-align:center;padding:12px 20px;" aria-label="Volver a la página de inicio">
+        ← Volver a AutomatizaIA
+      </a>
+      <p style="font-family:var(--mono);font-size:0.72rem;color:var(--muted2);margin-top:0.75rem;">Ver todos los tutoriales</p>
+    </div>
+
+  </aside>
+
+</div><!-- /page-layout -->
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon">AI</div>
+        Automatiza<span style="color:var(--amber)">IA</span>
+      </div>
+      <p>Tutoriales paso a paso de automatización con IA para México y Latinoamérica. Make, n8n, ChatGPT y más. Completamente en español.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Tutoriales</h4>
+      <ul>
+        <li><a href="tutorial-whatsapp.html">WhatsApp + IA</a></li>
+        <li><a href="comparativa-make-n8n.html">Make vs n8n</a></li>
+        <li><a href="tutorial-n8n-local.html">Instalar n8n</a></li>
+        <li><a href="tutorial-n8n-chatgpt.html" aria-current="page">n8n + ChatGPT</a></li>
+        <li><a href="tutorial-email-ia.html">Email con IA</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Herramientas</h4>
+      <ul>
+        <li><a href="https://n8n.io" target="_blank" rel="noopener">n8n</a></li>
+        <li><a href="https://make.com" target="_blank" rel="noopener">Make</a></li>
+        <li><a href="https://platform.openai.com" target="_blank" rel="noopener">OpenAI API</a></li>
+        <li><a href="https://zapier.com" target="_blank" rel="noopener">Zapier</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Sitio</h4>
+      <ul>
+        <li><a href="automatizacionsIA.html">Inicio</a></li>
+        <li><a href="automatizacionsIA.html#newsletter">Newsletter</a></li>
+        <li><a href="automatizacionsIA.html#faq">FAQ</a></li>
+        <li><a href="politica-privacidad.html">Privacidad</a></li>
+        <li><a href="aviso-legal.html">Aviso legal</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 AutomatizaIA · México · Todos los derechos reservados</span>
+    <span>Hecho con ❤️ para Latinoamérica</span>
+  </div>
+</footer>
+
+<script>
+/* ──────────────────────────────────────
+   READING PROGRESS BAR
+────────────────────────────────────── */
+function updateReadingProgress() {
+  const article = document.getElementById('article-main');
+  if (!article) return;
+  const scrollTop = window.scrollY;
+  const docHeight = article.offsetHeight;
+  const winHeight = window.innerHeight;
+  const scrollPercent = Math.min(scrollTop / (docHeight - winHeight + 200), 1);
+
+  document.getElementById('reading-progress').style.transform = `scaleX(${scrollPercent})`;
+
+  const pct = Math.round(scrollPercent * 100);
+  document.getElementById('sidebar-progress').style.width = pct + '%';
+  document.getElementById('progress-pct').textContent = pct + '%';
+}
+
+window.addEventListener('scroll', updateReadingProgress, { passive: true });
+
+/* ──────────────────────────────────────
+   NAV MOBILE TOGGLE
+────────────────────────────────────── */
+function toggleMenu() {
+  const links = document.getElementById('nav-links');
+  const btn = document.querySelector('.nav-toggle');
+  const open = links.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+  btn.textContent = open ? '✕' : '☰';
+}
+
+/* ──────────────────────────────────────
+   COPY CODE
+────────────────────────────────────── */
+function copyCode(btn) {
+  const code = btn.closest('.code-block').querySelector('.code-body').innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => btn.textContent = 'Copiar', 2000);
+  }).catch(() => {
+    // Fallback para navegadores sin clipboard API
+    const ta = document.createElement('textarea');
+    ta.value = code;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => btn.textContent = 'Copiar', 2000);
+  });
+}
+
+/* ──────────────────────────────────────
+   NEWSLETTER
+────────────────────────────────────── */
+function subscribeNL() {
+  const input = document.getElementById('nl-email');
+  const msg = document.getElementById('nl-msg');
+  if (input && input.value && input.value.includes('@') && input.value.includes('.')) {
+    msg.textContent = '// ✓ ¡Suscrito! Revisa tu correo para confirmar.';
+    msg.style.color = 'var(--green)';
+    input.value = '';
+    input.placeholder = 'tu@correo.com';
+  } else {
+    if (input) { input.style.borderColor = 'var(--red)'; setTimeout(() => input.style.borderColor = '', 2000); }
+    if (msg) { msg.textContent = 'Por favor ingresa un correo válido.'; msg.style.color = 'var(--red)'; }
+  }
+}
+
+/* ──────────────────────────────────────
+   SHARE BUTTONS
+────────────────────────────────────── */
+const shareUrl = encodeURIComponent(window.location.href);
+const shareTitle = encodeURIComponent('Conectar n8n con ChatGPT: flujos de trabajo inteligentes paso a paso | AutomatizaIA');
+const shareText = encodeURIComponent('Aprende a conectar n8n con ChatGPT y crear automatizaciones inteligentes. Tutorial completo en español para México y Latinoamérica.');
+
+function shareTwitter() {
+  window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'width=600,height=400');
+}
+function shareFacebook() {
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'width=600,height=400');
+}
+function shareWhatsApp() {
+  window.open(`https://wa.me/?text=${shareText}%20${shareUrl}`, '_blank');
+}
+function shareLinkedIn() {
+  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`, '_blank', 'width=600,height=400');
+}
+
+/* ──────────────────────────────────────
+   SCROLL REVEAL
+────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach(el => el.classList.add('animate-hidden'));
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => io.observe(el));
+});
+
+/* ──────────────────────────────────────
+   KEYBOARD NAVIGATION
+────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[tabindex="0"]').forEach(el => {
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+    });
+  });
+});
+
+/* ──────────────────────────────────────
+   ACTIVE TOC LINK ON SCROLL
+────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('h2[id]');
+  const tocLinks = document.querySelectorAll('.toc-list a');
+
+  const ioToc = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.style.color = '');
+        const activeLink = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+        if (activeLink) activeLink.style.color = 'var(--amber)';
+      }
+    });
+  }, { rootMargin: '-60px 0px -70% 0px' });
+
+  sections.forEach(s => ioToc.observe(s));
+});
+</script>
+
+</body>
+</html>
